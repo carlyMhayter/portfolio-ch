@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.page-content {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid lime;
+  margin: 20px 0px;
+}
