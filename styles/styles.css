@@ -6,7 +6,7 @@
  *  NavBar
  **********************************************************************/
 .navbar {
-  background-color: rgb(245, 244, 244);
+  background-color: rgb(230, 230, 230);
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -70,6 +70,7 @@
   transition: 0.5s;
   color: rgb(66, 66, 66);
   box-shadow: -40px 40px 1px 1px rgb(255, 187, 0);
+  border-radius: 20px;
 }
 
 .fineart-container:hover {
@@ -111,6 +112,7 @@
   transition: 0.5s;
   color: rgb(95, 95, 95);
   box-shadow: 40px 40px 1px 1px rgb(255, 187, 0);
+  border-radius: 20px;
 }
 
 .web-container:hover {
@@ -157,25 +159,12 @@
   height: 800px;
   border: 10px solid rgb(252, 137, 129);
   animation-duration: 2s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-top: 100%;
-    opacity: 0;
-  }
-
-  to {
-    margin-top: 0%;
-    opacity: 100%;
-  }
 }
 
 #bio-text-container {
   border: 2px solid rgb(0, 4, 255);
   position: absolute;
-  right: 60px;
+  right: 0px;
   top: 200px;
   width: 450px;
   height: 600px;
@@ -183,24 +172,11 @@
   justify-content: center;
   flex-direction: column;
   animation-duration: 2s;
-  animation-name: slidein2;
-}
-
-@keyframes slidein2 {
-  from {
-    margin-left: 100%;
-    opacity: 0;
-  }
-
-  to {
-    margin-left: 0%;
-    opacity: 100%;
-  }
 }
 
 .bio-text {
-  border: 2px solid rgb(255, 17, 0);
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(252, 137, 129);
   right: 150px;
   top: 300px;
   width: 450px;
@@ -208,10 +184,17 @@
   padding: 10px;
   font-size: 20px;
   border-radius: 10px;
+  box-shadow: -10px 10px 1px 1px rgb(218, 86, 10);
+  transition: 0.5s;
+}
+.bio-text:hover {
+  box-shadow: 30px -5px 1px 1px #ffb766;
+  border: 2px solid rgb(255, 236, 172);
 }
 
 .hello-text {
   font-size: 50px;
+  font-family: Rubik Mono One, serif;
 }
 
 /***********************************************************************
@@ -230,13 +213,16 @@
   border: 2px solid indianred;
   text-align: center;
   font-size: 20px;
+  margin: 20px;
+  font-family: Rubik Mono One, sans-serif;
+  color: rgb(177, 65, 0);
 }
 
 .form-contact p {
   margin: 0px;
 }
 .form-contact label {
-  background-color: fuchsia;
+  /* background-color: fuchsia; */
 }
 .form-boxes {
   border: 1px solid rgb(221, 221, 221);
@@ -246,17 +232,18 @@
   font-size: 18px;
   font-family: -apple-system;
   border-radius: 5px;
-  transition: 1s;
-  margin-bottom: 10px;
+  transition: 0.5s;
+  margin-bottom: 30px;
+  box-shadow: -10px 10px 1px 1px rgb(218, 86, 10);
 }
 
 .small-box {
-  height: 50px;
+  height: 40px;
   text-align: center;
 }
 .form-boxes:hover {
-  background-color: rgba(36, 24, 6, 0.2);
-  border: 2px solid rgba(90, 72, 58, 0.3);
+  border: 1px solid #ffecac;
+  box-shadow: 10px 20px 1px 1px #ffb766;
 }
 
 .button {
@@ -264,4 +251,69 @@
   font-family: Rubik Mono One, serif;
   font-size: 40px;
   background-color: #fc8981;
+  transition: 0.5s;
+  border-radius: 5px;
+  border: 4px solid rgb(218, 86, 10);
+  box-shadow: -20px 10px 1px 1px rgb(177, 65, 0);
+}
+
+.button:hover {
+  border: 4px solid #ffb766;
+  background-color: #ffecac;
+  box-shadow: 30px 20px 1px 1px #d6a80f;
+  color: rgba(37, 37, 37, 0.966);
+}
+
+/***********************************************************************
+ *  Gallery Page
+ **********************************************************************/
+.gallery-container {
+  /* border: 2px solid rgb(255, 0, 157); */
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container {
+  border: 5px solid rgb(255, 255, 255);
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  box-shadow: 2px 2px 5px 2px rgb(247, 247, 247);
+}
+
+.project-img-container {
+  /* border: 2px solid orange; */
+}
+
+.project-img {
+  border: 5px solid rgb(240, 240, 240);
+}
+
+.project-text-container {
+  border: 2px solid rgb(21, 175, 16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project-title {
+  border: 2px solid rgb(148, 0, 25);
+  font-family: Rubik Mono One, sans-serif;
+}
+
+.project-description {
+  border: 2px solid rgb(0, 101, 252);
+}
+
+.web-project {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 20px;
 }
