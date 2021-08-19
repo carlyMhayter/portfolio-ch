@@ -15,14 +15,6 @@ const webExamples = [
     siteDescription: "Watercolor. 2011",
     linkToSite: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
   },
-  {
-    sitePic: "./color-leaves.png",
-    imgWidth: "450px",
-    imgHeight: "600px",
-    siteTitle: "Untitled",
-    siteDescription: "Watercolor. 2011",
-    linkToSite: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
-  },
 ];
 
 const Home = () => {
@@ -31,7 +23,7 @@ const Home = () => {
       <div className="page-content">
         <div className="gallery-container">
           {webExamples.map((thing) => (
-            <div className="project-container web-project">
+            <div key={thing.sitePic} className="project-container web-project">
               <div className="project-img-container">
                 <img
                   className="project-img"

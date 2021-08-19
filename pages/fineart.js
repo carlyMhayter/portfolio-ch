@@ -45,7 +45,7 @@ const Home = () => {
       <div className="page-content">
         <div className="gallery-container">
           {fineArtPics.map((pic) => (
-            <div className="project-container">
+            <div key={pic.imgLoc} className="project-container">
               <div className="project-img-container">
                 <img
                   className="project-img"

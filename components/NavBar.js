@@ -46,7 +46,7 @@ const NavBar = () => {
         <div className="link-container">
           <div className="text-links-container">
             {Links.map((link) => (
-              <div className="navlink">
+              <div key={link.linkName} className="navlink">
                 <Link href={link.linkLoc}>
                   <a> {link.linkName} </a>
                 </Link>
