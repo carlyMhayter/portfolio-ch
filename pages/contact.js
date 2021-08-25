@@ -1,4 +1,5 @@
 import FormContact from "../components/FormContact";
+import Image from "next/image";
 
 const Home = () => {
   return (

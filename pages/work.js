@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -11,9 +12,10 @@ const Home = () => {
               <a>
                 <div className="fineart-text tag-text">FINE ART</div>
                 <div className="fineart-img">
-                  <img
+                  <Image
                     src="./brush-drawing2.svg"
                     className="fineart-logo brush-top"
+                    alt="hand drawn paint brush drawing"
                   />
                 </div>
               </a>
@@ -23,9 +25,10 @@ const Home = () => {
             <Link href="./web">
               <a>
                 <div className="web-img">
-                  <img
+                  <Image
                     src="./laptop-drawing-lines-1.svg"
                     className="web-logo"
+                    alt="hand drawn laptop"
                   />
                 </div>
                 <div className="web-text tag-text">WEB</div>
@@ -33,7 +36,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </div>{" "}
+      </div>
     </>
   );
 };

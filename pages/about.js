@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Home = () => {
   return (
     <>
@@ -25,8 +27,8 @@ const Home = () => {
               development.
             </p>
           </div>
-          <img id="self-img" src="./self-cropped-hat.jpg" />
-          <img id="palm-tree" src="./palm-tree.svg" />
+          <Image id="self-img" src="./self-cropped-hat.jpg" />
+          <Image id="palm-tree" src="./palm-tree.svg" />
           <div className="blocking"></div>
         </div>
       </div>
