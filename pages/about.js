@@ -4,18 +4,30 @@ const Home = () => {
       <div className="page-content">
         <div id="bio-container">
           <div id="bio-text-container">
-            <p className="bio-text hello-text"> Hello! </p>
-            <p className="bio-text">
+            <p id="bubble1" className="bio-text hello-text">
+              Hello!
+            </p>
+            <p className="question-bio-text">WHO AM I:</p>
+            <p id="bubble2" className="bio-text">
               I am a designer and web developer based in Encinitas CA.
             </p>
-            <p className="bio-text">I make efficient, beautiful websites.</p>
-            <p className="bio-text">
-              I am familiar with a variety of technologies, including React and
-              Next.js.
+            <p className="question-bio-text">WHAT DO I DO?:</p>
+
+            <p id="bubble3" className="bio-text">
+              I make efficient, beautiful websites.
             </p>
-            <p className="bio-text">Check out my portfolio on my work page!</p>
+            <p className="question-bio-text">HOW DID I GET HERE?:</p>
+            <p id="bubble4" className="bio-text">
+              I dunno, you tell me man! But actually, I started out studying
+              Painting at UC Santa Cruz. Ultimately, I got a degree in Molecular
+              Biology (long story), but have returned to my ultimate love of art
+              and design, with my newfound passion for coding and web
+              development.
+            </p>
           </div>
-          <img id="self-img" src="./self-cropped3.jpg" />
+          <img id="self-img" src="./self-cropped-hat.jpg" />
+          <img id="palm-tree" src="./palm-tree.svg" />
+          <div className="blocking"></div>
         </div>
       </div>
     </>

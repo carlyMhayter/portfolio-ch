@@ -1,11 +1,12 @@
 const webExamples = [
   {
-    imgLoc: "./walking-man-screenshot.png",
-    imgWidth: "600px",
-    imgHeight: "550px",
-    siteTitle: "Walking Man Tribute Band",
-    siteDescription: "Full custom website built with React and Vercel",
-    linkToSite: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+    imgLoc: "./ndy-logo.svg",
+    imgWidth: "300px",
+    imgHeight: "300px",
+    siteTitle: "Never Die Young Tribute Band",
+    siteDescription:
+      "Full graphic design services and custom website built with React in Next.js.",
+    linkToSite: "https://neverdieyoung.net",
   },
   {
     sitePic: "./color-leaves.png",

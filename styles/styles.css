@@ -1,18 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Barrio&family=Kirang+Haerang&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,100;1,400&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+:root {
+  --blue: rgb(115, 183, 192);
+  --deSatBlue: rgb(168, 194, 201);
+  --ltBlue: rgb(216, 247, 250);
+  --drkBlue: rgb(103, 133, 136);
+  --vvLtGrey: rgb(241, 241, 241);
+  --vLtGrey: rgb(223, 222, 222);
+  --ltGrey: rgb(211, 211, 211);
+  --brightOrangeRed: #ff5a19;
+  --orangeRed: rgb(218, 86, 10);
+  --vLtPink: rgb(253, 233, 226);
+  --vvLtPink: rgb(250, 239, 235);
+  --salmon: rgb(252, 137, 129);
+  --drkGrey: rgb(56, 56, 56);
+  --almostBlack: rgb(26, 25, 25);
+}
+
 /***********************************************************************
  *  NavBar
  **********************************************************************/
 .navbar {
-  background-color: rgb(230, 230, 230);
+  background-color: var(--vvLtGrey);
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px 2px;
+  z-index: 10;
+  position: relative;
 }
 
 .link-container {
@@ -32,7 +50,7 @@
 }
 
 .navlink {
-  color: rgb(56, 56, 56);
+  color: var(--drkGrey);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -41,9 +59,9 @@
 }
 
 .navlink:hover {
-  text-shadow: 2px 2px 10px #c7c7c7;
-  color: rgb(48, 48, 48);
-  transform: scale(1.05);
+  text-shadow: 2px 2px 10px var(--ltGrey);
+  color: var(--almostBlack);
+  transform: scale(1.03);
 }
 
 /***********************************************************************
@@ -51,93 +69,69 @@
  **********************************************************************/
 
 .work-container {
-  /* border: 2px solid blue; */
   display: flex;
   flex-direction: row;
   width: 1000px;
   height: 600px;
   justify-content: space-around;
 }
-
-.fineart-container {
-  border: 10px solid rgb(255, 236, 172);
-  width: 400px;
-  height: 600px;
+.container-tags {
+  border: 2px solid var(--deSatBlue);
+  background-color: var(--vLtGrey);
+  width: 350px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
   color: rgb(66, 66, 66);
-  box-shadow: -40px 40px 1px 1px rgb(255, 187, 0);
   border-radius: 20px;
 }
 
-.fineart-container:hover {
-  border: 10px solid rgb(252, 137, 129);
-  background-color: rgb(247, 247, 247);
-  /* box-shadow: -3px 3px 10px 1px rgb(173, 173, 173); */
-  color: rgba(37, 37, 37, 0.966);
-  box-shadow: 20px 20px 1px 1px rgb(218, 86, 10);
+.fineart-container {
+  box-shadow: -40px 40px 1px 1px var(--blue);
+}
+.web-container {
+  box-shadow: 40px 40px 1px 1px var(--blue);
 }
 
-.fineart-text {
+.fineart-container:hover {
+  border: 10px solid var(--salmon);
+  color: var(--almostBlack);
+  background-color: var(--vLtPink);
+  box-shadow: 20px 20px 1px 1px var(--orangeRed);
+}
+.web-container:hover {
+  border: 10px solid var(--salmon);
+  background-color: var(--vLtPink);
+  box-shadow: -20px 20px 1px 1px var(--orangeRed);
+  color: rgba(37, 37, 37, 0.966);
+  text-shadow: 10px 10px 7px var(--brightOrangeRed);
+}
+
+.tag-text {
   font-family: Rubik Mono One, serif;
-  font-size: 100px;
+  font-size: 80px;
   /* border: 2px solid lavender; */
   display: flex;
   flex-direction: column;
   padding: 30px 0px;
   text-align: center;
-  text-shadow: -3px 3px 2px #ffb766;
+  text-shadow: -3px 3px 2px var(--brightOrangeRed);
   transition: 0.5s;
 }
-
-.fineart-img {
-  /* border: 2px solid yellow; */
-}
-.fineart-logo {
-  width: 400px;
-  /* border: 2px solid black; */
-}
-
-.web-container {
-  border: 10px solid rgb(255, 236, 172);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 600px;
-  transition: 0.5s;
-  color: rgb(95, 95, 95);
-  box-shadow: 40px 40px 1px 1px rgb(255, 187, 0);
-  border-radius: 20px;
-}
-
-.web-container:hover {
-  border: 10px solid rgb(252, 137, 129);
-  background-color: rgb(247, 247, 247);
-  box-shadow: -20px 20px 1px 1px rgb(218, 86, 10);
-  color: rgba(37, 37, 37, 0.966);
-  text-shadow: 5px 5px 7px #ff5a19;
+.fineart-text {
 }
 .web-text {
-  font-family: Rubik Mono One, sans-serif;
-  font-size: 100px;
-  display: flex;
-  flex-direction: column;
-  padding: 30px 0px;
-  text-align: center;
-  text-shadow: 3px 3px 2px #ffb766;
 }
 
-.web-img {
-  /* border: 2px solid purple; */
+.fineart-logo {
+  width: 325px;
 }
+
 .web-logo {
-  width: 400px;
-  height: 550x;
+  width: 325px;
 }
 
 /***********************************************************************
@@ -149,25 +143,27 @@
   justify-content: space-between;
   align-items: center;
   width: 1000px;
-  border: 2px solid rgb(255, 17, 0);
   padding: 10px;
   position: relative;
 }
 
 #self-img {
-  width: 650px;
-  height: 800px;
-  border: 10px solid rgb(252, 137, 129);
+  width: 450px;
+  height: 550px;
+  border: 10px solid var(--brightOrangeRed);
   animation-duration: 2s;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  border-radius: 20px;
 }
 
 #bio-text-container {
-  border: 2px solid rgb(0, 4, 255);
   position: absolute;
   right: 0px;
-  top: 200px;
+  top: 0px;
   width: 450px;
-  height: 600px;
+  height: 700px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -175,26 +171,51 @@
 }
 
 .bio-text {
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(252, 137, 129);
-  right: 150px;
-  top: 300px;
-  width: 450px;
+  background-color: white;
+  border: 2px solid var(--vLtPink);
   text-align: center;
   padding: 10px;
   font-size: 20px;
   border-radius: 10px;
-  box-shadow: -10px 10px 1px 1px rgb(218, 86, 10);
+  box-shadow: -10px 10px 1px 1px var(--blue);
   transition: 0.5s;
+  margin: 0px 0px 20px 0px;
 }
 .bio-text:hover {
-  box-shadow: 30px -5px 1px 1px #ffb766;
-  border: 2px solid rgb(255, 236, 172);
+  box-shadow: 30px -5px 1px 1px var(--deSatBlue);
+  border: 2px solid var(--ltBlue);
 }
 
 .hello-text {
   font-size: 50px;
+  margin: 10px;
   font-family: Rubik Mono One, serif;
+}
+
+#palm-tree {
+  width: 450px;
+  /* border: 2px solid yellow; */
+  position: absolute;
+  top: -80px;
+  left: -150px;
+}
+
+.blocking {
+  background-color: whitesmoke;
+  border: 0px solid white;
+  border-top: 3px solid var(--ltGrey);
+  position: absolute;
+  width: 1000px;
+  height: 400px;
+  top: 775px;
+}
+#bubble2 {
+}
+.question-bio-text {
+  font-family: Rubik Mono One, serif;
+  text-align: center;
+  font-size: 19px;
+  margin: 25px 0px 5px 0px;
 }
 
 /***********************************************************************
@@ -203,19 +224,17 @@
 .form-element {
   display: flex;
   justify-content: stretch;
-  background: red;
 }
 
 .form-contact {
   max-width: 700px;
   display: flex;
   flex-direction: column;
-  border: 2px solid indianred;
   text-align: center;
   font-size: 20px;
   margin: 20px;
   font-family: Rubik Mono One, sans-serif;
-  color: rgb(177, 65, 0);
+  color: rgb(73, 99, 102);
 }
 
 .form-contact p {
@@ -225,16 +244,16 @@
   /* background-color: fuchsia; */
 }
 .form-boxes {
-  border: 1px solid rgb(221, 221, 221);
+  border: 2px solid var(--vLtPink);
   width: 350px;
-  background-color: rgb(241, 241, 241);
+  background-color: var(--vvLtGrey);
   color: rgb(88, 58, 0);
   font-size: 18px;
   font-family: -apple-system;
   border-radius: 5px;
   transition: 0.5s;
   margin-bottom: 30px;
-  box-shadow: -10px 10px 1px 1px rgb(218, 86, 10);
+  box-shadow: -10px 10px 1px 1px var(--blue);
 }
 
 .small-box {
@@ -242,26 +261,26 @@
   text-align: center;
 }
 .form-boxes:hover {
-  border: 1px solid #ffecac;
-  box-shadow: 10px 20px 1px 1px #ffb766;
+  border: 2px solid var(--salmon);
+  box-shadow: 10px 20px 1px 1px var(--orangeRed);
 }
 
 .button {
   height: 80px;
   font-family: Rubik Mono One, serif;
   font-size: 40px;
-  background-color: #fc8981;
+  background-color: var(--deSatBlue);
   transition: 0.5s;
   border-radius: 5px;
-  border: 4px solid rgb(218, 86, 10);
-  box-shadow: -20px 10px 1px 1px rgb(177, 65, 0);
+  border: 2px solid var(--blue);
+  box-shadow: -20px 10px 1px 1px var(--drkBlue);
+  color: var(--almostBlack);
+  text-shadow: -2px 2px 2px var(--brightOrangeRed);
 }
 
 .button:hover {
-  border: 4px solid #ffb766;
-  background-color: #ffecac;
-  box-shadow: 30px 20px 1px 1px #d6a80f;
-  color: rgba(37, 37, 37, 0.966);
+  border: 2px solid var(--salmon);
+  box-shadow: 10px 20px 1px 1px var(--orangeRed);
 }
 
 /***********************************************************************
@@ -274,6 +293,13 @@
   flex-direction: column;
 }
 
+.fineart-gallery-container {
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-container {
   border: 5px solid rgb(255, 255, 255);
   margin: 10px;
@@ -281,18 +307,26 @@
   flex-direction: row;
   padding: 10px;
   box-shadow: 2px 2px 5px 2px rgb(247, 247, 247);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  text-align: center;
 }
-
-.project-img-container {
-  /* border: 2px solid orange; */
+.project-container:hover {
+  box-shadow: 2px 2px 5px 5px rgb(211, 211, 211);
+  transform: scale(1.03);
+  background-color: var(--vvLtPink);
 }
 
 .project-img {
   border: 5px solid rgb(240, 240, 240);
+  box-shadow: 2px 2px 5px 2px rgb(223, 222, 222);
+  transition: 0.5s;
 }
 
 .project-text-container {
-  border: 2px solid rgb(21, 175, 16);
+  /* border: 2px solid rgb(21, 175, 16); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,12 +334,12 @@
 }
 
 .project-title {
-  border: 2px solid rgb(148, 0, 25);
+  /* border: 2px solid rgb(148, 0, 25); */
   font-family: Rubik Mono One, sans-serif;
 }
 
 .project-description {
-  border: 2px solid rgb(0, 101, 252);
+  /* border: 2px solid rgb(0, 101, 252); */
 }
 
 .web-project {
@@ -316,4 +350,50 @@
 
 .site-title {
   font-size: 20px;
+}
+
+.fineart-styles {
+  width: 350px;
+}
+/***********************************************************************
+ *  Home Page
+ **********************************************************************/
+#hero-big-text {
+  /*70's*/
+  height: 500px;
+  position: absolute;
+  top: -110px;
+  right: -60px;
+  z-index: 2;
+  transition: 1s;
+  border: 2px solid aqua;
+}
+
+#hero-illustration {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 220px;
+  left: -150px;
+  border: 2px solid yellow;
+}
+
+.hero-content {
+  flex-direction: column;
+  position: relative;
+  border: 4px solid coral;
+  width: 350px;
+  height: 100vh;
+}
+
+.hero-med-text {
+  font-family: Rubik Mono One, sans-serif;
+  position: absolute;
+  font-size: 30px;
+  top: 225px;
+  right: -30px;
+  width: 600px;
+  height: 100px;
+  text-align: right;
+  border: 3px solid pink;
 }

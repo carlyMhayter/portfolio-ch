@@ -1,41 +1,31 @@
 const fineArtPics = [
   {
     imgLoc: "./color-leaves.png",
-    imgWidth: "450px",
-    imgHeight: "600px",
+    imgWidth: "300px",
+    imgHeight: "400px",
     imgTitle: "Untitled",
     imgDescription: "Watercolor. 2011",
   },
   {
     imgLoc: "./hazel-drawing.jpg",
-    imgWidth: "450px",
-    imgHeight: "600px",
+    imgWidth: "300px",
+    imgHeight: "400px",
     imgTitle: "Portrait of Friend",
     imgDescription: "Pen on paper. 2013",
   },
   {
     imgLoc: "./dylan-painting.jpg",
-    imgWidth: "450px",
-    imgHeight: "600px",
-    imgTitle: "Portrait",
-    imgDescription:
-      "This is a picture of me that my boyfriend took. He took it in Encinitas.",
+    imgWidth: "300px",
+    imgHeight: "400px",
+    imgTitle: "Dylan",
+    imgDescription: "Acrylic on Board. 2014",
   },
   {
     imgLoc: "./kristian-painting.jpg",
-    imgWidth: "450px",
-    imgHeight: "600px",
-    imgTitle: "Portrait",
-    imgDescription:
-      "This is a picture of me that my boyfriend took. He took it in Encinitas.",
-  },
-  {
-    imgLoc: "./self-cropped3.jpg",
     imgWidth: "300px",
     imgHeight: "400px",
-    imgTitle: "Portrait",
-    imgDescription:
-      "This is a picture of me that my boyfriend took. He took it in Encinitas.",
+    imgTitle: "Kristian",
+    imgDescription: "Acrylic on Board. 2011",
   },
 ];
 
@@ -43,9 +33,9 @@ const Home = () => {
   return (
     <>
       <div className="page-content">
-        <div className="gallery-container">
+        <div className="gallery-container fineart-gallery-container">
           {fineArtPics.map((pic) => (
-            <div key={pic.imgLoc} className="project-container">
+            <div key={pic.imgLoc} className="project-container fineart-styles">
               <div className="project-img-container">
                 <img
                   className="project-img"
