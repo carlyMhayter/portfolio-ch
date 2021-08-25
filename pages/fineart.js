@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const fineArtPics = [
   {
-    imgLoc: "./color-leaves.png",
+    imgLoc: "/color-leaves.png",
     imgWidth: "300px",
     imgHeight: "400px",
     imgTitle: "Untitled",
@@ -10,7 +10,7 @@ const fineArtPics = [
     altText: "rainbow watercolor leaves",
   },
   {
-    imgLoc: "./hazel-drawing.jpg",
+    imgLoc: "/hazel-drawing.jpg",
     imgWidth: "300px",
     imgHeight: "400px",
     imgTitle: "Portrait of Friend",
@@ -18,7 +18,7 @@ const fineArtPics = [
     altText: "pen portrait drawing of friend",
   },
   {
-    imgLoc: "./dylan-painting.jpg",
+    imgLoc: "/dylan-painting.jpg",
     imgWidth: "300px",
     imgHeight: "400px",
     imgTitle: "Dylan",
@@ -26,7 +26,7 @@ const fineArtPics = [
     altText: "portrait painting on board",
   },
   {
-    imgLoc: "./kristian-painting.jpg",
+    imgLoc: "/kristian-painting.jpg",
     imgWidth: "300px",
     imgHeight: "400px",
     imgTitle: "Kristian",
@@ -42,15 +42,13 @@ const Home = () => {
         <div className="gallery-container fineart-gallery-container">
           {fineArtPics.map((pic) => (
             <div key={pic.imgLoc} className="project-container fineart-styles">
-              <div className="project-img-container">
-                <Image
-                  alt={pic.altText}
-                  className="project-img"
-                  src={pic.imgLoc}
-                  height={pic.imgHeight}
-                  width={pic.imgWidth}
-                />
-              </div>
+              <Image
+                alt={pic.altText}
+                className="project-img"
+                src={pic.imgLoc}
+                height={pic.imgHeight}
+                width={pic.imgWidth}
+              />
               <div className="project-text-container">
                 <p className="project-title">{pic.imgTitle}</p>
                 <p className="project-description">{pic.imgDescription}</p>

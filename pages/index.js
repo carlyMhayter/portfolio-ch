@@ -7,9 +7,16 @@ export default function Home() {
     <>
       <div className="page-content">
         <div className="hero-content">
-          <Image id="hero-illustration" src="./swiss-army.svg" />
-          <Image id="hero-big-text" src="./front-page-text-3line-70s.svg" />
-
+          <div id="hero-illustration">
+            <Image src="/swiss-army.svg" layout="fill" alt="hero page text" />
+          </div>
+          <div id="hero-big-text">
+            <Image
+              src="/front-page-text-3line-70s.svg"
+              layout="fill"
+              alt="hero page smaller text"
+            />
+          </div>
           <div className="hero-med-text">
             <p>You might even say, a jack of all trades.</p>
           </div>

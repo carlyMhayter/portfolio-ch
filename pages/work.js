@@ -11,11 +11,11 @@ const Home = () => {
             <Link href="./fineart">
               <a>
                 <div className="fineart-text tag-text">FINE ART</div>
-                <div className="fineart-img">
+                <div className="fineart-logo brush-top">
                   <Image
-                    src="./brush-drawing2.svg"
-                    className="fineart-logo brush-top"
+                    src="/brush-drawing2.svg"
                     alt="hand drawn paint brush drawing"
+                    layout="fill"
                   />
                 </div>
               </a>
@@ -24,14 +24,14 @@ const Home = () => {
           <div className="web-container container-tags">
             <Link href="./web">
               <a>
-                <div className="web-img">
+                <div className="web-text tag-text">WEB</div>
+                <div className="web-logo">
                   <Image
-                    src="./laptop-drawing-lines-1.svg"
-                    className="web-logo"
+                    src="/laptop-drawing-lines-1.svg"
                     alt="hand drawn laptop"
+                    layout="fill"
                   />
                 </div>
-                <div className="web-text tag-text">WEB</div>
               </a>
             </Link>
           </div>

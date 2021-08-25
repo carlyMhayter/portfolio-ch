@@ -87,6 +87,7 @@
   transition: 0.5s;
   color: rgb(66, 66, 66);
   border-radius: 20px;
+  position: relative;
 }
 
 .fineart-container {
@@ -97,13 +98,13 @@
 }
 
 .fineart-container:hover {
-  border: 10px solid var(--salmon);
+  border: 2px solid var(--salmon);
   color: var(--almostBlack);
   background-color: var(--vLtPink);
   box-shadow: 20px 20px 1px 1px var(--orangeRed);
 }
 .web-container:hover {
-  border: 10px solid var(--salmon);
+  border: 2px solid var(--salmon);
   background-color: var(--vLtPink);
   box-shadow: -20px 20px 1px 1px var(--orangeRed);
   color: rgba(37, 37, 37, 0.966);
@@ -120,18 +121,27 @@
   text-align: center;
   text-shadow: -3px 3px 2px var(--brightOrangeRed);
   transition: 0.5s;
-}
-.fineart-text {
+  position: absolute;
+  top: 60px;
+  left: 0;
 }
 .web-text {
+  left: 75px;
 }
-
 .fineart-logo {
   width: 325px;
+  height: 50px;
+  position: absolute;
+  top: 60%;
+  left: 10px;
 }
 
 .web-logo {
   width: 325px;
+  height: 325px;
+  position: absolute;
+  top: 175px;
+  left: 20px;
 }
 
 /***********************************************************************
@@ -194,7 +204,7 @@
 
 #palm-tree {
   width: 450px;
-  /* border: 2px solid yellow; */
+  height: 1000px;
   position: absolute;
   top: -80px;
   left: -150px;
@@ -361,9 +371,10 @@
 #hero-big-text {
   /*70's*/
   height: 500px;
+  width: 800px;
   position: absolute;
   top: -110px;
-  right: -60px;
+  right: -150px;
   z-index: 2;
   transition: 1s;
   border: 2px solid aqua;

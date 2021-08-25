@@ -69,16 +69,17 @@
     width: 350px;
   }
   #self-img {
-    top: 75px;
+    top: 90px;
     left: 25px;
     width: 300px;
-    height: 400px;
+    height: 380px;
   }
 
   #palm-tree {
     top: -70px;
     left: -100px;
     width: 300px;
+    height: 700px;
   }
 
   .blocking {
@@ -118,13 +119,25 @@
   }
   .tag-text {
     font-size: 60px;
-    padding: 0px;
+  }
+
+  .web-text {
+    top: 0px;
+    left: 85px;
+  }
+
+  .fineart-text {
+    top: 20px;
   }
   .fineart-logo {
     width: 300px;
+    top: 70%;
+    left: 5%;
   }
   .web-logo {
     width: 250px;
+    top: 50px;
+    left: 30px;
   }
   /***********************************************************************
  *  Gallery Page

@@ -27,8 +27,21 @@ const Home = () => {
               development.
             </p>
           </div>
-          <Image id="self-img" src="./self-cropped-hat.jpg" />
-          <Image id="palm-tree" src="./palm-tree.svg" />
+          <div id="self-img">
+            <Image
+              src="/self-cropped-hat.jpg"
+              alt="self portrait of the designer"
+              layout="fill"
+            />
+          </div>
+          <div id="palm-tree">
+            <Image
+              src="/palm-tree.svg"
+              alt="hand drawn design of palm tree"
+              layout="fill"
+            />
+          </div>
+
           <div className="blocking"></div>
         </div>
       </div>
