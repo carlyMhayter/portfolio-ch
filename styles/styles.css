@@ -10,6 +10,8 @@
   --vLtGrey: rgb(223, 222, 222);
   --ltGrey: rgb(211, 211, 211);
   --brightOrangeRed: #ff5a19;
+  --deSatRedDark: #935656;
+  --deSatRed: #f06464;
   --orangeRed: rgb(218, 86, 10);
   --vLtPink: rgb(253, 233, 226);
   --vvLtPink: rgb(250, 239, 235);
@@ -160,7 +162,7 @@
 #self-img {
   width: 450px;
   height: 550px;
-  border: 10px solid var(--brightOrangeRed);
+  border: 10px solid var(--deSatRed);
   animation-duration: 2s;
   position: absolute;
   top: 100px;
@@ -272,7 +274,7 @@
 }
 .form-boxes:hover {
   border: 2px solid var(--salmon);
-  box-shadow: 10px 20px 1px 1px var(--orangeRed);
+  box-shadow: 10px 20px 1px 1px var(--deSatRed);
 }
 
 .button {
@@ -290,7 +292,7 @@
 
 .button:hover {
   border: 2px solid var(--salmon);
-  box-shadow: 10px 20px 1px 1px var(--orangeRed);
+  box-shadow: 10px 20px 1px 1px var(--deSatRed);
 }
 
 /***********************************************************************
@@ -373,7 +375,7 @@
   height: 500px;
   width: 600px;
   position: absolute;
-  top: -50px;
+  top: 0px;
   left: -400px;
   z-index: 2;
   transition: 1s;
@@ -382,10 +384,11 @@
 
 #hero-illustration {
   width: 400px;
-  height: 400px;
+  height: 450px;
   position: absolute;
-  top: 370px;
+  top: 430px;
   left: -150px;
+  z-index: 4;
   /* border: 2px solid yellow; */
 }
 
@@ -401,11 +404,12 @@
   font-family: Rubik Mono One, sans-serif;
   position: absolute;
   font-size: 30px;
-  top: 250px;
+  top: 300px;
   right: -30px;
   width: 600px;
   height: 100px;
   text-align: right;
+  z-index: 2;
   /* border: 3px solid pink; */
 }
 
@@ -417,15 +421,31 @@
   width: 600px;
   height: 900px;
   position: relative;
+  z-index: 1;
 }
 
 .hero-button-container {
   /* border: 2px solid purple; */
   position: absolute;
-  top: 380px;
+  top: 430px;
   left: 250px;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 3;
+}
+
+.smoke-drawing {
+  width: 1300px;
+  height: 1100px;
+  position: absolute;
+  top: -90px;
+  left: -450px;
+  z-index: 0;
+  /* border: 2px solid purple; */
+}
+
+.hero-button {
+  font-size: 30px;
 }

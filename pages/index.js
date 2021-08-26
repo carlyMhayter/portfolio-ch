@@ -33,9 +33,13 @@ export default function Home() {
             <p>You might even say, a jack of all trades.</p>
           </div>
           <div className="hero-button-container">
-            <button className="button"> button </button>
-            <button className="button"> button </button>
-            <button className="button"> button </button>
+            <button className="button hero-button"> resume </button>
+            <button className="button hero-button"> web </button>
+            <button className="button hero-button"> fine art </button>
+          </div>
+          <div className="smoke-drawing">
+            {" "}
+            <Image src="/smoke.svg" alt="smoke svg" layout="fill" />
           </div>
         </div>
       </div>

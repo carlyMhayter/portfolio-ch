@@ -1,6 +1,24 @@
+:root {
+  --blue: rgb(115, 183, 192);
+  --deSatBlue: rgb(168, 194, 201);
+  --ltBlue: rgb(216, 247, 250);
+  --drkBlue: rgb(103, 133, 136);
+  --vvLtGrey: rgb(241, 241, 241);
+  --vLtGrey: rgb(223, 222, 222);
+  --ltGrey: rgb(211, 211, 211);
+  --brightOrangeRed: #ff5a19;
+  --orangeRed: rgb(218, 86, 10);
+  --vLtPink: rgb(253, 233, 226);
+  --vvLtPink: rgb(250, 239, 235);
+  --salmon: rgb(252, 137, 129);
+  --drkGrey: rgb(56, 56, 56);
+  --deSatRedDark: #935656;
+  --deSatRed: #f06464;
+  --almostBlack: rgb(26, 25, 25);
+}
 html,
 body {
-  background-color: whitesmoke;
+  background-color: var(--vvLtPink);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,

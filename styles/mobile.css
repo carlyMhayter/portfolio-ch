@@ -16,12 +16,14 @@
   --vvLtPink: rgb(250, 239, 235);
   --salmon: rgb(252, 137, 129);
   --drkGrey: rgb(56, 56, 56);
+  --deSatRedDark: #935656;
+  --deSatRed: #f06464;
   --almostBlack: rgb(26, 25, 25);
 }
 
 @media only screen and (max-width: 950px) {
   body {
-    /* background-color: red; */
+    background-color: var(--vvLtPink);
   }
 
   .page-content {
@@ -31,29 +33,64 @@
     flex-direction: column;
     justify-content: flex-start;
     margin: 0px;
+    /* border: 2px solid blue; */
+    overflow-x: hidden;
   }
   /***********************************************************************
  *  Home Page
  **********************************************************************/
-
+  .hero-content {
+    /* border: 2px solid indianred; */
+  }
   #hero-big-text {
     width: 350px;
     height: 100px;
-    top: 100px;
-    right: 0;
+    top: 200px;
+    left: 0px;
   }
-
+  .hand-drawing {
+    top: -210px;
+    right: -150px;
+    transform: rotate(-30deg);
+    /* border: 2px solid green; */
+    width: 400px;
+    height: 800px;
+    position: relative;
+    z-index: 1;
+  }
+  .smoke-drawing {
+    width: 800px;
+    height: 1100px;
+    position: absolute;
+    top: -225px;
+    left: -200px;
+    z-index: 0;
+    /* border: 2px solid purple; */
+  }
   #hero-illustration {
     width: 200px;
-    height: 200px;
-    top: 0px;
+    height: 300px;
+    top: 330px;
     left: -30px;
+    transform: rotate(15deg);
   }
   .hero-med-text {
     font-size: 18px;
-    top: 200px;
+    top: 275px;
     right: 0px;
     width: 300px;
+  }
+
+  .hero-button {
+    font-size: 20px;
+    height: 50px;
+    /*width: 180px; */
+  }
+
+  .hero-button-container {
+    height: 200px;
+    top: 430px;
+    left: 180px;
   }
 
   /***********************************************************************
