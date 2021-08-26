@@ -36,7 +36,7 @@ const Home = () => {
           </div>
           <div id="palm-tree">
             <Image
-              src="/palm-tree.svg"
+              src="/palm-tree-color.svg"
               alt="hand drawn design of palm tree"
               layout="fill"
             />

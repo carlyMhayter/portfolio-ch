@@ -371,28 +371,28 @@
 #hero-big-text {
   /*70's*/
   height: 500px;
-  width: 800px;
+  width: 600px;
   position: absolute;
-  top: -110px;
-  right: -150px;
+  top: -50px;
+  left: -400px;
   z-index: 2;
   transition: 1s;
-  border: 2px solid aqua;
+  /* border: 2px solid aqua; */
 }
 
 #hero-illustration {
   width: 400px;
   height: 400px;
   position: absolute;
-  top: 220px;
+  top: 370px;
   left: -150px;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 
 .hero-content {
   flex-direction: column;
   position: relative;
-  border: 4px solid coral;
+  /* border: 4px solid coral; */
   width: 350px;
   height: 100vh;
 }
@@ -401,10 +401,31 @@
   font-family: Rubik Mono One, sans-serif;
   position: absolute;
   font-size: 30px;
-  top: 225px;
+  top: 250px;
   right: -30px;
   width: 600px;
   height: 100px;
   text-align: right;
-  border: 3px solid pink;
+  /* border: 3px solid pink; */
+}
+
+.hand-drawing {
+  top: -210px;
+  right: -150px;
+  transform: rotate(-30deg);
+  /* border: 2px solid green; */
+  width: 600px;
+  height: 900px;
+  position: relative;
+}
+
+.hero-button-container {
+  /* border: 2px solid purple; */
+  position: absolute;
+  top: 380px;
+  left: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
