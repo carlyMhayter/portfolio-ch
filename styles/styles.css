@@ -213,7 +213,7 @@
 }
 
 .blocking {
-  background-color: whitesmoke;
+  background-color: var(--vvLtPink);
   border: 0px solid white;
   border-top: 3px solid var(--ltGrey);
   position: absolute;
