@@ -20,16 +20,15 @@ const Home = () => {
             </p>
             <p className="question-bio-text">HOW DID I GET HERE?:</p>
             <p id="bubble4" className="bio-text">
-              I dunno, you tell me man! But actually, I started out studying
-              Painting at UC Santa Cruz. Ultimately, I got a degree in Molecular
-              Biology (long story), but have returned to my ultimate love of art
-              and design, with my newfound passion for coding and web
-              development.
+              I dunno, you tell me! I started out studying Painting at UC Santa
+              Cruz. Ultimately, I got a degree in Molecular Biology (long
+              story), but have returned to my ultimate love of art and design,
+              with my newfound passion for web development.
             </p>
           </div>
           <div id="self-img">
             <Image
-              src="/self-cropped-hat.jpg"
+              src="/self-cropped-hat-lowQ.jpg"
               alt="self portrait of the designer"
               layout="fill"
             />

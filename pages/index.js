@@ -7,6 +7,27 @@ export default function Home() {
     <>
       <div className="page-content">
         <div className="hero-content">
+          <p id="first-name" className="hero-my-name">
+            Carly
+          </p>
+          <p id="last-name" className="hero-my-name">
+            Hayter
+          </p>
+
+          <div className="hero-text-1">
+            <p>
+              <i className="fa fa-check-square-o" aria-hidden="true"></i>
+              performant web design
+            </p>
+            <p>
+              <i className="fa fa-check-square-o" aria-hidden="true"></i>clean
+              graphic design
+            </p>
+            <p>
+              <i className="fa fa-check-square-o" aria-hidden="true"></i>modern
+              ui/ux
+            </p>
+          </div>
           <div id="hero-illustration">
             <Image
               src="/swiss-army-color.svg"
@@ -14,13 +35,7 @@ export default function Home() {
               alt="hero page text"
             />
           </div>
-          <div id="hero-big-text">
-            <Image
-              src="/front-page-text-3line-70s.svg"
-              layout="fill"
-              alt="hero page smaller text"
-            />
-          </div>
+
           <div className="hand-drawing">
             <Image
               src="/hand.svg"
@@ -29,18 +44,18 @@ export default function Home() {
               className="actual-hand-img"
             />
           </div>
-          <div className="hero-med-text">
-            <p>You might even say, a jack of all trades.</p>
-          </div>
+          {/* <div className="hero-med-text">
+            <p>Web development that is sharp, fresh, and clean</p>
+          </div> */}
           <div className="hero-button-container">
             <button className="button hero-button"> resume </button>
             <button className="button hero-button"> web </button>
             <button className="button hero-button"> fine art </button>
           </div>
-          <div className="smoke-drawing">
+          {/* <div className="smoke-drawing">
             {" "}
             <Image src="/smoke.svg" alt="smoke svg" layout="fill" />
-          </div>
+          </div> */}
         </div>
       </div>
 
