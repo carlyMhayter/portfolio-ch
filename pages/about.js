@@ -28,7 +28,7 @@ const Home = () => {
           </div>
           <div id="self-img">
             <Image
-              src="/self-cropped-hat-lowQ.jpg"
+              src="/self-cropped-hat-small.jpg"
               alt="self portrait of the designer"
               layout="fill"
             />

@@ -23,7 +23,7 @@
 
 @media only screen and (max-width: 950px) {
   body {
-    background-color: var(--vvLtPink);
+    background-color: var(--drkBlue);
   }
 
   .page-content {
@@ -39,60 +39,146 @@
   /***********************************************************************
  *  Home Page
  **********************************************************************/
+
   .hero-content {
-    /* border: 2px solid indianred; */
-  }
-  #hero-big-text {
-    width: 350px;
-    height: 100px;
-    top: 200px;
-    left: 0px;
-  }
-  .hand-drawing {
-    top: -210px;
-    right: -150px;
-    transform: rotate(-30deg);
-    /* border: 2px solid green; */
-    width: 400px;
-    height: 800px;
+    flex-direction: column;
     position: relative;
-    z-index: 1;
-  }
-  .smoke-drawing {
-    width: 800px;
-    height: 1100px;
-    position: absolute;
-    top: -225px;
-    left: -200px;
-    z-index: 0;
-    /* border: 2px solid purple; */
-  }
-  #hero-illustration {
-    width: 200px;
-    height: 300px;
-    top: 330px;
-    left: -30px;
-    transform: rotate(15deg);
-  }
-  .hero-med-text {
-    font-size: 18px;
-    top: 275px;
-    right: 0px;
-    width: 300px;
+    border: 1px solid coral;
+    width: 350px;
+    height: 100vh;
   }
 
-  .hero-button {
-    font-size: 20px;
-    height: 50px;
-    /*width: 180px; */
+  .hand-drawing {
+    top: 110px;
+    left: -20px;
+    transform: rotate(35deg) scaleX(-1);
+    /* border: 266tpx solid green; */
+    width: 150px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .laptop-hero {
+    width: 900px;
+    height: 400px;
+    position: absolute;
+    /* border: 2px solid green; */
+    left: -275px;
+    top: 250px;
+  }
+  .hero-text-1 {
+    z-index: 1;
+    font-family: Rubik Mono One, sans-serif;
+    color: var(--drkGrey);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-size: 17px;
+    height: 200px;
+    width: 350px;
+    position: relative;
+    top: 120px;
+    left: 90px;
+    text-shadow: -1px 1px 1px var(--deSatBlue);
+    border: 2px solid lime;
+  }
+
+  .hero-text-1 p {
+    padding: 0px;
+    margin: 0px;
+    transition: 1s;
+  }
+  .hero-text-1 p:hover {
+    text-shadow: 5px 5px 5px var(--salmon);
+  }
+
+  .hero-text-1 i {
+    color: var(--drkGrey);
+    font-size: 25px;
+    margin-right: 8px;
+    text-shadow: -3px 3px 2px var(--deSatRed);
+  }
+
+  .hero-text-2 {
+    top: -30px;
+    transform: rotate(0deg);
+    position: absolute;
+    left: 0px;
+  }
+  .hero-text-3 {
+    transform: rotate(2deg);
+    position: absolute;
+    top: 100px;
+    left: 10px;
+  }
+  .hero-text-4 {
+    transform: rotate(3deg);
+    position: absolute;
+    top: 145px;
+    left: 0px;
   }
 
   .hero-button-container {
-    height: 200px;
-    top: 430px;
-    left: 180px;
+    /* border: 2px solid purple; */
+    transform: rotate(1deg);
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+    z-index: 3;
   }
 
+  .hero-button {
+    font-size: 18px;
+    height: 40px;
+    box-shadow: 2px 5px 10px rgba(37, 37, 37, 0.2);
+  }
+
+  .hero-button:hover {
+    box-shadow: -5px 10px 1px 1px var(--deSatRed);
+  }
+
+  .hero-my-name {
+    font-family: Rubik Mono One, sans-serif;
+    position: absolute;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px 20px;
+  }
+
+  #first-name {
+    color: var(--drkGrey);
+    left: -10px;
+    top: -20px;
+    text-shadow: -4px 4px 1px var(--salmon);
+    padding-left: 20px;
+    transition: 0.5s;
+  }
+
+  #last-name {
+    color: var(--drkGrey);
+    left: 150px;
+    top: -20px;
+    text-shadow: 4px -4px 1px var(--salmon);
+    padding-right: 20px;
+    transition: 0.5s;
+  }
+
+  #first-name:hover {
+    text-shadow: -20px -4px 4px var(--ltBlue);
+  }
+
+  #last-name:hover {
+    text-shadow: 20px 4px 4px var(--ltBlue);
+  }
   /***********************************************************************
  *  About
  **********************************************************************/
@@ -109,7 +195,7 @@
     top: 90px;
     left: 25px;
     width: 300px;
-    height: 380px;
+    height: 365px;
   }
 
   #palm-tree {
