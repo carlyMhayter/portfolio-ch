@@ -14,22 +14,24 @@ export default function Home() {
               layout="fill"
             />
           </div>
-          <p id="first-name" className="hero-my-name">
-            Carly
-          </p>
-          <p id="last-name" className="hero-my-name">
-            Hayter
-          </p>
+          <div className="name-container">
+            <p id="first-name" className="hero-my-name">
+              Carly
+            </p>
+            <p id="last-name" className="hero-my-name">
+              Hayter
+            </p>
+          </div>
           <div className="hero-text-1">
-            <p className="hero-text-2">
+            <p className="hero-text-2 hero-text-1-inner">
               <i className="fa fa-check-square-o" aria-hidden="true"></i>
               performant web sites
             </p>
-            <p className="hero-text-3">
+            <p className="hero-text-3  hero-text-1-inner">
               <i className="fa fa-check-square-o" aria-hidden="true"></i>clean
               graphic design
             </p>
-            <p className="hero-text-4">
+            <p className="hero-text-4 hero-text-1-inner">
               <i className="fa fa-check-square-o" aria-hidden="true"></i>modern
               ui/ux
             </p>
@@ -53,6 +55,7 @@ export default function Home() {
               fine art
             </button>
           </div>
+          <div className="dot"></div>
         </div>
       </div>
 

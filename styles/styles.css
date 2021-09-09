@@ -16,6 +16,8 @@
   --vLtPink: rgb(253, 233, 226);
   --vvLtPink: rgb(250, 239, 235);
   --salmon: rgb(252, 137, 129);
+  --ltSalmon: rgb(253, 192, 188);
+  --vltSalmon: rgb(253, 192, 188);
   --drkGrey: rgb(56, 56, 56);
   --almostBlack: rgb(26, 25, 25);
 }
@@ -162,7 +164,7 @@
 #self-img {
   width: 450px;
   height: 550px;
-  border: 10px solid var(--deSatRed);
+  border: 10px solid var(--ltSalmon);
   animation-duration: 2s;
   position: absolute;
   top: 100px;
@@ -387,7 +389,7 @@
   width: 350px;
   height: 400px;
   position: absolute;
-  z-index: 1;
+  z-index: 5;
 }
 
 .laptop-hero {
@@ -397,9 +399,10 @@
   /* border: 2px solid green; */
   left: -275px;
   top: -50px;
+  z-index: 2;
 }
 .hero-text-1 {
-  z-index: 1;
+  z-index: 5;
   font-family: Rubik Mono One, sans-serif;
   color: var(--drkGrey);
   border-radius: 10px;
@@ -414,8 +417,11 @@
   top: 120px;
   left: 90px;
   text-shadow: -1px 1px 1px var(--deSatBlue);
+  /* border: 2px solid purple; */
 }
 
+.hero-text-1-inner {
+}
 .hero-text-1 p {
   padding: 0px;
   margin: 0px;
@@ -461,7 +467,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  z-index: 3;
+  z-index: 5;
 }
 
 .hero-button {
@@ -473,34 +479,33 @@
 .hero-button:hover {
   box-shadow: -5px 10px 1px 1px var(--deSatRed);
 }
-
-.hero-my-name {
-  font-family: Rubik Mono One, sans-serif;
+.name-container {
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-family: Rubik Mono One, sans-serif;
   font-size: 50px;
+  top: 0px;
+  color: var(--drkGrey);
+  margin: 0px;
+}
+.hero-my-name {
+  padding: 5px 40px 5px 0px;
   background-color: white;
   border-radius: 20px;
-  padding: 7px 30px;
+  margin: 0px;
+  transition: 0.5s;
+  padding: 5px 40px;
 }
 
 #first-name {
-  color: var(--drkGrey);
-  left: -135px;
-  top: -65px;
   text-shadow: -4px 4px 1px var(--salmon);
-  padding-left: 80px;
-  transition: 0.5s;
 }
 
 #last-name {
-  color: var(--drkGrey);
-  /* left: -220px;
-  top: 20px; */
-  left: 165px;
-  top: -50px;
   text-shadow: 4px -4px 1px var(--salmon);
-  padding-right: 70px;
-  transition: 0.5s;
 }
 
 #first-name:hover {
@@ -509,4 +514,16 @@
 
 #last-name:hover {
   text-shadow: 20px 4px 4px var(--ltBlue);
+}
+
+.dot {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--salmon);
+  border-radius: 50%;
+  position: absolute;
+  top: 80%;
+  right: 20%;
+  transform: translate(50%, -50%);
+  z-index: 1;
 }
