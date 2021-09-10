@@ -55,6 +55,7 @@ export default function Home() {
               fine art
             </button>
           </div>
+          <div className="dot2"></div>
           <div className="dot"></div>
         </div>
       </div>

@@ -68,7 +68,7 @@
     top: 165px;
   }
   .hero-text-1 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     z-index: 5;
     font-family: Rubik Mono One, sans-serif;
     color: var(--drkGrey);
@@ -79,10 +79,10 @@
     flex-direction: column;
     font-size: 17px;
     height: 100px;
-    width: 90vw;
+    width: 70vw;
     position: relative;
     top: 80px;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, 0%);
     text-shadow: -1px 1px 1px var(--deSatBlue);
   }
@@ -192,17 +192,47 @@
   }
 
   #last-name {
-    text-shadow: 4px -4px 1px var(--salmon);
+    text-shadow: 4px 4px 1px var(--salmon);
     padding-right: 50px;
   }
 
   #first-name:hover {
-    text-shadow: -20px -4px 4px var(--ltBlue);
+    text-shadow: -20px 4px 4px var(--ltBlue);
   }
 
   #last-name:hover {
     text-shadow: 20px 4px 4px var(--ltBlue);
   }
+
+  .dot {
+    height: 100vh;
+    width: 200vw;
+    background-image: linear-gradient(
+      to top left,
+      var(--salmon),
+      var(--vvLtPink)
+    );
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    right: 20%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+    border: 20px rgb(255, 238, 238) solid;
+  }
+
+  .dot2 {
+    height: 100vh;
+    width: 200vw;
+    background-image: linear-gradient(to right, var(--white), var(--vltSalmon));
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
   /***********************************************************************
  *  About
  **********************************************************************/

@@ -17,7 +17,7 @@
   --vvLtPink: rgb(250, 239, 235);
   --salmon: rgb(252, 137, 129);
   --ltSalmon: rgb(253, 192, 188);
-  --vltSalmon: rgb(253, 192, 188);
+  --vltSalmon: rgb(255, 217, 214);
   --drkGrey: rgb(56, 56, 56);
   --almostBlack: rgb(26, 25, 25);
 }
@@ -490,6 +490,7 @@
   top: 0px;
   color: var(--drkGrey);
   margin: 0px;
+  z-index: 2;
 }
 .hero-my-name {
   padding: 5px 40px 5px 0px;
@@ -505,7 +506,7 @@
 }
 
 #last-name {
-  text-shadow: 4px -4px 1px var(--salmon);
+  text-shadow: 4px 4px 1px var(--salmon);
 }
 
 #first-name:hover {
@@ -518,12 +519,29 @@
 
 .dot {
   height: 100vh;
-  width: 100vw;
-  background-color: var(--salmon);
+  width: 200vw;
+  background-image: linear-gradient(
+    to top left,
+    var(--salmon),
+    var(--vvLtPink)
+  );
   border-radius: 50%;
   position: absolute;
   top: 80%;
   right: 20%;
   transform: translate(50%, -50%);
+  z-index: 1;
+  border: 20px rgb(255, 238, 238) solid;
+}
+
+.dot2 {
+  height: 100vh;
+  width: 200vw;
+  background-image: linear-gradient(to right, white, var(--vltSalmon));
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 0px;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
