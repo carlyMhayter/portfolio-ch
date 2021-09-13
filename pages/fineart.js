@@ -13,7 +13,7 @@ const fineArtPics = [
     imgLoc: "/hazel-drawing.jpg",
     imgWidth: "300px",
     imgHeight: "400px",
-    imgTitle: "Portrait of Friend",
+    imgTitle: "Pen Portrait",
     imgDescription: "Pen on paper. 2013",
     altText: "pen portrait drawing of friend",
   },
@@ -42,13 +42,18 @@ const Home = () => {
         <div className="gallery-container fineart-gallery-container">
           {fineArtPics.map((pic) => (
             <div key={pic.imgLoc} className="project-container fineart-styles">
-              <Image
-                alt={pic.altText}
-                className="project-img"
-                src={pic.imgLoc}
-                height={pic.imgHeight}
-                width={pic.imgWidth}
-              />
+              <div
+                style={{ height: pic.imgHeight, width: pic.imgWidth }}
+                className="project-img-container"
+              >
+                <Image
+                  alt={pic.altText}
+                  className="project-img"
+                  src={pic.imgLoc}
+                  height={pic.imgHeight}
+                  width={pic.imgWidth}
+                />
+              </div>
               <div className="project-text-container">
                 <p className="project-title">{pic.imgTitle}</p>
                 <p className="project-description">{pic.imgDescription}</p>

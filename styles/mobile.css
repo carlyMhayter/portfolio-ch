@@ -218,7 +218,6 @@
     right: 20%;
     transform: translate(50%, -50%);
     z-index: 1;
-    border: 20px rgb(255, 238, 238) solid;
   }
 
   .dot2 {
@@ -323,7 +322,11 @@
     width: 350px;
   }
 
-  .project-img {
+  .project-img-container {
+    /* width: 300px !important;
+    height: 200px !important; */
+    margin: 0px;
+    padding: 0px;
   }
 
   /***********************************************************************
