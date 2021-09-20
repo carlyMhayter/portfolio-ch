@@ -42,16 +42,12 @@ const Home = () => {
         <div className="gallery-container fineart-gallery-container">
           {fineArtPics.map((pic) => (
             <div key={pic.imgLoc} className="project-container fineart-styles">
-              <div
-                style={{ height: pic.imgHeight, width: pic.imgWidth }}
-                className="project-img-container"
-              >
+              <div className="project-img-container fineart-img-container">
                 <Image
                   alt={pic.altText}
                   className="project-img"
                   src={pic.imgLoc}
-                  height={pic.imgHeight}
-                  width={pic.imgWidth}
+                  layout="fill"
                 />
               </div>
               <div className="project-text-container">

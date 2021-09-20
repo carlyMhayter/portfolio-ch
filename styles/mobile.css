@@ -322,11 +322,9 @@
     width: 350px;
   }
 
-  .project-img-container {
-    /* width: 300px !important;
-    height: 200px !important; */
-    margin: 0px;
-    padding: 0px;
+  .fineart-img-container {
+    width: 275px;
+    height: 375px;
   }
 
   /***********************************************************************

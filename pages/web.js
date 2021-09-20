@@ -21,8 +21,8 @@ const Home = () => {
           {webExamples.map((thing) => (
             <div key={thing.sitePic} className="project-container web-project">
               <div
-                style={{ height: thing.imgHeight, width: thing.imgWidth }}
-                className="project-img-container"
+                // style={{ height: thing.imgHeight, width: thing.imgWidth }}
+                className="project-img-container web-img-container"
               >
                 <Image
                   alt={thing.imgAlt}
