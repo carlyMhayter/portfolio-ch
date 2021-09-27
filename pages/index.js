@@ -24,16 +24,15 @@ export default function Home() {
           </div>
           <div className="hero-text-1">
             <p className="hero-text-2 hero-text-1-inner">
-              <i className="fa fa-check-square-o" aria-hidden="true"></i>
+              <i className="fa fa-check" aria-hidden="true"></i>
               performant web sites
             </p>
             <p className="hero-text-3  hero-text-1-inner">
-              <i className="fa fa-check-square-o" aria-hidden="true"></i>clean
-              graphic design
+              <i className="fa fa-check" aria-hidden="true"></i>clean graphic
+              design
             </p>
             <p className="hero-text-4 hero-text-1-inner">
-              <i className="fa fa-check-square-o" aria-hidden="true"></i>modern
-              ui/ux
+              <i className="fa fa-check" aria-hidden="true"></i>modern ui/ux
             </p>
           </div>
           <div className="hand-drawing">
