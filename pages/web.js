@@ -21,7 +21,7 @@ const webExamples = [
     siteClient: "Omniome Inc., 2020",
     siteDescription:
       "Page built to supervise DNA sequencing remotely for biotech company. Custom Webpack set-up and configuration.",
-    linkToSite: "https://neverdieyoung.net",
+    linkToSite: "https://seq-lab-status.vercel.app",
   },
 ];
 
