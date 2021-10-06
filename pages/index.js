@@ -14,7 +14,7 @@ export default function Home() {
               layout="fill"
             />
           </div>
-          <div class="name-illustration-container">
+          <div className="name-illustration-container">
             <Image
               src="/name-pixels.svg"
               layout="fill"
