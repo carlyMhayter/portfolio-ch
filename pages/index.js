@@ -15,7 +15,11 @@ export default function Home() {
             />
           </div>
           <div class="name-illustration-container">
-            <Image src="/name-pixels.svg" layout="fill" />
+            <Image
+              src="/name-pixels.svg"
+              layout="fill"
+              alt="pixelated carly hayter"
+            />
           </div>
           <div className="name-container">
             <p id="first-name" className="hero-my-name">
