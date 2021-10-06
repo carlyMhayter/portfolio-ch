@@ -1,28 +1,33 @@
 :root {
   --blue: rgb(115, 183, 192);
-  --deSatBlue: rgb(168, 194, 201);
-  --ltBlue: rgb(216, 247, 250);
-  --drkBlue: rgb(103, 133, 136);
-  --vvLtGrey: rgb(241, 241, 241);
-  --vLtGrey: rgb(223, 222, 222);
-  --ltGrey: rgb(211, 211, 211);
+  --deSatBlue: #a8c2c9;
+  --ltBlue: #d8f7fa;
+  --drkBlue: #427377;
+  --vvLtGrey: #f1f1f1;
+  --vLtGrey: #060505;
+  --ltGrey: #d3d3d3;
   --brightOrangeRed: #ff5a19;
-  --orangeRed: rgb(218, 86, 10);
-  --vLtPink: rgb(253, 233, 226);
+  --orangeRed: #da560a;
+  --vLtPink: #fde9e2;
   --vvLtPink: rgb(250, 239, 235);
-  --salmon: rgb(252, 137, 129);
-  --drkGrey: rgb(56, 56, 56);
+  --salmon: #fc8b83;
+  --ltSalmon: #fdc0bc;
+  --vltSalmon: #ffd9d6;
+  --drkGrey: #383838;
   --deSatRedDark: #935656;
   --deSatRed: #f06464;
   --almostBlack: rgb(26, 25, 25);
 }
 html,
 body {
-  background-color: var(--vvLtPink);
+  /* background-color: var(--vLtPink); */
+  background-image: url("/wavy-tower-background.svg");
+  background-repeat: repeat-x;
+  /* background-size: cover; */
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 a {
@@ -36,8 +41,10 @@ a {
 
 .page-content {
   width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0px;
+  /* border: 2px solid aqua; */
 }

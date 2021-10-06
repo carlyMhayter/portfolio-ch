@@ -14,6 +14,9 @@ export default function Home() {
               layout="fill"
             />
           </div>
+          <div class="name-illustration-container">
+            <Image src="/name-pixels.svg" layout="fill" />
+          </div>
           <div className="name-container">
             <p id="first-name" className="hero-my-name">
               Carly
@@ -25,14 +28,13 @@ export default function Home() {
           <div className="hero-text-1">
             <p className="hero-text-2 hero-text-1-inner">
               <i className="fa fa-check" aria-hidden="true"></i>
-              performant web sites
+              Web Developer
             </p>
             <p className="hero-text-3  hero-text-1-inner">
-              <i className="fa fa-check" aria-hidden="true"></i>clean graphic
-              design
+              <i className="fa fa-check" aria-hidden="true"></i>Designer
             </p>
             <p className="hero-text-4 hero-text-1-inner">
-              <i className="fa fa-check" aria-hidden="true"></i>modern ui/ux
+              <i className="fa fa-check" aria-hidden="true"></i>Problem Solver
             </p>
           </div>
           <div className="hand-drawing">

@@ -1,23 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Barrio&family=Kirang+Haerang&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,100;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 :root {
-  --blue: rgb(115, 183, 192);
-  --deSatBlue: rgb(168, 194, 201);
+  --blue: #73b7c0;
+  --deSatBlue: #a8c2c9;
   --ltBlue: rgb(216, 247, 250);
-  --drkBlue: rgb(103, 133, 136);
+  --drkBlue: #678588;
   --vvLtGrey: rgb(241, 241, 241);
   --vLtGrey: rgb(223, 222, 222);
-  --ltGrey: rgb(211, 211, 211);
+  --ltGrey: #d3d3d3;
   --brightOrangeRed: #ff5a19;
   --deSatRedDark: #935656;
   --deSatRed: #f06464;
   --orangeRed: rgb(218, 86, 10);
-  --vLtPink: rgb(253, 233, 226);
+  --vLtPink: #fde9e2;
   --vvLtPink: rgb(250, 239, 235);
-  --salmon: rgb(252, 137, 129);
-  --ltSalmon: rgb(253, 192, 188);
-  --vltSalmon: rgb(255, 217, 214);
+  --salmon: #fc8981;
+  --ltSalmon: #fdc0bc;
+  --vltSalmon: #ffd9d6;
   --grey: rgb(113, 113, 113);
   --drkGrey: rgb(56, 56, 56);
   --almostBlack: rgb(26, 25, 25);
@@ -79,6 +80,8 @@
   flex-direction: row;
   width: 1000px;
   height: 600px;
+  position: absolute;
+  top: 4rem;
   justify-content: space-around;
 }
 .container-tags {
@@ -155,6 +158,7 @@
  **********************************************************************/
 #bio-container {
   display: flex;
+  height: 100vh;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -217,7 +221,7 @@
 }
 
 .blocking {
-  background-color: var(--vvLtPink);
+  background-color: var(--vltSalmon);
   border: 0px solid white;
   border-top: 3px solid var(--ltGrey);
   position: absolute;
@@ -225,9 +229,7 @@
   height: 400px;
   top: 775px;
 }
-#bubble2 {
-}
-.question-bio-text {
+d .question-bio-text {
   font-family: Rubik Mono One, serif;
   text-align: center;
   font-size: 19px;
@@ -251,6 +253,8 @@
   margin: 20px;
   font-family: Rubik Mono One, sans-serif;
   color: rgb(73, 99, 102);
+  position: absolute;
+  top: 5rem;
 }
 
 .form-contact p {
@@ -472,7 +476,7 @@
   height: 200px;
   width: 450px;
   position: relative;
-  top: 180px;
+  top: 210px;
   left: 110px;
   /* border: 2px solid purple; */
 }
@@ -538,7 +542,7 @@
 .name-container {
   /* border: 2px solid purple; */
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: row;
   font-family: Rubik Mono One, sans-serif;
   font-size: 50px;
@@ -548,6 +552,16 @@
   color: var(--deSatRed);
   margin: 0px;
   z-index: 2;
+}
+
+.name-illustration-container {
+  /* border: 2px solid orange; */
+  z-index: 6;
+  position: absolute;
+  width: 550px;
+  height: 300px;
+  left: 85px;
+  top: 30px;
 }
 .hero-my-name {
   padding: 5px 20px 5px 0px;

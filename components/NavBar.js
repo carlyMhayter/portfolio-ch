@@ -16,6 +16,10 @@ const Links = [
     linkName: "Contact",
     linkLoc: "/contact",
   },
+  {
+    linkName: "Blog",
+    linkLoc: "http://localhost:8888/",
+  },
 ];
 
 const NavBar = () => {
