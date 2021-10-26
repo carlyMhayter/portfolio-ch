@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="page-content">
+      <div className="page-content page-content-hero">
         <div className="hero-content">
           <div className="laptop-hero">
             <Image
@@ -20,14 +20,6 @@ export default function Home() {
               layout="fill"
               alt="pixelated carly hayter"
             />
-          </div>
-          <div className="name-container">
-            <p id="first-name" className="hero-my-name">
-              Carly
-            </p>
-            <p id="last-name" className="hero-my-name">
-              Hayter
-            </p>
           </div>
           <div className="hero-text-1">
             <p className="hero-text-2 hero-text-1-inner">
@@ -50,18 +42,22 @@ export default function Home() {
             />
           </div>
           <div className="hero-button-container">
-            <button className="button hero-button" id="hero-button-1">
-              resume
-            </button>
-            <button className="button hero-button" id="hero-button-2">
-              web
-            </button>
-            <button className="button hero-button" id="hero-button-3">
-              fine art
-            </button>
+            <Link href="/resume">
+              <a className="button hero-button" id="hero-button-1" href="./">
+                resume{" "}
+              </a>
+            </Link>
+            <Link href="/web">
+              <a className="button hero-button" id="hero-button-2" href="./web">
+                web
+              </a>
+            </Link>
+            <Link href="/fineart">
+              <a className="button hero-button" id="hero-button-3">
+                fine art
+              </a>
+            </Link>
           </div>
-          {/* <div className="dot2"></div> */}
-          {/* <div className="dot"></div> */}
         </div>
       </div>
 

@@ -38,10 +38,13 @@ const fineArtPics = [
 const Home = () => {
   return (
     <>
-      <div className="page-content">
+      <div className="page-content fineart-page-content">
         <div className="gallery-container fineart-gallery-container">
           {fineArtPics.map((pic) => (
-            <div key={pic.imgLoc} className="project-container fineart-styles">
+            <div
+              key={pic.imgLoc}
+              className="project-container project-container-fineart "
+            >
               <div className="project-img-container fineart-img-container">
                 <Image
                   alt={pic.altText}

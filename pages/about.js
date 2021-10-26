@@ -3,7 +3,7 @@ import Image from "next/image";
 const Home = () => {
   return (
     <>
-      <div className="page-content">
+      <div className="page-content page-content-about">
         <div id="bio-container">
           <div id="bio-text-container">
             <p id="bubble1" className="bio-text hello-text">

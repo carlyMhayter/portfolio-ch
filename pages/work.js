@@ -5,7 +5,7 @@ import Image from "next/image";
 const Home = () => {
   return (
     <>
-      <div className="page-content">
+      <div className="page-content work-page-content">
         <div className="work-container">
           <div className="fineart-container container-tags">
             <Link href="./fineart">

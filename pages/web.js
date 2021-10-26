@@ -28,8 +28,8 @@ const webExamples = [
 const Home = () => {
   return (
     <>
-      <div className="page-content">
-        <div className="gallery-container">
+      <div className="page-content web-page-content">
+        <div className="gallery-container web-gallery">
           {webExamples.map((thing) => (
             <div
               key={thing.sitePic}

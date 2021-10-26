@@ -1,0 +1,250 @@
+/***********************************************************************
+ *  Home Page
+ **********************************************************************/
+#hero-button-1 {
+  display: none;
+}
+.hero-content {
+  flex-direction: column;
+  position: relative;
+  /* border: 1px solid coral; */
+  width: 350px;
+  height: 100vh;
+}
+
+.hand-drawing {
+  top: 90px;
+  left: -620px;
+  transform: rotate(35deg) scaleX(-1);
+  /* border: 266tpx solid green; */
+  width: 750px;
+  height: 600px;
+  position: absolute;
+  z-index: 5;
+}
+
+.laptop-hero {
+  width: 1800px;
+  height: 1100px;
+  position: absolute;
+  /* border: 2px solid green; */
+  left: -700px;
+  top: -60px;
+  z-index: 2;
+}
+
+.hero-text-1 {
+  z-index: 5;
+  font-family: Rubik Mono One, sans-serif;
+  color: var(--grey);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  height: 200px;
+  width: 450px;
+  position: relative;
+  top: 210px;
+  left: 110px;
+  /* border: 2px solid purple; */
+}
+
+.hero-text-1 p {
+  padding: 0px;
+  margin: 0px;
+  transition: 1s;
+}
+.hero-text-1 p:hover {
+  text-shadow: 5px 5px 5px var(--salmon);
+}
+
+.hero-text-1 i {
+  color: var(--deSatBlue);
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+.hero-text-2 {
+  top: 55px;
+  transform: rotate(0deg);
+  position: absolute;
+  left: 20px;
+}
+.hero-text-3 {
+  transform: rotate(2deg);
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+.hero-text-4 {
+  transform: rotate(3deg);
+  position: absolute;
+  top: 145px;
+  left: 0px;
+}
+
+.hero-button-container {
+  /* border: 2px solid purple; */
+  transform: rotate(5deg);
+  position: absolute;
+  left: 20px;
+  top: 410px;
+  width: 540px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  z-index: 10;
+}
+
+.hero-button {
+  font-size: 18px;
+  height: 40px;
+  box-shadow: 2px 5px 10px rgba(37, 37, 37, 0.2);
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.hero-button:hover {
+  box-shadow: -5px 10px 1px 1px var(--deSatRed);
+}
+.name-container {
+  /* border: 2px solid purple; */
+  position: absolute;
+  display: none;
+  flex-direction: row;
+  font-family: Rubik Mono One, sans-serif;
+  font-size: 50px;
+  top: 130px;
+  transform: rotate(-1deg);
+  left: 80px;
+  color: var(--deSatRed);
+  margin: 0px;
+  z-index: 2;
+}
+
+.name-illustration-container {
+  /* border: 2px solid orange; */
+  z-index: 6;
+  position: absolute;
+  width: 550px;
+  height: 300px;
+  left: 85px;
+  top: 30px;
+}
+.page-content-hero {
+  /* border: 2px red solid; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/***********************************************************************
+ *  MOBILE
+ **********************************************************************/
+
+@media only screen and (max-width: 950px) {
+  body {
+    /* background-image: none;
+    background-color: lightseagreen; */
+  }
+
+  .page-content-hero {
+    /* border: 2px red solid; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .hero-content {
+    /* border: 2px solid orange; */
+  }
+
+  .laptop-hero {
+    height: 500px;
+    top: 200px;
+  }
+  .name-illustration-container {
+    width: 500px;
+    top: -80px;
+    left: -70px;
+  }
+
+  .hero-text-1 {
+    top: 130px;
+    left: 0px;
+    width: 350px;
+    height: 0px;
+  }
+  .hero-text-2 {
+    top: 0px;
+    transform: rotate(0deg);
+  }
+  .hero-text-3 {
+    top: 30px;
+    left: 20px;
+    transform: rotate(0deg);
+  }
+
+  .hero-text-4 {
+    top: 60px;
+    left: 20px;
+    transform: rotate(0deg);
+  }
+
+  .hero-button-container {
+    /* border: 2px solid pink; */
+    flex-direction: column;
+    top: 275px;
+    left: 180px;
+    width: 200px;
+    height: 175px;
+  }
+  .hand-drawing {
+    left: -425px;
+    height: 350px;
+    top: 200px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* body {
+    background-image: none;
+    background-color: lightseagreen;
+  } */
+  .laptop-hero {
+    height: 450px;
+    top: 170px;
+    left: -735px;
+  }
+  .name-illustration-container {
+    width: 350px;
+    top: -95px;
+    left: -0px;
+  }
+  .hero-text-1 {
+    top: 100px;
+    left: 10px;
+    font-size: 18px;
+  }
+  .laptop-hero {
+    height: 500px;
+    top: 160px;
+  }
+  .hand-drawing {
+    left: -65px;
+    height: 250px;
+    width: 200px;
+    top: 220px;
+    z-index: 11;
+    transform: rotate(5deg) scaleX(-1);
+    /* border: 2px solid red; */
+  }
+  .hero-button-container {
+    /* border: 2px solid pink; */
+    flex-direction: column;
+    top: 235px;
+    left: 115px;
+    width: 200px;
+    height: 175px;
+  }
+}
