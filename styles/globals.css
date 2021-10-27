@@ -24,9 +24,10 @@
 
 html,
 body {
-  background-color: var(--vLtSalmon);
-  background-image: url("/wavy-tower-background.svg");
-  background-repeat: repeat-x;
+  background-image: url("/test.png");
+  background-repeat: repeat no-repeat;
+  background-color: var(--vltSalmon);
+  background-size: 100px 600px;
   padding: 0;
   margin: 0;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
