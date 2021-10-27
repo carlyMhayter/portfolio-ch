@@ -195,8 +195,8 @@
     /* border: 2px solid pink; */
     flex-direction: column;
     top: 275px;
-    left: 180px;
-    width: 200px;
+    left: 175px;
+    width: 150px;
     height: 175px;
   }
   .hand-drawing {
@@ -243,8 +243,8 @@
     /* border: 2px solid pink; */
     flex-direction: column;
     top: 235px;
-    left: 115px;
-    width: 200px;
+    left: 135px;
+    width: 180px;
     height: 175px;
   }
 }
