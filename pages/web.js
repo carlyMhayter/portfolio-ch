@@ -23,6 +23,17 @@ const webExamples = [
       "Page built to supervise DNA sequencing remotely for biotech company. Custom Webpack set-up and configuration.",
     linkToSite: "https://seq-lab-status.vercel.app",
   },
+  {
+    imgLoc: "/palette_screen.jpg",
+    imgWidth: "350px",
+    imgHeight: "300px",
+    imgAlt: "screenshot of palette site",
+    siteTitle: "Color AI Palette Generator",
+    siteClient: "Carly Hayter, 2021",
+    siteDescription:
+      "A fun color palette generator with infinite scoll functionality. Created with Imagga's Color AI API, and Unsplash.",
+    linkToSite: "https://infinite-scroll-pi.vercel.app/",
+  },
 ];
 
 const Home = () => {
