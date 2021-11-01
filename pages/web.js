@@ -62,7 +62,9 @@ const Home = () => {
               <div className="project-text-container">
                 <p className="project-title site-title">{thing.siteTitle}</p>
                 <p className="project-client">{thing.siteClient}</p>
-                <p className="project-description">{thing.siteDescription}</p>
+                <p className="project-description web-description ">
+                  {thing.siteDescription}
+                </p>
                 <a className="project-link" href={thing.linkToSite}>
                   View site
                 </a>
