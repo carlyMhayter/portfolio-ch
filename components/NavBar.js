@@ -16,10 +16,10 @@ const Links = [
     linkName: "Contact",
     linkLoc: "/contact",
   },
-  // {
-  //   linkName: "Blog",
-  //   linkLoc: "http://localhost:8888/",
-  // },
+  {
+    linkName: "Blog",
+    linkLoc: "https://carllitabobita.com/",
+  },
 ];
 
 const NavBar = () => {
