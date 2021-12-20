@@ -21,10 +21,16 @@
   position: relative;
 }
 
-.fineart-img-container {
+.fineart-img-container-med {
   height: 400px;
   width: 300px;
 }
+
+.fineart-img-container-long {
+  height: 450px;
+  width: 300px;
+}
+
 /***********************************************************************
  *  MOBILE
  **********************************************************************/

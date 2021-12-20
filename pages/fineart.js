@@ -1,6 +1,16 @@
 import Image from "next/image";
+const classString = "project-img-container fineart-img-container";
 
 const fineArtPics = [
+  {
+    imgLoc: "/male-figure1.jpg",
+    imgWidth: "300px",
+    imgHeight: "500px",
+    imgTitle: "Male Figure from Life",
+    imgDescription: "Charcoal on newsprint, 2021. 2.5hr pose.",
+    altText: "male figure drawing",
+    sizeClass: classString + "-long",
+  },
   {
     imgLoc: "/color-leaves.png",
     imgWidth: "300px",
@@ -8,6 +18,7 @@ const fineArtPics = [
     imgTitle: "Untitled",
     imgDescription: "Watercolor. 2011",
     altText: "rainbow watercolor leaves",
+    sizeClass: classString + "-med",
   },
   {
     imgLoc: "/hazel-drawing.jpg",
@@ -16,6 +27,7 @@ const fineArtPics = [
     imgTitle: "Pen Portrait",
     imgDescription: "Pen on paper. 2013",
     altText: "pen portrait drawing of friend",
+    sizeClass: classString + "-med",
   },
   {
     imgLoc: "/dylan-painting.jpg",
@@ -24,6 +36,7 @@ const fineArtPics = [
     imgTitle: "Dylan",
     imgDescription: "Acrylic on Board. 2014",
     altText: "portrait painting on board",
+    sizeClass: classString + "-med",
   },
   {
     imgLoc: "/kristian-painting.jpg",
@@ -32,6 +45,7 @@ const fineArtPics = [
     imgTitle: "Kristian",
     imgDescription: "Acrylic on Board. 2011",
     altText: "portrait painting on board of man",
+    sizeClass: classString + "-med",
   },
 ];
 
@@ -45,7 +59,7 @@ const Home = () => {
               key={pic.imgLoc}
               className="project-container project-container-fineart "
             >
-              <div className="project-img-container fineart-img-container">
+              <div className={pic.sizeClass}>
                 <Image
                   alt={pic.altText}
                   className="project-img"
