@@ -9,7 +9,7 @@ import "../styles/fineart.css";
 import "../styles/web.css";
 import { Router, useRouter } from "next/router";
 import { initGA, logPageView } from "../utils/analytics";
-
+import { useEffect } from "react";
 import "font-awesome/css/font-awesome.css";
 import NavBar from "../components/NavBar";
 
