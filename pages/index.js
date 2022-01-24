@@ -1,6 +1,5 @@
-import { useRouter } from "next/router";
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -23,14 +22,16 @@ export default function Home() {
           </div>
           <div className="hero-text-1">
             <p className="hero-text-2 hero-text-1-inner">
-              <i className="fa fa-check" aria-hidden="true"></i>
+              <i className="fa fa-check" aria-hidden="true" />
               Web Developer
             </p>
             <p className="hero-text-3  hero-text-1-inner">
-              <i className="fa fa-check" aria-hidden="true"></i>Designer
+              <i className="fa fa-check" aria-hidden="true" />
+              Designer
             </p>
             <p className="hero-text-4 hero-text-1-inner">
-              <i className="fa fa-check" aria-hidden="true"></i>Problem Solver
+              <i className="fa fa-check" aria-hidden="true" />
+              Problem Solver
             </p>
           </div>
           <div className="hand-drawing">
@@ -44,7 +45,7 @@ export default function Home() {
           <div className="hero-button-container">
             <Link href="/resume">
               <a className="button hero-button" id="hero-button-1" href="./">
-                resume{" "}
+                resume{' '}
               </a>
             </Link>
             <Link href="/web">
@@ -61,7 +62,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="content"></div>
+      <div className="content" />
     </>
   );
 }

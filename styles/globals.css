@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Kirang+Haerang&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,100;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Kirang+Haerang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 :root {
   --blue: rgb(115, 183, 192);
   --deSatBlue: #a8c2c9;
@@ -24,14 +24,14 @@
 
 html,
 body {
-  background-image: url("/test.png");
+  background-image: url('/test.png');
   background-repeat: repeat no-repeat;
   background-color: var(--vltSalmon);
   background-size: 100px 600px;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
 }
 
 a {

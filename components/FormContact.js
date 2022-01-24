@@ -1,6 +1,4 @@
-import { useForm, ValidationError } from "@formspree/react";
-
-const FormContact = () => {
+function FormContact() {
   return (
     <form
       className="form-contact"
@@ -23,12 +21,12 @@ const FormContact = () => {
         rows={10}
         name="message"
         id="message"
-        defaultValue={"Enter message here."}
-      ></textarea>
+        defaultValue="Enter message here."
+      />
       <button type="submit" className="button">
         Submit
       </button>
     </form>
   );
-};
+}
 export default FormContact;

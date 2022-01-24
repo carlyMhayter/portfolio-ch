@@ -1,66 +1,41 @@
-import { useCallback, useEffect, useState } from "react";
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
 
 const Links = [
-  { linkName: "Home", linkLoc: "/" },
+  { linkName: 'Home', linkLoc: '/' },
   {
-    linkName: "Meet Me",
-    linkLoc: "/about",
+    linkName: 'Meet Me',
+    linkLoc: '/about',
   },
   {
-    linkName: "Work",
-    linkLoc: "/work",
+    linkName: 'Work',
+    linkLoc: '/work',
   },
   {
-    linkName: "Contact",
-    linkLoc: "/contact",
+    linkName: 'Contact',
+    linkLoc: '/contact',
   },
   {
-    linkName: "Blog",
-    linkLoc: "https://carllitabobita.com/",
+    linkName: 'Blog',
+    linkLoc: 'https://carllitabobita.com/',
   },
 ];
 
-const NavBar = () => {
-  //   const [isOpen, setIsOpen] = useState(false);
-
-  //   const showDropdown = useCallback(() => {
-  //     let opposite = true;
-  //     if (isOpen) {
-  //       opposite = false;
-  //     } else {
-  //       opposite = true;
-  //     }
-  //     setIsOpen(opposite);
-  //   }, [isOpen]);
-
-  //   useEffect(() => {
-  //     document.addEventListener("click", () => {
-  //       let target1 = event.target.className;
-  //       if (isOpen && target1 != "dropDown-btn") {
-  //         setIsOpen(false);
-  //       }
-  //     });
-  //   }, [isOpen]);
-
+function NavBar() {
   return (
-    <>
-      <nav className="navbar">
-        <div className="link-container">
-          <div className="text-links-container">
-            {Links.map((link) => (
-              <div key={link.linkName} className="navlink">
-                <Link href={link.linkLoc}>
-                  <a> {link.linkName} </a>
-                </Link>
-              </div>
-            ))}
-          </div>
+    <nav className="navbar">
+      <div className="link-container">
+        <div className="text-links-container">
+          {Links.map((link) => (
+            <div key={link.linkName} className="navlink">
+              <Link href={link.linkLoc}>
+                <a> {link.linkName} </a>
+              </Link>
+            </div>
+          ))}
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
-};
+}
 
 export default NavBar;

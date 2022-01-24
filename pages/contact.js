@@ -1,14 +1,11 @@
-import FormContact from "../components/FormContact";
-import Image from "next/image";
+import FormContact from '../components/FormContact';
 
-const Home = () => {
+function Home() {
   return (
-    <>
-      <div className="page-content">
-        <FormContact />
-      </div>
-    </>
+    <div className="page-content">
+      <FormContact />
+    </div>
   );
-};
+}
 
 export default Home;
