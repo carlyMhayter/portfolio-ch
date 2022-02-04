@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 400px) {
   body {
-    background-color: var(--vltSalmon);
+    /* background-color: var(--vltSalmon); */
   }
   .project-container-fineart {
     width: 300px;

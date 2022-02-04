@@ -4,65 +4,45 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <div className="page-content page-content-hero">
-        <div className="hero-content">
-          <div className="laptop-hero">
+      <div className="page-content">
+        <div className="homepage-center-column">
+          <div className="homepage-text-container">
+            <h1 className="homepage-text-name">Carly Hayter</h1>
+
+            <div className="hero-text-minor-container">
+              <p className="hero-text-minor">
+                <i className="fa fa-check" aria-hidden="true" />
+                Web Developer
+              </p>
+              <p className="hero-text-minor">
+                <i className="fa fa-check" aria-hidden="true" />
+                Designer
+              </p>
+              <p className="hero-text-minor">
+                <i className="fa fa-check" aria-hidden="true" />
+                Problem Solver
+              </p>
+            </div>
+            <div className="homepage-button-container">
+              <Link href="/web">
+                <a className="homepage-button button" href="./web">
+                  web design
+                </a>
+              </Link>
+              <Link href="/fineart">
+                <a className="homepage-button button">fine art</a>
+              </Link>
+            </div>
+          </div>
+          <div className="laptop-hand-svg">
             <Image
-              src="/laptop-drawing-lines-2.svg"
-              alt="hand drawn laptop hero"
+              src="/laptop-hand.svg"
               layout="fill"
+              alt="drawing of hand drawing on a laptop"
             />
-          </div>
-          <div className="name-illustration-container">
-            <Image
-              src="/name-pixels.svg"
-              layout="fill"
-              alt="pixelated carly hayter"
-            />
-          </div>
-          <div className="hero-text-1">
-            <p className="hero-text-2 hero-text-1-inner">
-              <i className="fa fa-check" aria-hidden="true" />
-              Web Developer
-            </p>
-            <p className="hero-text-3  hero-text-1-inner">
-              <i className="fa fa-check" aria-hidden="true" />
-              Designer
-            </p>
-            <p className="hero-text-4 hero-text-1-inner">
-              <i className="fa fa-check" aria-hidden="true" />
-              Problem Solver
-            </p>
-          </div>
-          <div className="hand-drawing">
-            <Image
-              src="/hand.svg"
-              layout="fill"
-              alt="hand drawing"
-              className="actual-hand-img"
-            />
-          </div>
-          <div className="hero-button-container">
-            <Link href="/resume">
-              <a className="button hero-button" id="hero-button-1" href="./">
-                resume{' '}
-              </a>
-            </Link>
-            <Link href="/web">
-              <a className="button hero-button" id="hero-button-2" href="./web">
-                web
-              </a>
-            </Link>
-            <Link href="/fineart">
-              <a className="button hero-button" id="hero-button-3">
-                fine art
-              </a>
-            </Link>
           </div>
         </div>
       </div>
-
-      <div className="content" />
     </>
   );
 }

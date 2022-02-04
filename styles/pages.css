@@ -28,7 +28,7 @@
 .form-boxes {
   border: 2px solid var(--vLtPink);
   width: 350px;
-  background-color: var(--vvLtGrey);
+  background-color: white;
   color: rgb(88, 58, 0);
   font-size: 18px;
   font-family: -apple-system;

@@ -55,9 +55,7 @@
  *  Mobile
  **********************************************************************/
 @media only screen and (max-width: 400px) {
-  body {
-    background-color: var(--vltSalmon);
-  }
+
 
   .web-project {
     width: 300px;

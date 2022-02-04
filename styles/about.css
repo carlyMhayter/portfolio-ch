@@ -77,7 +77,7 @@
 }
 
 .blocking {
-  background-color: var(--vltSalmon);
+  background-color: var(--vvLtGrey);
   border: 0px solid white;
   border-top: 3px solid var(--ltGrey);
   position: absolute;

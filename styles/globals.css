@@ -7,7 +7,7 @@
   --ltBlue: #d8f7fa;
   --drkBlue: #427377;
   --vvLtGrey: #f1f1f1;
-  --vLtGrey: #060505;
+  --vLtGrey: #e6e5e5;
   --ltGrey: #d3d3d3;
   --brightOrangeRed: #ff5a19;
   --orangeRed: #da560a;
@@ -24,10 +24,7 @@
 
 html,
 body {
-  background-image: url('/test.png');
-  background-repeat: repeat no-repeat;
-  background-color: var(--vltSalmon);
-  background-size: 100px 600px;
+  background-color: var(--vvLtGrey);
   padding: 0;
   margin: 0;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -49,6 +46,7 @@ a {
   display: flex;
   justify-content: center;
   margin: 0px 0px;
+  overflow: hidden;
   /* border: 2px purple solid; */
 }
 
