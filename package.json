@@ -11,7 +11,12 @@
     "fix": "yarn lint --fix && prettier --write ."
   },
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@formspree/react": "^2.2.3",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/material": "^5.4.0",
+    "clipboard": "^2.0.10",
     "eslint": "^8.7.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "^11.0.1",
@@ -21,6 +26,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "font-awesome": "^4.7.0",
+    "material-ui": "^0.20.2",
     "next": "11.1.0",
     "prettier": "^2.5.1",
     "prop-types": "^15.8.1",

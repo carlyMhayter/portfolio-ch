@@ -15,13 +15,12 @@ function Home() {
           <p className="question-bio-text">WHAT DO I DO?:</p>
 
           <p id="bubble3" className="bio-text">
-            I make efficient, beautiful websites.
+            I love to make React applications and solve challenging problems.
           </p>
           <p className="question-bio-text">HOW DID I GET HERE?:</p>
           <p id="bubble4" className="bio-text">
-            I started out studying Painting at UC Santa Cruz. Ultimately, I got
-            a degree in Molecular Biology (long story), but have returned to my
-            ultimate love of art and design, with my newfound passion for web
+            I got a BS in Molecular Biology, but have expanded my love of
+            scientific problem-solving and experimentation into a career in web
             development.
           </p>
         </div>

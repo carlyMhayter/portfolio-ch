@@ -1,7 +1,15 @@
 /***********************************************************************
  *  Form
  **********************************************************************/
-.form-element {
+ .form-content-container{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+ }
+
+ .form-element {
   display: flex;
   justify-content: stretch;
 }
@@ -15,8 +23,9 @@
   margin: 20px;
   font-family: Rubik Mono One, sans-serif;
   color: rgb(73, 99, 102);
-  position: absolute;
-  top: 5rem;
+  
+  /* position: absolute;
+  top: 5rem; */
 }
 
 .form-contact p {
@@ -45,6 +54,29 @@
 .form-boxes:hover {
   border: 2px solid var(--salmon);
   box-shadow: 10px 20px 1px 1px var(--deSatRed);
+}
+
+.manual-contact{
+  width: 375px;
+  border: 1px solid var(--vltSalmon);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+}
+.manual-contact-button{
+  color: var(--drkBlue);
+}
+.manual-contact-icon{
+  margin-left:8px;
+  color: var(--drkBlue)
+}
+#contact-info-header {
+  font-family: Rubik Mono One, sans-serif;
+margin-top:20px;
 }
 
 /***********************************************************************

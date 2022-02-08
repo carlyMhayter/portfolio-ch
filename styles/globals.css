@@ -46,7 +46,8 @@ a {
   display: flex;
   justify-content: center;
   margin: 0px 0px;
-  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom: 50px;
   /* border: 2px purple solid; */
 }
 
