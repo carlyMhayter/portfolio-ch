@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barrio&family=Kirang+Haerang&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,100;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;800&display=swap');
 :root {
   --blue: rgb(115, 183, 192);
   --deSatBlue: #a8c2c9;
@@ -20,6 +21,10 @@
   --deSatRedDark: #935656;
   --deSatRed: #f06464;
   --almostBlack: #1a1919;
+  --font-heading: Rubik, sans-serif;
+  --font-weight-light: 300;
+  --font-weight-bold: 500;
+  --font-weight-bolder: 800;
 }
 
 html,
@@ -47,19 +52,16 @@ a {
   justify-content: center;
   margin: 0px 0px;
   overflow-y: scroll;
-  padding-bottom: 50px;
-  /* border: 2px purple solid; */
 }
 
 .button {
   height: 80px;
-  font-family: Rubik Mono One, serif;
+  font-family: var(--font-heading), serif;
   font-size: 40px;
-  background-color: var(--deSatBlue);
   transition: 0.5s;
   border-radius: 5px;
-  border: 2px solid var(--blue);
-  box-shadow: -20px 10px 1px 1px var(--drkBlue);
+  border: 2px solid var(--ltGrey);
+  box-shadow: -20px 10px 1px 1px var(--ltGrey);
   color: var(--almostBlack);
   text-shadow: -2px 2px 2px var(--brightOrangeRed);
 }

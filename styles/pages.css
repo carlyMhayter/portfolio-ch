@@ -1,15 +1,15 @@
 /***********************************************************************
  *  Form
  **********************************************************************/
- .form-content-container{
+.form-content-container {
   display: flex;
   /* justify-content: center; */
   align-items: center;
   position: relative;
   flex-direction: column;
- }
+}
 
- .form-element {
+.form-element {
   display: flex;
   justify-content: stretch;
 }
@@ -21,9 +21,9 @@
   text-align: center;
   font-size: 20px;
   margin: 20px;
-  font-family: Rubik Mono One, sans-serif;
+  font-family: var(--font-heading), sans-serif;
   color: rgb(73, 99, 102);
-  
+
   /* position: absolute;
   top: 5rem; */
 }
@@ -56,7 +56,7 @@
   box-shadow: 10px 20px 1px 1px var(--deSatRed);
 }
 
-.manual-contact{
+.manual-contact {
   width: 375px;
   border: 1px solid var(--vltSalmon);
   border-radius: 10px;
@@ -67,16 +67,16 @@
   margin-bottom: 20px;
   padding: 10px 0px;
 }
-.manual-contact-button{
+.manual-contact-button {
   color: var(--drkBlue);
 }
-.manual-contact-icon{
-  margin-left:8px;
-  color: var(--drkBlue)
+.manual-contact-icon {
+  margin-left: 8px;
+  color: var(--drkBlue);
 }
 #contact-info-header {
-  font-family: Rubik Mono One, sans-serif;
-margin-top:20px;
+  font-family: var(--font-heading), sans-serif;
+  margin-top: 20px;
 }
 
 /***********************************************************************
@@ -149,7 +149,7 @@ margin-top:20px;
 
 .project-title {
   /* border: 2px solid rgb(148, 0, 25); */
-  font-family: Rubik Mono One, sans-serif;
+  font-family: var(--font-heading), sans-serif;
   color: var(--drkGrey);
   text-shadow: 2px 2px 1px var(--ltSalmon);
   background-color: rgba(255, 255, 255, 0.95);
@@ -196,7 +196,7 @@ margin-top:20px;
   border-radius: 5px;
   margin-bottom: 20px;
   border: 2px white solid;
-  font-family: Rubik Mono One, sans-serif;
+  font-family: var(--font-heading), sans-serif;
   color: var(--drkGrey);
   text-shadow: 1px 1px 1px var(--blue);
   font-size: 23px;

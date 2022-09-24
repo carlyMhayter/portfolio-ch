@@ -49,10 +49,10 @@
 .hello-text {
   font-size: 50px;
   margin: 10px;
-  font-family: Rubik Mono One, serif;
+  font-family: var(--font-heading), serif;
 }
 .question-bio-text {
-  font-family: Rubik Mono One, serif;
+  font-family: var(--font-heading), serif;
   text-align: center;
   font-size: 19px;
   margin: 25px 0px 5px 0px;
