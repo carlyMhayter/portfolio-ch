@@ -5,22 +5,22 @@ function Home() {
     <div className="page-content page-content-about">
       <div id="bio-container">
         <div id="bio-text-container">
-          <p id="bubble1" className="bio-text hello-text">
-            Hello!
+          <p id="bubble1" className="hello-text">
+            Nice to meet you.
           </p>
-          <p className="question-bio-text">WHO AM I:</p>
           <p id="bubble2" className="bio-text">
-            I am a designer and web developer based in Encinitas CA.
+            My name is Carly, and I love to build things.
           </p>
-          <p className="question-bio-text">WHAT DO I DO?:</p>
 
           <p id="bubble3" className="bio-text">
-            I love to make React applications and solve challenging problems.
+            I love to use React to create elegant solutions to todays demands of
+            the web. The internet is such a big part of our lives, and I am
+            fascinated by the way small changes in code can transform a users
+            experience.
           </p>
-          <p className="question-bio-text">HOW DID I GET HERE?:</p>
           <p id="bubble4" className="bio-text">
-            I got a BS in Molecular Biology, but have expanded my love of
-            scientific problem-solving and experimentation into a career in web
+            I have leveraged my training in molecular biology and scientific
+            problem-solving and experimentation into a career in web
             development.
           </p>
         </div>

@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,100;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,300&display=swap');
+
 :root {
   --blue: rgb(115, 183, 192);
   --deSatBlue: #a8c2c9;
@@ -21,10 +24,9 @@
   --deSatRedDark: #935656;
   --deSatRed: #f06464;
   --almostBlack: #1a1919;
-  --font-heading: Rubik, sans-serif;
-  --font-weight-light: 300;
-  --font-weight-bold: 500;
-  --font-weight-bolder: 800;
+  --font-weight-light: 400;
+  --font-weight-bold: 600;
+  --font: Raleway, sans-serif;
 }
 
 html,
@@ -32,8 +34,7 @@ body {
   background-color: var(--vvLtGrey);
   padding: 0;
   margin: 0;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 a {
@@ -56,14 +57,13 @@ a {
 
 .button {
   height: 80px;
-  font-family: var(--font-heading), serif;
+  font-family: var(--font), serif;
   font-size: 40px;
   transition: 0.5s;
   border-radius: 5px;
   border: 2px solid var(--ltGrey);
   box-shadow: -20px 10px 1px 1px var(--ltGrey);
   color: var(--almostBlack);
-  text-shadow: -2px 2px 2px var(--brightOrangeRed);
 }
 
 .button:hover {

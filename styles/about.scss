@@ -30,7 +30,10 @@
   /* border: 2px pink solid; */
 }
 
-.bio-text {
+.hello-text {
+  font-size: 50px;
+  margin: 10px;
+  font-family: var(--font), serif;
   background-color: white;
   border: 2px solid var(--vLtPink);
   text-align: center;
@@ -40,19 +43,14 @@
   box-shadow: -10px 10px 1px 1px var(--blue);
   transition: 0.5s;
   margin: 0px 0px 20px 0px;
-}
-.bio-text:hover {
-  box-shadow: 30px -5px 1px 1px var(--deSatBlue);
-  border: 2px solid var(--ltBlue);
-}
 
-.hello-text {
-  font-size: 50px;
-  margin: 10px;
-  font-family: var(--font-heading), serif;
+  :hover {
+    box-shadow: 30px -5px 1px 1px var(--deSatBlue);
+    border: 2px solid var(--ltBlue);
+  }
 }
 .question-bio-text {
-  font-family: var(--font-heading), serif;
+  font-family: var(--font), serif;
   text-align: center;
   font-size: 19px;
   margin: 25px 0px 5px 0px;

@@ -1,18 +1,18 @@
-import '../styles/globals.css';
-import '../styles/pages.css';
-import '../styles/navbar.css';
-import '../styles/about.css';
-import '../styles/work.css';
-import '../styles/homePage.css';
-import '../styles/galleryPage.css';
-import '../styles/fineart.css';
-import '../styles/web.css';
-import { useRouter } from 'next/router';
-import { initGA, logPageView } from '../utils/analytics';
-import { useEffect } from 'react';
 import 'font-awesome/css/font-awesome.css';
-import NavBar from '../components/NavBar';
+import { useRouter } from 'next/router';
 import { PropTypes } from 'prop-types';
+import { useEffect } from 'react';
+import NavBar from '../components/NavBar';
+import '../styles/about.scss';
+import '../styles/fineart.scss';
+import '../styles/galleryPage.scss';
+import '../styles/globals.scss';
+import '../styles/homePage.scss';
+import '../styles/navbar.scss';
+import '../styles/pages.scss';
+import '../styles/web.scss';
+import '../styles/work.scss';
+import { initGA, logPageView } from '../utils/analytics';
 
 function MyApp({ Component, pageProps }) {
   const myRouter = useRouter();
