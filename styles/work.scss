@@ -25,36 +25,42 @@
   color: rgb(66, 66, 66);
   border-radius: 20px;
   position: relative;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .fineart-container {
-  box-shadow: -20px 20px 1px 1px var(--ltGrey);
+  box-shadow: -10px 10px 1px 1px var(--ltGrey);
+  &:hover {
+    border: 2px solid var(--ltSalmon);
+    color: var(--almostBlack);
+    background-color: var(--vLtPink);
+    box-shadow: 20px 20px 1px 1px var(--ltSalmon);
+  }
 }
 .web-container {
-  box-shadow: 20px 20px 1px 1px var(--ltGrey);
-}
+  box-shadow: 10px 10px 1px 1px var(--ltGrey);
 
-.fineart-container:hover {
-  border: 2px solid var(--ltSalmon);
-  color: var(--almostBlack);
-  background-color: var(--vLtPink);
-  box-shadow: 20px 20px 1px 1px var(--ltSalmon);
-}
-.web-container:hover {
-  border: 2px solid var(--ltSalmon);
-  background-color: var(--vLtPink);
-  box-shadow: -20px 20px 1px 1px var(--ltSalmon);
-  color: rgba(37, 37, 37, 0.966);
+  &:hover {
+    border: 2px solid var(--ltSalmon);
+    background-color: var(--vLtPink);
+    box-shadow: -20px 20px 1px 1px var(--ltSalmon);
+    color: rgba(37, 37, 37, 0.966);
+  }
 }
 
 .tag-text {
   font-family: var(--font);
-  font-size: 4em;
+  font-size: 2em;
   display: flex;
   flex-direction: column;
-  padding: 30px 0px;
+  padding-top: 60px;
   text-align: center;
   transition: 0.5s;
+  text-decoration: underline;
+  text-decoration-color: var(--vLtGrey);
+  text-underline-offset: 0.25em;
 }
 
 .fineart-logo {
@@ -74,20 +80,12 @@
 }
 
 @media only screen and (max-width: 950px) {
-  /* body {
-    background-image: none;
-    background-color: lightseagreen;
-  } */
-
-  .work-page-content {
-    /* height: auto; */
-  }
   .work-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 350px;
     overflow-x: hidden;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
   .container-tags {
     width: 300px;
@@ -95,41 +93,9 @@
     align-items: center;
     justify-content: flex-start;
   }
-  .tag-text {
-    font-size: 50px;
-    /* border: 2px solid lavender; */
-    padding: 0px 0px;
-    padding-top: 20px;
-    text-align: center;
-    text-shadow: -3px 3px 2px var(--brightOrangeRed);
-    transition: 0.5s;
-    position: relative;
-    top: 0px;
-  }
-  .web-text {
-    left: -60px;
-    top: 20px;
-  }
 
+  .web-logo,
   .fineart-logo {
-    width: 275px;
-    position: absolute;
-    top: 70%;
-    left: 10px;
-  }
-
-  .web-logo {
-    width: 225px;
-    height: 200px;
-    position: absolute;
-    top: 10px;
-    left: 90px;
-  }
-
-  .fineart-container {
-    box-shadow: -10px 10px 1px 1px var(--ltGrey);
-  }
-  .web-container {
-    box-shadow: 10px 10px 1px 1px var(--ltGrey);
+    display: none;
   }
 }

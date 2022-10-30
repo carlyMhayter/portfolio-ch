@@ -5,8 +5,8 @@ function Home() {
   return (
     <div className="page-content">
       <div className="work-container">
-        <div className="fineart-container container-tags">
-          <Link href="./fineart">
+        <Link href="./fineart">
+          <div className="fineart-container container-tags">
             <a>
               <div className="fineart-text tag-text">Fine Art</div>
               <div className="fineart-logo brush-top">
@@ -17,11 +17,10 @@ function Home() {
                 />
               </div>
             </a>
-          </Link>
-        </div>
-
-        <div className="web-container container-tags">
-          <Link href="./web">
+          </div>
+        </Link>
+        <Link href="./web">
+          <div className="web-container container-tags">
             <a>
               <div className="web-text tag-text">Web</div>
               <div className="web-logo">
@@ -32,8 +31,8 @@ function Home() {
                 />
               </div>
             </a>
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     </div>
   );
