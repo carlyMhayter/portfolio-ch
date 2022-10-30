@@ -1,6 +1,6 @@
 const webExamples = [
   {
-    imgLoc: '/NDY-screenshot-blue.jpg',
+    imgLoc: '/NDY-screenshot.png',
     imgWidth: '350px',
     imgHeight: '300px',
     imgAlt: 'never die young screenshot of logo',
@@ -11,7 +11,7 @@ const webExamples = [
     linkToSite: 'https://neverdieyoung.net',
   },
   {
-    imgLoc: '/seqScreenshot-blue.jpg',
+    imgLoc: '/seqScreenshot.png',
     imgWidth: '350px',
     imgHeight: '300px',
     imgAlt: 'never die young screenshot of logo',
@@ -41,20 +41,24 @@ function Home() {
         {webExamples.map((thing) => (
           <div
             key={thing.sitePic}
-            className="project-container web-project"
+            className="web-project"
             style={{
               backgroundImage: `url(${thing.imgLoc})`,
             }}
           >
-            <div className="project-text-container">
-              <p className="project-title site-title">{thing.siteTitle}</p>
-              <p className="project-client">{thing.siteClient}</p>
-              <p className="project-description web-description ">
-                {thing.siteDescription}
-              </p>
-              <a className="project-link" href={thing.linkToSite}>
-                View site
-              </a>
+            <div className="project-background-overlay">
+              <div className="project-inner-container">
+                <div className="project-text-container">
+                  <p className="project-title site-title">{thing.siteTitle}</p>
+                  <p className="project-client">{thing.siteClient}</p>
+                  <p className="project-description web-description ">
+                    {thing.siteDescription}
+                  </p>
+                  <a className="project-link" href={thing.linkToSite}>
+                    View site
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         ))}
