@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import ComputerIcon from '@mui/icons-material/Computer';
+import BrushIcon from '@mui/icons-material/Brush';
 
 function Home() {
   return (
@@ -7,32 +9,24 @@ function Home() {
       <div className="work-container">
         <Link href="./fineart">
           <div className="fineart-container container-tags">
-            <a>
-              <div className="fineart-text tag-text">Fine Art</div>
-              <div className="fineart-logo brush-top">
-                <Image
-                  src="/brush-drawing2.svg"
-                  alt="hand drawn paint brush drawing"
-                  layout="fill"
-                />
-              </div>
-            </a>
+            <BrushIcon fontSize="medium" color="inherit" />
+            <p className="fineart-text tag-text">Fine Art</p>
           </div>
         </Link>
         <Link href="./web">
           <div className="web-container container-tags">
-            <a>
-              <div className="web-text tag-text">Web</div>
-              <div className="web-logo">
-                <Image
-                  src="/laptop-drawing-lines-1.svg"
-                  alt="hand drawn laptop"
-                  layout="fill"
-                />
-              </div>
-            </a>
+            <ComputerIcon fontSize="medium" color="inherit" />
+            <p className="web-text tag-text">Web</p>
           </div>
         </Link>
+
+        <a
+          href="/HayterCarly_Resume_Nov2022.pdf"
+          download
+          className="resume-container"
+        >
+          Click to download my resume.
+        </a>
       </div>
     </div>
   );

@@ -1,30 +1,47 @@
 /***********************************************************************
  *  Work
  **********************************************************************/
-.work-page-content {
-  height: 100vh;
-}
+
 .work-container {
   display: flex;
-  flex-direction: row;
-  width: 1000px;
   height: 600px;
   top: 4rem;
-  justify-content: space-around;
+  flex-direction: column-reverse;
+  width: 350px;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: flex-end;
 }
+
+.resume-container {
+  width: 300px;
+  height: auto;
+  margin-top: 2em;
+  border-radius: 1em;
+  padding: 2em;
+  transition: 0.5s;
+  border: 1px solid var(--vltSalmon);
+
+  &:hover {
+    background-color: whitesmoke;
+  }
+}
+
 .container-tags {
   border: 2px solid transparent;
   background-color: whitesmoke;
-  width: 23em;
-  height: 18.5em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   margin-top: 2.5em;
   transition: 0.5s;
   color: rgb(66, 66, 66);
   border-radius: 20px;
   position: relative;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+
   &:hover {
     cursor: pointer;
   }
@@ -53,47 +70,17 @@
 .tag-text {
   font-family: var(--font);
   font-size: 2em;
-  display: flex;
-  flex-direction: column;
-  padding-top: 60px;
-  text-align: center;
-  transition: 0.5s;
-  text-decoration: underline;
-  text-decoration-color: var(--vLtGrey);
-  text-underline-offset: 0.25em;
+  padding-left: 0.5em;
 }
 
-.fineart-logo {
-  width: 325px;
-  height: 50px;
-  position: absolute;
-  top: 60%;
-  left: 10px;
-}
-
-.web-logo {
-  width: 200px;
-  height: 325px;
-  position: absolute;
-  top: 2.5em;
-  left: 4.3em;
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1em;
+  position: relative;
 }
 
 @media only screen and (max-width: 950px) {
-  .work-container {
-    flex-direction: column-reverse;
-    width: 350px;
-    overflow-x: hidden;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .container-tags {
-    width: 300px;
-    height: 200px;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
   .web-logo,
   .fineart-logo {
     display: none;
