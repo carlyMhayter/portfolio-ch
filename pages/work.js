@@ -21,7 +21,7 @@ function Home() {
         </Link>
 
         <a
-          href="/HayterCarly_Resume_Nov2022.pdf"
+          href="/HayterCarly_Resume_Nov2022_v2.pdf"
           download
           className="resume-container"
         >
