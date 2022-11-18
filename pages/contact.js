@@ -8,6 +8,7 @@ function Home() {
       <div className="form-content-container">
         <h1 id="contact-info-header">Contact </h1>
         <div className="manual-contact">
+          <p className="contact-p">Email me:</p>
           <a
             href="mailto:carlyhayter@gmail.com"
             className="manual-contact-button"
@@ -15,7 +16,8 @@ function Home() {
           >
             carlyhayter@gmail.com
           </a>
-
+        </div>
+        <div className="manual-contact">
           <Tooltip title="Open in new window" placement="bottom">
             <Button
               id="carly-linkedIn"
