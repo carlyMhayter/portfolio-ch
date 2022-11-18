@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 const webExamples = [
   {
     imgLoc: '/NDY-screenshot.png',
@@ -36,34 +38,41 @@ const webExamples = [
 
 function Home() {
   return (
-    <div className="page-content web-page-content">
-      <div className="gallery-container web-gallery">
-        {webExamples.map((thing) => (
-          <div
-            key={thing.sitePic}
-            className="web-project"
-            style={{
-              backgroundImage: `url(${thing.imgLoc})`,
-            }}
-          >
-            <div className="project-background-overlay">
-              <div className="project-inner-container">
-                <div className="project-text-container">
-                  <p className="project-title site-title">{thing.siteTitle}</p>
-                  <p className="project-client">{thing.siteClient}</p>
-                  <p className="project-description web-description ">
-                    {thing.siteDescription}
-                  </p>
-                  <a className="project-link" href={thing.linkToSite}>
-                    View site
-                  </a>
+    <>
+      <Head>
+        <title>Web - Carly Hayter</title>
+      </Head>
+      <div className="page-content web-page-content">
+        <div className="gallery-container web-gallery">
+          {webExamples.map((thing) => (
+            <div
+              key={thing.sitePic}
+              className="web-project"
+              style={{
+                backgroundImage: `url(${thing.imgLoc})`,
+              }}
+            >
+              <div className="project-background-overlay">
+                <div className="project-inner-container">
+                  <div className="project-text-container">
+                    <p className="project-title site-title">
+                      {thing.siteTitle}
+                    </p>
+                    <p className="project-client">{thing.siteClient}</p>
+                    <p className="project-description web-description ">
+                      {thing.siteDescription}
+                    </p>
+                    <a className="project-link" href={thing.linkToSite}>
+                      View site
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 export default Home;
