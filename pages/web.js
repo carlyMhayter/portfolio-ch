@@ -2,6 +2,17 @@ import Head from 'next/head';
 
 const webExamples = [
   {
+    imgLoc: '/perpetual-screenshot.png',
+    imgWidth: '350px',
+    imgHeight: '300px',
+    imgAlt: 'screenshot of https://www.perpetualflame.net/',
+    siteTitle: 'Custom Website',
+    siteClient: 'Perpetual Flame Ministries',
+    siteDescription:
+      'Managed software development for an independent record label with over $400K in annual revenue, designing and implementing a custom Next.js website in Typescript in under 2 business days.',
+    linkToSite: 'https://www.perpetualflame.net/',
+  },
+  {
     imgLoc: '/NDY-screenshot.png',
     imgWidth: '350px',
     imgHeight: '300px',
