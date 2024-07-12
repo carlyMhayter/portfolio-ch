@@ -16,13 +16,11 @@ const MenuLinks = styled.ul`
 `;
 const MenuLink = styled.li`
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  padding: 5px 50px 10px 15px;
-  margin-bottom: 2px;
+  /* background-color: red; */
 
-  /* &:hover {
-    text-shadow: 0px 0px 10px #fff;
-  } */
+  border-radius: 20px;
+  margin-bottom: 5px;
+  padding: 5px 50px 0px 15px;
 
   &:after {
     background: none repeat scroll 0 0 transparent;
@@ -34,7 +32,7 @@ const MenuLink = styled.li`
     opacity: 0;
     border-radius: 2px;
     position: relative;
-    background: linear-gradient(to right, var(--blue-lt), white); //
+    background: linear-gradient(to right, var(--blue-ltr), white); //
     transition: width 0.3s ease 0s, left 0.3s ease 0s, opacity 0.2s ease;
     width: 0;
   }
@@ -44,6 +42,13 @@ const MenuLink = styled.li`
     left: 0;
     opacity: 1;
   }
+
+  a {
+    width: 100%;
+    display: block;
+
+    /* padding: 5px 50px 10px 5px; */
+  }
 `;
 
 function FloatingMenu({ links }) {
@@ -52,7 +57,8 @@ function FloatingMenu({ links }) {
       <MenuLinks>
         {links.map((link) => (
           <>
-            <MenuLink data-aos="fade-in">
+            {/* <MenuLink data-aos="fade-in"> */}
+            <MenuLink>
               <Link href={link.href}>{link.name}</Link>
             </MenuLink>
           </>

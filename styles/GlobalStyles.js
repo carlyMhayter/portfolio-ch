@@ -20,8 +20,8 @@ const GlobalStyles = createGlobalStyle`
 --olive: #564E1F; 
 --beige: #E4E6C3;
 --blue: #6F73D2;
-  
---blue-lt: #ACB2F9;
+--blue-ltr: #ACB2F9;
+--blue-lt: #a1a3e;
 --ltgrey:#F7F7F2;
 --hotpink: #EE4266;
 
