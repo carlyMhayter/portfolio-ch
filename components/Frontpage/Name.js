@@ -31,7 +31,7 @@ const BokehContainer = styled.div`
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center center;
-  background-color: var(--blue-ltr);
+  background-color: var(--blue);
 `;
 
 const ImageThing = styled.img`
@@ -118,6 +118,12 @@ const BlankScreen = styled.div`
     }
   }
 `;
+
+const Ball = styled.div`
+  background-color: red;
+  height: 24px;
+  width: 24px;
+`;
 function Name() {
   return (
     <>
@@ -127,7 +133,7 @@ function Name() {
             maskImage: `url(${laptopscreen.src})`,
           }}
         >
-          <BlankScreen />
+            <BlankScreen />
         </LaptopScreen>
         <LaptopThing src={laptop.src} />
         <BokehContainer style={{ maskImage: `url(${mask.src})` }}>
