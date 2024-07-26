@@ -63,41 +63,75 @@ const BlankScreen = styled.div`
   width: 100%;
   z-index: 3;
   background: var(--beige);
-  animation: color 10s infinite;
 
-  @keyframes color {
-    1% {
-      opacity: 1;
-    }
-    10% {
-      opacity: 1;
-    }
-    20% {
-      opacity: 1;
-    }
-    30% {
-      opacity: 1;
-    }
-    40% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 1;
-    }
-    65% {
-      opacity: 0;
-    }
-    70% {
-      opacity: 0;
-    }
-    80% {
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
+  &.animated {
+    animation: color 10s 0s infinite;
+    @keyframes color {
+      0% {
+        background-color: white;
+      }
+      /* 9% {
+        background-color: white;
+      }
+      10% {
+        background-color: red;
+      }
+      19% {
+        background-color: red;
+      }
+
+      20% {
+        background-color: orange;
+      } */
+      29% {
+        background-color: white;
+      }
+      30% {
+        background-color: yellow;
+      }
+      /* 39% {
+        background-color: yellow;
+      }
+      40% {
+        background-color: green;
+      } */
+      49% {
+        background-color: yellow;
+      }
+      50% {
+        background-color: blue;
+      }
+      /* 59% {
+        background-color: blue;
+      }
+      60% {
+        background-color: purple;
+      } */
+      69% {
+        background-color: blue;
+      }
+      70% {
+        background-color: pink;
+      }
+      /* 79% {
+        background-color: pink;
+      } */
+      /* 80% {
+        background-color: lime;
+      }
+      89% {
+        background-color: lime;
+      }
+      90% {
+        background-color: aliceblue;
+      } */
+
+      /* 99% {
+        background-color: aliceblue;
+      } */
+      100% {
+        background-color: white;
+      }
     }
   }
 `;
@@ -123,8 +157,7 @@ function Name() {
             maskImage: `url(${laptopscreen.src})`,
           }}
         >
-            <BlankScreen />
-            <ColorScreen />
+            <BlankScreen id="screen" />
         </LaptopScreen>
         <LaptopThing src={laptop.src} />
         <BokehContainer style={{ maskImage: `url(${mask.src})` }} />
