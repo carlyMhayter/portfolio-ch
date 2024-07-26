@@ -7,7 +7,7 @@ const OuterMenuContainer = styled.nav`
   width: fit-content;
   height: fit-content;
   position: absolute;
-  z-index: 10;
+  z-index: 40;
   color: var(--olive);
 `;
 
@@ -15,24 +15,20 @@ const MenuLinks = styled.ul`
   list-style-type: none;
 `;
 const MenuLink = styled.li`
-  background-color: rgba(255, 255, 255, 0.5);
-  /* background-color: red; */
-
   border-radius: 20px;
-  margin-bottom: 5px;
-  padding: 5px 50px 0px 15px;
-
+  margin-bottom: 2px;
+  padding: 0px 100px 0px 15px;
   &:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: '';
     display: block;
-    height: 2px; //
+    height: 3px; //
     left: 50%;
     opacity: 0;
     border-radius: 2px;
     position: relative;
-    background: linear-gradient(to right, var(--blue-ltr), white); //
+    background: linear-gradient(to right, var(--blue-ltr), var(--vvLtGrey)); //
     transition: width 0.3s ease 0s, left 0.3s ease 0s, opacity 0.2s ease;
     width: 0;
   }

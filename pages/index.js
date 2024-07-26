@@ -72,23 +72,18 @@ export default function Home() {
         }
         30% {
           top: 50%;
-          transform: scale(1);
         }
         40% {
           top: 40%;
-          transform: scale(1.5);
         }
         50% {
           top: 50%;
-          transform: scale(1);
         }
         60% {
           top: 33%;
-          transform: scale(1.5);
         }
         70% {
           top: 50%;
-          transform: scale(1);
         }
 
         90% {
@@ -99,6 +94,8 @@ export default function Home() {
         }
       }
     }
+
+    /* mobile styling */
   `;
 
   useEffect(() => {
