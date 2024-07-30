@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
 --lg:1024px;
 --xl: 1280px;
 --xxl: 1536px;
+--xxxl: 2000px;
 
 
 --olive: #564E1F; 
@@ -24,6 +25,12 @@ const GlobalStyles = createGlobalStyle`
 --blue-lt: #a1a3e;
 --ltgrey:#F7F7F2;
 --hotpink: #EE4266;
+--yellow: #ece425;
+--pinkBrown: #d37f79;
+
+--green: #13a492;
+
+
 
 --curl: "Playwrite NG Modern", cursive;
 --cursive: "Playwrite DE Grund", cursive;
@@ -56,6 +63,34 @@ word-break: break-word;
 
 }
 
+
+.test {
+
+  @media only screen and (min-width: 480px) {
+    background-color: red;
+  }
+  @media only screen and (min-width:640px) {
+    background-color: orange;
+  }
+  @media only screen and (min-width:768px) {
+    background-color: yellow;
+  }
+  @media only screen and (min-width: 1024px) {
+    background-color: lime;
+  }
+  @media only screen and (min-width: 1280px) {
+    background-color: blue;
+  }
+  @media only screen and (min-width: 1536px) {
+    background-color: purple;
+  }
+
+  @media only screen and (min-width: 2000px) {
+    background-color: black;
+  }
+
+
+}
 
 
 }
