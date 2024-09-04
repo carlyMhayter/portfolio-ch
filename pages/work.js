@@ -13,17 +13,41 @@ const WorkContainer = styled.div`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
   font-family: var(--font);
 `;
 
 const WorkTypeContainer = styled.div`
-  border: 1px solid var(--yellow);
-  border-radius: 10px;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 1rem;
   margin: 0.5rem 0rem;
   text-align: center;
-  background-image: linear-gradient(transparent, var(--yellow));
+  transition: all ease 0.5s;
+  cursor: pointer;
+  background: linear-gradient(to right, var(--green), var(--green)),
+    linear-gradient(to right, var(--beige), var(--beige));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+
+  &:first-of-type {
+    background: linear-gradient(to right, var(--yellow), var(--yellow)),
+      linear-gradient(to right, var(--blue-ltr), var(--blue-ltr));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+  }
+
+  &:last-of-type {
+    background: linear-gradient(to right, var(--hotpink), var(--hotpink)),
+      linear-gradient(to right, var(--blue), var(--blue));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-size: 0 0.1em, 100% 0.1em;
+  }
 `;
 const Text = styled.p`
   font-style: italic;
@@ -31,8 +55,17 @@ const Text = styled.p`
 `;
 
 const ResumeContainer = styled.a`
-  border: 1px solid var(--yellow);
   border-radius: 10px;
+  padding: 0.5rem 3rem;
+  margin: 0.5rem 0rem;
+  text-align: center;
+  /* box-shadow: inset 0px -20px 20px white; */
+  transition: all ease 0.5s;
+  font-family: var(--darkYellow);
+  cursor: pointer;
+  &:hover {
+    /* box-shadow: inset 0px -10px 40px white; */
+  }
 `;
 
 function Home() {
@@ -55,10 +88,14 @@ function Home() {
               <Text>Web</Text>
             </WorkTypeContainer>
           </Link>
-
-          <ResumeContainer href="/HayterCarly_Resume_Nov2022_v2.pdf" download>
-            My resume
-          </ResumeContainer>
+          <Link href="/HayterCarly_Resume_Nov2022_v2.pdf" download>
+            <WorkTypeContainer>
+              <Text>Resume</Text>
+            </WorkTypeContainer>
+          </Link>
+          {/* <ResumeContainer href="/HayterCarly_Resume_Nov2022_v2.pdf" download>
+            My Resume
+          </ResumeContainer> */}
         </WorkContainer>
       </PageLayout>
     </>
