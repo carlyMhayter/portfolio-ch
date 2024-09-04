@@ -51,10 +51,10 @@ function FloatingMenu({ links }) {
   return (
     <OuterMenuContainer>
       <MenuLinks>
-        {links.map((link) => (
+        {links.map((link, index) => (
           <>
             {/* <MenuLink data-aos="fade-in"> */}
-            <MenuLink>
+            <MenuLink data-aos="fade-right" data-aos-delay={`${100 * index}`}>
               <Link href={link.href}>{link.name}</Link>
             </MenuLink>
           </>

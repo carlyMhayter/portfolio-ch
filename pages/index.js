@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-
+import { linkArray } from '../data/data';
 import Head from 'next/head';
 import FloatingMenu from '../components/FloatingMenu';
 import styled from 'styled-components';
 import Name from '../components/Frontpage/Name';
+import PageLayout from '../components/PageLayout';
+
 const OuterContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -22,14 +24,6 @@ const InnerContainer = styled.div`
 `;
 
 export default function Home() {
-  const linkArray = [
-    { name: 'Home', href: '' },
-    { name: 'About Me', href: '/about' },
-    { name: 'Work', href: '/work' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Blog', href: 'https://carllitabobita.com/' },
-  ];
-
   const BallOutmostContainer = styled.div`
     position: absolute;
     /* background-color: pink; */
@@ -363,13 +357,13 @@ export default function Home() {
   `;
 
   useEffect(() => {
-    const ball = document.getElementById('ball');
+    // const ball = document.getElementById('ball');
     const nameImage = document.getElementById('NameImage');
-    const spinner = document.getElementById('spinner');
+    // const spinner = document.getElementById('spinner');
 
-    ball.classList.add('animated');
+    // ball.classList.add('animated');
     nameImage.classList.add('animated');
-    spinner.classList.add('animated');
+    // spinner.classList.add('animated');
   }, []);
 
   return (
@@ -377,13 +371,13 @@ export default function Home() {
       <Head>
         <title>Carly Hayter</title>
       </Head>
-      <OuterContainer>
-        <InnerContainer>
-          <FloatingMenu links={linkArray} />
-          <Name />
-        </InnerContainer>
-      </OuterContainer>
-      <BallOutmostContainer>
+
+      <PageLayout>
+        <FloatingMenu links={linkArray} />
+        <Name />
+      </PageLayout>
+
+      {/* <BallOutmostContainer>
         <BallInnerContainer>
           <BallContainer id="ball" className="animation">
             <Ball />
@@ -394,7 +388,7 @@ export default function Home() {
             </Spinner>
           </BallContainer>
         </BallInnerContainer>
-      </BallOutmostContainer>
+      </BallOutmostContainer> */}
     </>
   );
 }

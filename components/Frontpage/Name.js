@@ -31,7 +31,7 @@ const NameImage = styled.div`
   background-size: cover;
   animation: color 10s 0s infinite;
 
-  @keyframes color {
+  /* @keyframes color {
     1% {
       background-color: var(--blue);
     }
@@ -62,6 +62,28 @@ const NameImage = styled.div`
     75% {
       background-color: var(--blue);
     }
+    100% {
+      background-color: var(--blue);
+    }
+  } */
+
+  @keyframes color {
+    1% {
+      background-color: var(--blue);
+    }
+
+    31% {
+      background-color: var(--pinkBrown);
+    }
+
+    51% {
+      background-color: var(--yellow);
+    }
+
+    71% {
+      background-color: var(--green);
+    }
+
     100% {
       background-color: var(--blue);
     }

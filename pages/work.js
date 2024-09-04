@@ -3,6 +3,37 @@ import Link from 'next/link';
 import ComputerIcon from '@mui/icons-material/Computer';
 import BrushIcon from '@mui/icons-material/Brush';
 import Head from 'next/head';
+import styled from 'styled-components';
+import FloatingMenu from '../components/FloatingMenu';
+import { linkArray } from '../data/data';
+import PageLayout from '../components/PageLayout';
+
+const WorkContainer = styled.div`
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: var(--font);
+`;
+
+const WorkTypeContainer = styled.div`
+  border: 1px solid var(--yellow);
+  border-radius: 10px;
+  padding: 0.5rem 3rem;
+  margin: 0.5rem 0rem;
+  text-align: center;
+  background-image: linear-gradient(transparent, var(--yellow));
+`;
+const Text = styled.p`
+  font-style: italic;
+  font-weight: 600;
+`;
+
+const ResumeContainer = styled.a`
+  border: 1px solid var(--yellow);
+  border-radius: 10px;
+`;
 
 function Home() {
   return (
@@ -10,30 +41,26 @@ function Home() {
       <Head>
         <title>Work - Carly Hayter</title>
       </Head>
-      <div className="page-content">
-        <div className="work-container">
+      <PageLayout>
+        <FloatingMenu links={linkArray} />
+
+        <WorkContainer>
           <Link href="./fineart">
-            <div className="fineart-container container-tags">
-              <BrushIcon fontSize="medium" color="inherit" />
-              <p className="fineart-text tag-text">Fine Art</p>
-            </div>
+            <WorkTypeContainer>
+              <Text>Fine Art</Text>
+            </WorkTypeContainer>
           </Link>
           <Link href="./web">
-            <div className="web-container container-tags">
-              <ComputerIcon fontSize="medium" color="inherit" />
-              <p className="web-text tag-text">Web</p>
-            </div>
+            <WorkTypeContainer>
+              <Text>Web</Text>
+            </WorkTypeContainer>
           </Link>
 
-          <a
-            href="/HayterCarly_Resume_Nov2022_v2.pdf"
-            download
-            className="resume-container"
-          >
-            Click to download my resume.
-          </a>
-        </div>
-      </div>
+          <ResumeContainer href="/HayterCarly_Resume_Nov2022_v2.pdf" download>
+            My resume
+          </ResumeContainer>
+        </WorkContainer>
+      </PageLayout>
     </>
   );
 }
