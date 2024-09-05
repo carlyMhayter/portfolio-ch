@@ -373,7 +373,6 @@ export default function Home() {
       </Head>
 
       <PageLayout>
-        <FloatingMenu links={linkArray} />
         <Name />
       </PageLayout>
 

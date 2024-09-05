@@ -61,6 +61,18 @@ word-break: break-word;
 * {
   box-sizing: border-box;
 
+    scrollbar-color: var(--vvLtGrey);
+    scrollbar-track-color: var(--vvLtGrey);
+
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--vvLtGrey);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius: 10px;
+  }
 
 }
 

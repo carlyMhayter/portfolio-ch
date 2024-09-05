@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Link from 'next/dist/client/link';
-
+import { useRouter } from 'next/dist/client/router';
+import { LinkSharp } from '@mui/icons-material';
 const OuterMenuContainer = styled.nav`
   /* background-color: orange; */
   width: fit-content;
@@ -28,9 +29,17 @@ const MenuLink = styled.li`
     opacity: 0;
     border-radius: 2px;
     position: relative;
-    background: linear-gradient(to right, var(--blue-ltr), var(--vvLtGrey)); //
+    ${(props) =>
+      `background: linear-gradient(to right, ${props.color}, var(--vvLtGrey));`}
+    /* background: linear-gradient(to right, var(--blue-ltr), var(--vvLtGrey)); // */
     transition: width 0.3s ease 0s, left 0.3s ease 0s, opacity 0.2s ease;
     width: 0;
+  }
+
+  &:first-of-type {
+    &:after {
+      background: linear-gradient(to right, var(--yellow), var(--vvLtGrey)); //
+    }
   }
 
   &:hover:after {
@@ -47,17 +56,39 @@ const MenuLink = styled.li`
   }
 `;
 
-function FloatingMenu({ links }) {
+export const linkArray = [
+  { name: 'Home', href: '/', color: 'var(--hotpink)' },
+  { name: 'About Me', href: '/about', color: 'var(--blue)' },
+  { name: 'Work', href: '/work', color: 'var(--yellow)' },
+  { name: 'Contact', href: '/contact', color: 'var(--pinkBrown)' },
+  { name: 'Blog', href: 'https://carllitabobita.com/', color: 'var(--green)' },
+];
+
+function FloatingMenu() {
+  const router = useRouter();
+
+  const [currentLinks, setCurrentLinks] = useState([]);
+
+  useEffect(() => {
+    let pathname = router.pathname;
+    console.log('linkArray', linkArray);
+    const testing = linkArray.filter((link) => link.href !== pathname);
+    setCurrentLinks(testing);
+    console.log('testing', testing);
+  }, []);
+  console.log('router.pathname', router.pathname);
   return (
     <OuterMenuContainer>
       <MenuLinks>
-        {links.map((link, index) => (
-          <>
-            {/* <MenuLink data-aos="fade-in"> */}
-            <MenuLink data-aos="fade-right" data-aos-delay={`${100 * index}`}>
-              <Link href={link.href}>{link.name}</Link>
-            </MenuLink>
-          </>
+        {currentLinks.map((link, index) => (
+          <MenuLink
+            key={`${Date.now}-${index}`}
+            data-aos="fade-right"
+            data-aos-delay={`${100 * index}`}
+            color={link.color}
+          >
+            <Link href={link.href}>{link.name}</Link>
+          </MenuLink>
         ))}
       </MenuLinks>
     </OuterMenuContainer>

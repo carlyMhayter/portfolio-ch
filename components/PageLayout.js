@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import FloatingMenu from './FloatingMenu';
 
 const OuterContainer = styled.div`
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
+  overflow-y: scroll;
+  padding-bottom: 3rem;
 `;
 
 const InnerContainer = styled.div`
@@ -19,7 +22,10 @@ const InnerContainer = styled.div`
 export default function PageLayout({ children }) {
   return (
     <OuterContainer>
-      <InnerContainer>{children}</InnerContainer>
+      <InnerContainer>
+        <FloatingMenu />
+        {children}
+      </InnerContainer>
     </OuterContainer>
   );
 }

@@ -75,8 +75,6 @@ function Home() {
         <title>Work - Carly Hayter</title>
       </Head>
       <PageLayout>
-        <FloatingMenu links={linkArray} />
-
         <WorkContainer>
           <Link href="./fineart">
             <WorkTypeContainer>
