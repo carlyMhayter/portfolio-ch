@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Link from 'next/dist/client/link';
 import { useRouter } from 'next/dist/client/router';
-import { LinkSharp } from '@mui/icons-material';
 const OuterMenuContainer = styled.nav`
   /* background-color: orange; */
   width: fit-content;

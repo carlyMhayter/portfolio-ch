@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import ComputerIcon from '@mui/icons-material/Computer';
-import BrushIcon from '@mui/icons-material/Brush';
+
 import Head from 'next/head';
 import styled from 'styled-components';
 import FloatingMenu from '../components/FloatingMenu';
@@ -24,29 +23,43 @@ const WorkTypeContainer = styled.div`
   cursor: pointer;
   background: linear-gradient(to right, var(--green), var(--green)),
     linear-gradient(to right, var(--beige), var(--beige));
-  background-size: 100% 0.1em, 0 0.1em;
-  background-position: 100% 100%, 0 100%;
+  background-size:
+    100% 0.1em,
+    0 0.1em;
+  background-position:
+    100% 100%,
+    0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
 
   &:first-of-type {
     background: linear-gradient(to right, var(--yellow), var(--yellow)),
       linear-gradient(to right, var(--blue-ltr), var(--blue-ltr));
-    background-size: 100% 0.1em, 0 0.1em;
-    background-position: 100% 100%, 0 100%;
+    background-size:
+      100% 0.1em,
+      0 0.1em;
+    background-position:
+      100% 100%,
+      0 100%;
     background-repeat: no-repeat;
   }
 
   &:last-of-type {
     background: linear-gradient(to right, var(--hotpink), var(--hotpink)),
       linear-gradient(to right, var(--blue), var(--blue));
-    background-size: 100% 0.1em, 0 0.1em;
-    background-position: 100% 100%, 0 100%;
+    background-size:
+      100% 0.1em,
+      0 0.1em;
+    background-position:
+      100% 100%,
+      0 100%;
     background-repeat: no-repeat;
   }
 
   &:hover {
-    background-size: 0 0.1em, 100% 0.1em;
+    background-size:
+      0 0.1em,
+      100% 0.1em;
   }
 `;
 const Text = styled.p`
