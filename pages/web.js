@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import PageLayout from '../components/PageLayout';
-import Image from 'next/dist/client/image';
+import Image from 'next/image';
 import styled from 'styled-components';
 import arrow from '../public/arrow.svg';
 import closeX from '../public/x.svg';
@@ -231,7 +231,7 @@ function Home() {
                 <SiteInfo isSelected={selected === site.slug}></SiteInfo>
               </TextContainer>
               <ArrowContainer isSelected={selected === site.slug}>
-                <img src={arrow.src} />
+                <img src={arrow.src} alt="right pointing arrow" />
               </ArrowContainer>
             </ProjectContainer>
           ))}
@@ -246,7 +246,7 @@ function Home() {
             }}
           >
             <CloseContainer>
-              <Image src={closeX.src} layout="fill" />
+              <Image src={closeX.src} layout="fill" alt="close button" />
             </CloseContainer>
           </CloseButton>
           <ModalInfoContainer>

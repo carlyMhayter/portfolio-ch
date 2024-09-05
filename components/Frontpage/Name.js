@@ -99,12 +99,10 @@ const ImageThing = styled.img`
 
 function Name() {
   return (
-    <>
-      <ImageContainer>
-        <NameImage id="NameImage" style={{ maskImage: `url(${mask.src})` }} />
-        <ImageThing src={image.src} />
-      </ImageContainer>
-    </>
+    <ImageContainer>
+      <NameImage id="NameImage" style={{ maskImage: `url(${mask.src})` }} />
+      <ImageThing src={image.src} />
+    </ImageContainer>
   );
 }
 

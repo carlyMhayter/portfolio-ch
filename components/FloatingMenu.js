@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Link from 'next/dist/client/link';
 import { useRouter } from 'next/dist/client/router';
+
 const OuterMenuContainer = styled.nav`
   /* background-color: orange; */
   width: fit-content;
@@ -69,7 +70,7 @@ function FloatingMenu() {
   const [currentLinks, setCurrentLinks] = useState([]);
 
   useEffect(() => {
-    let pathname = router.pathname;
+    const pathname = router.pathname;
     console.log('linkArray', linkArray);
     const testing = linkArray.filter((link) => link.href !== pathname);
     setCurrentLinks(testing);

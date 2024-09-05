@@ -21,6 +21,7 @@ function Home() {
           </div>
           <div className="manual-contact">
             <button
+              type="button"
               id="carly-linkedIn"
               variant="text"
               className="manual-contact-button"

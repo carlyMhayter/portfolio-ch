@@ -1,9 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
-import { linkArray } from '../data/data';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
-import FloatingMenu from '../components/FloatingMenu';
 import styled from 'styled-components';
 import Name from '../components/Frontpage/Name';
 import PageLayout from '../components/PageLayout';

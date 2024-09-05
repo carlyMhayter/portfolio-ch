@@ -1,10 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
-
 import Head from 'next/head';
 import styled from 'styled-components';
-import FloatingMenu from '../components/FloatingMenu';
-import { linkArray } from '../data/data';
 import PageLayout from '../components/PageLayout';
 
 const WorkContainer = styled.div`
