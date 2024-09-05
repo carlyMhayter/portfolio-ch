@@ -363,7 +363,7 @@ export default function Home() {
 
     // ball.classList.add('animated');
     nameImage.classList.add('animated');
-    // spinner.classList.add('animated');
+    // spinner.classList.add('animated'); 4
   }, []);
 
   return (
