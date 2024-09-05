@@ -36,12 +36,6 @@ const MenuLink = styled.li`
     width: 0;
   }
 
-  &:first-of-type {
-    &:after {
-      background: linear-gradient(to right, var(--yellow), var(--vvLtGrey)); //
-    }
-  }
-
   &:hover:after {
     width: 100%;
     left: 0;
@@ -59,7 +53,7 @@ const MenuLink = styled.li`
 export const linkArray = [
   { name: 'Home', href: '/', color: 'var(--hotpink)' },
   { name: 'About Me', href: '/about', color: 'var(--blue)' },
-  { name: 'Work', href: '/work', color: 'var(--yellow)' },
+  { name: 'Work', href: '/work', color: 'var(--orange)' },
   { name: 'Contact', href: '/contact', color: 'var(--pinkBrown)' },
   { name: 'Blog', href: 'https://carllitabobita.com/', color: 'var(--green)' },
 ];

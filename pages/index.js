@@ -367,23 +367,9 @@ export default function Home() {
       <Head>
         <title>Carly Hayter</title>
       </Head>
-
       <PageLayout>
         <Name />
       </PageLayout>
-
-      {/* <BallOutmostContainer>
-        <BallInnerContainer>
-          <BallContainer id="ball" className="animation">
-            <Ball />
-            <Spinner id="spinner">
-              {spinArray.map((line) => (
-                <SpinLine num={line} />
-              ))}
-            </Spinner>
-          </BallContainer>
-        </BallInnerContainer>
-      </BallOutmostContainer> */}
     </>
   );
 }

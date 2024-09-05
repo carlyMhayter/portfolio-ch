@@ -18,7 +18,7 @@ const WorkTypeContainer = styled.div`
   transition: all ease 0.5s;
   cursor: pointer;
   background: linear-gradient(to right, var(--green), var(--green)),
-    linear-gradient(to right, var(--beige), var(--beige));
+    linear-gradient(to right, var(--aqua), var(--aqua));
   background-size:
     100% 0.1em,
     0 0.1em;
@@ -28,9 +28,9 @@ const WorkTypeContainer = styled.div`
   background-repeat: no-repeat;
   transition: background-size 400ms;
 
-  &:first-of-type {
+  &.second {
     background: linear-gradient(to right, var(--yellow), var(--yellow)),
-      linear-gradient(to right, var(--blue-ltr), var(--blue-ltr));
+      linear-gradient(to right, var(--ltyellow), var(--ltyellow));
     background-size:
       100% 0.1em,
       0 0.1em;
@@ -40,9 +40,9 @@ const WorkTypeContainer = styled.div`
     background-repeat: no-repeat;
   }
 
-  &:last-of-type {
+  &.third {
     background: linear-gradient(to right, var(--hotpink), var(--hotpink)),
-      linear-gradient(to right, var(--blue), var(--blue));
+      linear-gradient(to right, var(--ltpink), var(--ltpink));
     background-size:
       100% 0.1em,
       0 0.1em;
@@ -86,17 +86,25 @@ function Home() {
       <PageLayout>
         <WorkContainer>
           <Link href="./fineart">
-            <WorkTypeContainer>
+            <WorkTypeContainer color1={'var(--green)'} color2={'var(--beige)'}>
               <Text>Fine Art</Text>
             </WorkTypeContainer>
           </Link>
           <Link href="./web">
-            <WorkTypeContainer>
+            <WorkTypeContainer
+              className="second"
+              color1={'var(--yellow)'}
+              color2={'var(--blue-ltr)'}
+            >
               <Text>Web</Text>
             </WorkTypeContainer>
           </Link>
           <Link href="/HayterCarly_Resume_Nov2022_v2.pdf" download>
-            <WorkTypeContainer>
+            <WorkTypeContainer
+              color1={'var(--hotpink)'}
+              color2={'var(--blue)'}
+              className="third"
+            >
               <Text>Resume</Text>
             </WorkTypeContainer>
           </Link>
