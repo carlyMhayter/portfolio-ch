@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import PageLayout from '../components/PageLayout';
 
 function Home() {
   return (
@@ -7,7 +8,7 @@ function Home() {
       <Head>
         <title>About - Carly Hayter</title>
       </Head>
-      <div className="page-content page-content-about">
+      <PageLayout>
         <div id="bio-container">
           <div id="bio-text-container">
             <p id="bubble1" className="hello-text">
@@ -48,7 +49,7 @@ function Home() {
 
           <div className="blocking" />
         </div>
-      </div>{' '}
+      </PageLayout>
     </>
   );
 }

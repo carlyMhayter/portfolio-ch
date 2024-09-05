@@ -13,12 +13,15 @@ import '../styles/pages.scss';
 import '../styles/web.scss';
 import '../styles/work.scss';
 import { initGA, logPageView } from '../utils/analytics';
-
+import GlobalStyles from '../styles/GlobalStyles';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function MyApp({ Component, pageProps }) {
   const myRouter = useRouter();
 
   useEffect(() => {
     initGA();
+    AOS.init();
     // `routeChangeComplete` won't run for the first page load unless the query string is
     // hydrated later on, so here we log a page view if this is the first render and
     // there's no query string
@@ -38,7 +41,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <NavBar />
+      <GlobalStyles />
 
       <Component {...pageProps} />
     </>

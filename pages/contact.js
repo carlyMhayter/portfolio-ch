@@ -1,6 +1,3 @@
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import Head from 'next/head';
 
 function Home() {
@@ -23,21 +20,19 @@ function Home() {
             </a>
           </div>
           <div className="manual-contact">
-            <Tooltip title="Open in new window" placement="bottom">
-              <Button
-                id="carly-linkedIn"
-                variant="text"
-                className="manual-contact-button"
+            <button
+              type="button"
+              id="carly-linkedIn"
+              variant="text"
+              className="manual-contact-button"
+            >
+              <a
+                href="https://www.linkedin.com/in/carly-hayter-ab1a8853/"
+                target="_blank"
               >
-                <a
-                  href="https://www.linkedin.com/in/carly-hayter-ab1a8853/"
-                  target="_blank"
-                >
-                  LinkedIn
-                </a>
-                <OpenInNewIcon className="manual-contact-icon" />
-              </Button>
-            </Tooltip>
+                LinkedIn
+              </a>
+            </button>
           </div>
         </div>
       </div>
