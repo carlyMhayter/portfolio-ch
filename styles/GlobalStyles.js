@@ -30,7 +30,9 @@ const GlobalStyles = createGlobalStyle`
 
 --darkYellow: #817c0b;
 --pinkBrown: #d37f79;
+--deSatRed: #f06464;
 --orange: #ff6d1b;
+--salmon: #fc8b83;
 --ltpink: #ffd0ef;
 --aqua: #aaf4dd;
 

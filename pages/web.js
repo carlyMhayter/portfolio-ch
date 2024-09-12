@@ -137,7 +137,7 @@ const ModalContainer = styled.div`
   height: 100dvh;
   width: 100dvw;
   overflow: hidden;
-  background-color: white;
+  background: radial-gradient(white, rgba(255, 255, 255, 0.95));
   transition: 0.5s all ease;
   ${(props) => (props.clickedInto ? 'z-index: 50;' : 'z-index: -1;')}
   ${(props) => (props.showModal ? 'opacity: 1;' : 'opacity: 0;')}
@@ -208,7 +208,7 @@ function Home() {
       <Head>
         <title>Web - Carly Hayter</title>
       </Head>
-      <PageLayout>
+      <PageLayout fullHeight={false}>
         <ProjectsOuterContainer>
           {webExamples.map((site, index) => (
             <ProjectContainer

@@ -52,8 +52,8 @@ const MenuLink = styled.li`
 
 export const linkArray = [
   { name: 'Home', href: '/', color: 'var(--hotpink)' },
-  { name: 'About Me', href: '/about', color: 'var(--blue)' },
   { name: 'Work', href: '/work', color: 'var(--orange)' },
+  { name: 'About Me', href: '/about', color: 'var(--blue)' },
   { name: 'Contact', href: '/contact', color: 'var(--pinkBrown)' },
   { name: 'Blog', href: 'https://carllitabobita.com/', color: 'var(--green)' },
 ];
@@ -81,7 +81,12 @@ function FloatingMenu() {
             data-aos-delay={`${100 * index}`}
             color={link.color}
           >
-            <Link href={link.href}>{link.name}</Link>
+            <Link
+              href={link.href}
+              target={link.name === 'Blog' ? '_blank' : '_self'}
+            >
+              {link.name}
+            </Link>
           </MenuLink>
         ))}
       </MenuLinks>

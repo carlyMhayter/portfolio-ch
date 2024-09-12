@@ -83,13 +83,9 @@ function Home() {
       <Head>
         <title>Work - Carly Hayter</title>
       </Head>
-      <PageLayout>
+      <PageLayout fullHeight={true}>
         <WorkContainer>
-          <Link href="./fineart">
-            <WorkTypeContainer color1={'var(--green)'} color2={'var(--beige)'}>
-              <Text>Fine Art</Text>
-            </WorkTypeContainer>
-          </Link>
+          {' '}
           <Link href="./web">
             <WorkTypeContainer
               className="second"
@@ -97,6 +93,11 @@ function Home() {
               color2={'var(--blue-ltr)'}
             >
               <Text>Web</Text>
+            </WorkTypeContainer>
+          </Link>
+          <Link href="./fineart">
+            <WorkTypeContainer color1={'var(--green)'} color2={'var(--beige)'}>
+              <Text>Fine Art</Text>
             </WorkTypeContainer>
           </Link>
           <Link href="/HayterCarly_Resume_Nov2022_v2.pdf" download>
