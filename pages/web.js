@@ -9,6 +9,20 @@ import closeX from '../public/x.svg';
 const webExamples = [
   {
     slug: 'perpetual',
+    images: [
+      {
+        imgLoc: '/perpetual-screenshot.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of https://www.perpetualflame.net/',
+      },
+      {
+        imgLoc: '/perpetual-screenshot.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of https://www.perpetualflame.net/',
+      },
+    ],
     imgLoc: '/perpetual-screenshot.png',
     imgWidth: '350px',
     imgHeight: '300px',
@@ -22,6 +36,14 @@ const webExamples = [
   {
     slug: 'ndy',
     imgLoc: '/NDY-screenshot.png',
+    images: [
+      {
+        imgLoc: '/NDY-screenshot.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'never die young screenshot of logo',
+      },
+    ],
     imgWidth: '350px',
     imgHeight: '300px',
     imgAlt: 'never die young screenshot of logo',
@@ -33,6 +55,14 @@ const webExamples = [
   },
   {
     slug: 'seq',
+    images: [
+      {
+        imgLoc: '/seqScreenshot.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'never die young screenshot of logo',
+      },
+    ],
     imgLoc: '/seqScreenshot.png',
     imgWidth: '350px',
     imgHeight: '300px',
@@ -45,6 +75,14 @@ const webExamples = [
   },
   {
     slug: 'palette',
+    images: [
+      {
+        imgLoc: '/palette_screen.jpg',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of palette site',
+      },
+    ],
     imgLoc: '/palette_screen.jpg',
     imgWidth: '350px',
     imgHeight: '300px',
@@ -71,13 +109,14 @@ const ProjectContainer = styled.button`
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 1.5rem;
   transition: all ease 0.5s;
   border: 0px;
   cursor: pointer;
+  /* box-shadow: 2px 2px 0px 0px var(--ltyellow); */
   /* ${(props) =>
     props.isSelected
       ? '  align-items: flex-start;'
@@ -89,24 +128,43 @@ const ProjectContainer = styled.button`
   &:last-of-type {
     margin-bottom: 3rem;
   }
+
+  @media only screen and (min-width: 640px) {
+    flex-direction: row;
+  }
 `;
 
 const ImageContainer = styled.div`
-  height: 300px;
-  width: 30%;
+  height: 290px;
+  width: 100%;
   position: relative;
   background-position: center;
   background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+  @media only screen and (min-width: 640px) {
+    width: 30%;
+  }
 `;
 
 const TextContainer = styled.div`
   /* border: 1px solid red; */
-  width: 40%;
+  width: 100%;
   padding: 1rem;
+
+  @media only screen and (min-width: 640px) {
+    width: 40%;
+  }
 `;
 const SiteTitle = styled.div`
   font-size: 1.5rem;
   color: var(--olive);
+  text-decoration: underline;
+  text-decoration-color: var(--ltyellow);
+  @media only screen and (min-width: 640px) {
+    text-decoration: none;
+  }
   /* border-bottom: 2px solid yellow; */
 `;
 const SiteDescription = styled.div`
@@ -124,10 +182,13 @@ const ArrowContainer = styled.div`
   /* border: 1px solid blue; */
   height: 100%;
   max-height: 300px;
-
   width: 30%;
   position: relative;
   padding-right: 2rem;
+  display: none;
+  @media only screen and (min-width: 640px) {
+    display: block;
+  }
 `;
 
 const ModalContainer = styled.div`
@@ -147,10 +208,17 @@ const ModalInner = styled.div`
   height: 100%;
   width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  border: 1px solid red;
+  overflow-y: scroll;
+  @media only screen and (min-width: 640px) {
+    flex-direction: row;
+  }
 `;
 
 const CloseButton = styled.button`
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
   border: 0;
@@ -168,6 +236,7 @@ const CloseContainer = styled.div`
 
 const ModalInfoContainer = styled.div`
   position: absolute;
+  /* border: 1px solid blue; */
   width: calc(100% - 2rem);
   height: calc(100% - 2rem);
   position: relative;
@@ -182,6 +251,29 @@ const ModalInfoContainer = styled.div`
     padding-bottom: 0.5rem;
   }
 `;
+const ModalImagesContainer = styled.div`
+  position: absolute;
+  /* border: 1px solid blue; */
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  position: relative;
+  margin: 0 auto;
+  margin-top: 1rem;
+  max-width: 1200px;
+  padding: 2rem;
+  /* overflow-y: scroll; */
+  /* border: 1px solid var(--yellow); */
+
+  * {
+    padding-bottom: 0.5rem;
+  }
+`;
+
+const ModalImage = styled.img`
+  width: 100%;
+  height: auto;
+`;
+ModalImage;
 function Home() {
   const [clickedInto, setClickedInto] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -192,17 +284,26 @@ function Home() {
     if (clickedInto) {
       const data = webExamples.filter((site) => site.slug === selected)[0];
       setSelectedData(data);
+
+      document.body.style.overflow = 'hidden';
+
       // console.log('data', data);
       setTimeout(() => {
         setShowModal(true);
       }, 500);
     } else {
+      document.body.style.overflow = 'auto';
+
       setTimeout(() => {
         setShowModal(false);
       }, 0);
     }
   }, [clickedInto]);
+  console.log('selectedData', selectedData);
+  console.log(typeof selectedData.images);
+  console.log('selectedData.images', selectedData.images);
 
+  console.log(typeof []);
   return (
     <>
       <Head>
@@ -223,8 +324,6 @@ function Home() {
               <ImageContainer
                 style={{ backgroundImage: `url(${site.imgLoc})` }}
               />
-              {/* <Image src={site.imgLoc} layout="fill" />
-              </ImageContainer> */}
               <TextContainer>
                 <SiteTitle>{site.siteClient}</SiteTitle>
                 <SiteDescription>{site.siteTitle}</SiteDescription>
@@ -248,7 +347,18 @@ function Home() {
             <CloseContainer>
               <Image src={closeX.src} layout="fill" alt="close button" />
             </CloseContainer>
-          </CloseButton>
+          </CloseButton>{' '}
+          <ModalImagesContainer>
+            {selectedData.images &&
+              selectedData.images.map(
+                (image) => (
+                  <>
+                    <ModalImage src={image.imgLoc} alt={image.imgAlt} />{' '}
+                  </>
+                ),
+                // <ModalImage>{image}</ModalImage>
+              )}
+          </ModalImagesContainer>
           <ModalInfoContainer>
             <SiteTitle>{selectedData.siteClient}</SiteTitle>
             <SiteDescription>{selectedData.siteTitle}</SiteDescription>

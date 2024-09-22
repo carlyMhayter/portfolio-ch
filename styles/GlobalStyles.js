@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
 --beige: #E4E6C3;
 --blue: #6F73D2;
 --blue-ltr: #ACB2F9;
---blue-lt: #a1a3e;
+--blue-lt: #a1a3ed;
 --ltgrey:#F7F7F2;
 --hotpink: #EE4266;
 --yellow: #ece425;
