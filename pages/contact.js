@@ -122,20 +122,10 @@ function Home() {
       <Head>
         <title>Contact - Carly Hayter</title>
       </Head>
-      <PageLayout fullHeight={true}>
+      <PageLayout fullHeight>
         <ContactContainer>
           <InnerContainer>
             <ContactText>Contact me at:</ContactText>
-            {/* <a href="mailto:carlyhayter@gmail.com" id="carly-email">
-              carlyhayter@gmail.com{' '}
-              <CopyButton
-                onClick={() =>
-                  navigator.clipboard.writeText('carlyhayter@gmail.com')
-                }
-              >
-                <CopyIcon src={copy.src} />
-              </CopyButton>
-            </a> */}
             <CopyButton
               id="carly-email"
               onClick={() => {

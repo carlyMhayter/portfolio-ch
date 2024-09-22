@@ -367,7 +367,7 @@ export default function Home() {
       <Head>
         <title>Carly Hayter</title>
       </Head>
-      <PageLayout fullHeight={true}>
+      <PageLayout fullHeight>
         <Name />
       </PageLayout>
     </>

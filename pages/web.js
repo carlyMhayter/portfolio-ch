@@ -232,6 +232,10 @@ const CloseContainer = styled.div`
   position: relative;
   height: 100%;
   width: 100%;
+  img {
+    width: 40px;
+    height: auto;
+  }
 `;
 
 const ModalInfoContainer = styled.div`
@@ -309,7 +313,7 @@ function Home() {
       <Head>
         <title>Web - Carly Hayter</title>
       </Head>
-      <PageLayout fullHeight={false}>
+      <PageLayout>
         <ProjectsOuterContainer>
           {webExamples.map((site, index) => (
             <ProjectContainer
@@ -345,7 +349,7 @@ function Home() {
             }}
           >
             <CloseContainer>
-              <Image src={closeX.src} layout="fill" alt="close button" />
+              <img src={closeX.src} alt="close button" />
             </CloseContainer>
           </CloseButton>{' '}
           <ModalImagesContainer>

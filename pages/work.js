@@ -83,35 +83,31 @@ function Home() {
       <Head>
         <title>Work - Carly Hayter</title>
       </Head>
-      <PageLayout fullHeight={true}>
+      <PageLayout fullHeight>
         <WorkContainer>
-          {' '}
           <Link href="./web">
             <WorkTypeContainer
               className="second"
-              color1={'var(--yellow)'}
-              color2={'var(--blue-ltr)'}
+              color1="var(--yellow)"
+              color2="var(--blue-ltr)"
             >
               <Text>Web</Text>
             </WorkTypeContainer>
           </Link>
           <Link href="./fineart">
-            <WorkTypeContainer color1={'var(--green)'} color2={'var(--beige)'}>
+            <WorkTypeContainer color1="var(--green)" color2="var(--beige)">
               <Text>Fine Art</Text>
             </WorkTypeContainer>
           </Link>
           <Link href="/HayterCarly_Resume_Nov2022_v2.pdf" download>
             <WorkTypeContainer
-              color1={'var(--hotpink)'}
-              color2={'var(--blue)'}
+              color1="var(--hotpink)"
+              color2="var(--blue)"
               className="third"
             >
               <Text>Resume</Text>
             </WorkTypeContainer>
           </Link>
-          {/* <ResumeContainer href="/HayterCarly_Resume_Nov2022_v2.pdf" download>
-            My Resume
-          </ResumeContainer> */}
         </WorkContainer>
       </PageLayout>
     </>
