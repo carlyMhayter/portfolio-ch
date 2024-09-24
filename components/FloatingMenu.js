@@ -60,7 +60,7 @@ const DropdownContainer = styled.h1`
   top: ${(props) => (props.show ? `-2rem` : ` -10rem`)};
   transition: 0.75s all ease;
   background: transparent;
-  border-bottom: 7px dotted ${(props) => ` ${props.color}`};
+  border-bottom: 7px solid ${(props) => ` ${props.color}`};
   font-weight: 800;
   font-size: 40px;
   text-transform: lowercase;
@@ -73,14 +73,14 @@ const DropdownContainer = styled.h1`
   }
   @media only screen and (min-width: 640px) {
     font-size: 60px;
-    border-bottom: 8px dotted ${(props) => ` ${props.color}`};
+    border-bottom: 8px solid ${(props) => ` ${props.color}`};
   }
   @media only screen and (min-width: 768px) {
     font-size: 70px;
   }
   @media only screen and (min-width: 1024px) {
     font-size: 80px;
-    border-bottom: 9px dotted ${(props) => ` ${props.color}`};
+    border-bottom: 9px solid ${(props) => ` ${props.color}`};
   }
   @media only screen and (min-width: 1280px) {
     font-size: 90px;
@@ -91,7 +91,7 @@ const DropdownContainer = styled.h1`
 
   @media only screen and (min-width: 2000px) {
     font-size: 100px;
-    border-bottom: 10px dotted ${(props) => ` ${props.color}`};
+    border-bottom: 10px solid ${(props) => ` ${props.color}`};
   }
 `;
 

@@ -75,12 +75,12 @@ word-break: break-word;
 
 
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
     background-color: var(--vvLtGrey);
   }
   ::-webkit-scrollbar-thumb {
     background-color: var(--green);
-    border-radius: 10px;
+    border-radius: 7px;
   }
 
 }

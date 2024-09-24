@@ -10,7 +10,7 @@ import dots2 from '../public/blueborder2.svg';
 const AboutContainer = styled.div`
   /* border: 1px solid lime; */
   width: 100%;
-  height: calc(100% - 150px);
+  height: calc(100% - 125px);
   display: flex;
   position: relative;
   overflow: hidden;
@@ -18,39 +18,22 @@ const AboutContainer = styled.div`
   justify-content: center;
   top: 150px;
   overflow-y: scroll;
-
+  /* background-image: linear-gradient(
+    to bottom,
+    var(--ltgreen) 10%,
+    transparent 40%
+  ); */
+  border-radius: 10px;
   @media only screen and (min-width: 640px) {
     top: 0px;
     height: 100%;
+    background-image: none;
   }
   .self-portrait {
     mask-position: center top;
     mask-size: contain;
     mask-repeat: no-repeat;
     z-index: 2;
-
-    @media only screen and (min-width: 480px) {
-      background-color: red;
-    }
-    @media only screen and (min-width: 640px) {
-      background-color: orange;
-    }
-    @media only screen and (min-width: 768px) {
-      background-color: yellow;
-    }
-    @media only screen and (min-width: 1024px) {
-      background-color: lime;
-    }
-    @media only screen and (min-width: 1280px) {
-      background-color: blue;
-    }
-    @media only screen and (min-width: 1536px) {
-      background-color: purple;
-    }
-
-    @media only screen and (min-width: 2000px) {
-      background-color: black;
-    }
   }
 
   .palm-tree {
@@ -66,12 +49,15 @@ const AboutContainer = styled.div`
 
 const InnerContainer = styled.div`
   display: flex;
-  position: relative;
+  position: absolute;
+  inset: 0;
   /* overflow: hidden; */
   flex-direction: column-reverse;
   /* min-height: 700px; */
+  /* background-color: red; */
+  padding-top: 100px;
   height: fit-content;
-  top: 150px;
+  /* top: 250px; */
   @media only screen and (min-width: 640px) {
     flex-direction: row;
     top: auto;
@@ -105,6 +91,8 @@ const TextContainer = styled.div`
   height: fit-content;
   /* background-color: pink; */
   z-index: 3;
+  margin: 0 auto;
+
   @media only screen and (min-width: 480px) {
     /* background-color: red; */
     width: 320px;
@@ -147,7 +135,7 @@ const ImageContainer = styled.div`
   mask-position: center top;
   mask-size: contain;
   mask-repeat: no-repeat;
-
+  margin: 0 auto;
   @media only screen and (min-width: 640px) {
     top: -20px;
     width: 400px;
