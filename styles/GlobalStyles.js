@@ -38,6 +38,7 @@ const GlobalStyles = createGlobalStyle`
 
 
 --green: #13a492;
+--ltgreen: #8ccfc6;
 
 
 

@@ -131,7 +131,6 @@ function Home() {
               onClick={() => {
                 setCopied(true);
                 navigator.clipboard.writeText('carlyhayter@gmail.com');
-                window.alert('Copied!');
               }}
             >
               carlyhayter@gmail.com{' '}
