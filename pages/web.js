@@ -5,95 +5,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import arrow from '../public/arrow.svg';
 import closeX from '../public/x.svg';
-
-const webExamples = [
-  {
-    slug: 'perpetual',
-    images: [
-      {
-        imgLoc: '/perpetual-screenshot.png',
-        imgWidth: '350px',
-        imgHeight: '300px',
-        imgAlt: 'screenshot of https://www.perpetualflame.net/',
-      },
-      {
-        imgLoc: '/perpetual-screenshot.png',
-        imgWidth: '350px',
-        imgHeight: '300px',
-        imgAlt: 'screenshot of https://www.perpetualflame.net/',
-      },
-    ],
-    imgLoc: '/perpetual-screenshot.png',
-    imgWidth: '350px',
-    imgHeight: '300px',
-    imgAlt: 'screenshot of https://www.perpetualflame.net/',
-    siteTitle: 'Custom Website',
-    siteClient: 'Perpetual Flame Ministries',
-    siteDescription:
-      'Managed software development for an independent record label with over $400K in annual revenue, designing and implementing a custom Next.js website in Typescript in under 2 business days.',
-    linkToSite: 'https://www.perpetualflame.net/',
-  },
-  {
-    slug: 'ndy',
-    imgLoc: '/NDY-screenshot.png',
-    images: [
-      {
-        imgLoc: '/NDY-screenshot.png',
-        imgWidth: '350px',
-        imgHeight: '300px',
-        imgAlt: 'never die young screenshot of logo',
-      },
-    ],
-    imgWidth: '350px',
-    imgHeight: '300px',
-    imgAlt: 'never die young screenshot of logo',
-    siteTitle: 'Custom Website + Graphic Design',
-    siteClient: 'Never Die Young Tribute Band, 2021',
-    siteDescription:
-      'Full graphic design services and custom website built with React in Next.js.',
-    linkToSite: 'https://neverdieyoung.net',
-  },
-  {
-    slug: 'seq',
-    images: [
-      {
-        imgLoc: '/seqScreenshot.png',
-        imgWidth: '350px',
-        imgHeight: '300px',
-        imgAlt: 'never die young screenshot of logo',
-      },
-    ],
-    imgLoc: '/seqScreenshot.png',
-    imgWidth: '350px',
-    imgHeight: '300px',
-    imgAlt: 'never die young screenshot of logo',
-    siteTitle: 'Sequencing Lab Instrument Statuses',
-    siteClient: 'Omniome Inc., 2020',
-    siteDescription:
-      'Page built to supervise DNA sequencing remotely for biotech company. Custom Webpack set-up and configuration.',
-    linkToSite: 'https://seq-lab-status.vercel.app',
-  },
-  {
-    slug: 'palette',
-    images: [
-      {
-        imgLoc: '/palette_screen.jpg',
-        imgWidth: '350px',
-        imgHeight: '300px',
-        imgAlt: 'screenshot of palette site',
-      },
-    ],
-    imgLoc: '/palette_screen.jpg',
-    imgWidth: '350px',
-    imgHeight: '300px',
-    imgAlt: 'screenshot of palette site',
-    siteTitle: 'Color AI Palette Generator',
-    siteClient: 'Carly Hayter, 2021',
-    siteDescription:
-      "A fun color palette generator with infinite scoll functionality. Created with Imagga's Color AI API, and Unsplash.",
-    linkToSite: 'https://infinite-scroll-pi.vercel.app/',
-  },
-];
+import { webWork } from '../data/data';
 
 const ProjectsOuterContainer = styled.div`
   height: 100%;
@@ -286,7 +198,7 @@ function Home() {
 
   useEffect(() => {
     if (clickedInto) {
-      const data = webExamples.filter((site) => site.slug === selected)[0];
+      const data = webWork.filter((site) => site.slug === selected)[0];
       setSelectedData(data);
 
       document.body.style.overflow = 'hidden';
@@ -315,7 +227,7 @@ function Home() {
       </Head>
       <PageLayout>
         <ProjectsOuterContainer>
-          {webExamples.map((site, index) => (
+          {webWork.map((site, index) => (
             <ProjectContainer
               id={`slug-${site.slug}`}
               key={`${Date.now}-${index}`}
