@@ -12,6 +12,8 @@ export const webWork = [
   {
     slug: 'btsite',
     imgLoc: '/btsite/Screenshot_2024-09-26_at_4.55.04_PM.png',
+    year: 2024,
+
     images: [
       {
         imgLoc: '/btsite/Screenshot_2024-09-26_at_4.55.04_PM.png',
@@ -70,9 +72,11 @@ export const webWork = [
     ],
     imgWidth: '350px',
     imgHeight: '300px',
-    imgAlt: 'never die young screenshot of logo',
-    siteTitle: 'Custom Enterprise Website',
+    imgAlt: 'screenshot of blue telescope website',
+    siteTitle: 'Custom Website',
     siteClient: 'Blue Telescope',
+    projectName: 'Blue Telescope Website',
+    siteActive: true,
     siteDescription:
       'While working as lead web developer for indepdendent themed entertainment company, built entire custom website in addition to other projects',
     linkToSite: 'https://www.bluetelescope.com/',
@@ -86,193 +90,166 @@ export const webWork = [
       // 'Assembled and developed component libraries from the ground up for over 60 components utilizing atomic design principles, while learning Gutenberg Blocks to develop 3 blocks to ease ability to update media for content creators.',
     ],
   },
-  // //SSPM
-  // {
-  //   slug: 'wde',
-  //   imgLoc: '/wildearth/Screenshot_2024-09-26_at_3.57.49_PM.png',
-  //   images: [
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_3.57.49_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.04.21_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.05.02_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.06.01_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.06.21_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.06.45_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.07.07_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.07.49_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.08.06_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.09.13_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //   ],
-  //   imgWidth: '350px',
-  //   imgHeight: '300px',
-  //   imgAlt: 'never die young screenshot of logo',
-  //   siteTitle: 'Custom Enterprise Website',
-  //   siteClient: 'Wild Earth',
-  //   siteDescription:
-  //     'Oversaw front end engineering for a series C plant-based dog food start-up valued at over $20MM, maintaining and building out feature work in a headless architecture site to drive performance, growing new customer base by 15%.',
-  //   linkToSite: 'https://neverdieyoung.net',
-  //   clientType: 'Fulltime',
-  //   keyTech: [
-  //     'gatsby',
-  //     'redux',
-  //     'netlify',
-  //     'wordpress',
-  //     'stripe',
-  //     'auth0',
-  //     'react',
-  //   ],
-  //   bullets: [
-  //     'Spearheaded an initiative to engineer a product cancellation flow to recommend alternative products and promote customer retention, diverting 31% of clients to new dog food formula purchase instead of cancellation, generating $20K.',
-  //     'Designed and implemented a product quiz for the website which captured email from 85% of visitors and drove 55% of visitors to new subscription purchases, generating over $50K in new revenue per year.',
-  //     'Drove progress on over 5 high-profile feature projects, managing workflows and deadlines for multiple projects concurrently, while analyzing and debugging over 10 bugs per week, improving site functionality by 5%.',
-  //     'Collaborated with a team of 4 to engineer the account area of the website with a 100% collaboration satisfaction rating, incorporating user-authentication on the back end and Auth0 for login flow, reducing unactivated logins from 50 to 0.',
-  //     'Assembled and developed component libraries from the ground up for over 60 components utilizing atomic design principles, while learning Gutenberg Blocks to develop 3 blocks to ease ability to update media for content creators.',
-  //   ],
-  // },
-  // //Kofi's Fire
-  // {
-  //   slug: 'wde',
-  //   imgLoc: '/wildearth/Screenshot_2024-09-26_at_3.57.49_PM.png',
-  //   images: [
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_3.57.49_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.04.21_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.05.02_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.06.01_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.06.21_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.06.45_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.07.07_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.07.49_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.08.06_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //     {
-  //       imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.09.13_PM.png',
-  //       imgWidth: '350px',
-  //       imgHeight: '300px',
-  //       imgAlt: 'screenshot of wildearth website',
-  //     },
-  //   ],
-  //   imgWidth: '350px',
-  //   imgHeight: '300px',
-  //   imgAlt: 'never die young screenshot of logo',
-  //   siteTitle: 'Custom Enterprise Website',
-  //   siteClient: 'Wild Earth',
-  //   siteDescription:
-  //     'Oversaw front end engineering for a series C plant-based dog food start-up valued at over $20MM, maintaining and building out feature work in a headless architecture site to drive performance, growing new customer base by 15%.',
-  //   linkToSite: 'https://neverdieyoung.net',
-  //   clientType: 'Fulltime',
-  //   keyTech: [
-  //     'gatsby',
-  //     'redux',
-  //     'netlify',
-  //     'wordpress',
-  //     'stripe',
-  //     'auth0',
-  //     'react',
-  //   ],
-  //   bullets: [
-  //     'Spearheaded an initiative to engineer a product cancellation flow to recommend alternative products and promote customer retention, diverting 31% of clients to new dog food formula purchase instead of cancellation, generating $20K.',
-  //     'Designed and implemented a product quiz for the website which captured email from 85% of visitors and drove 55% of visitors to new subscription purchases, generating over $50K in new revenue per year.',
-  //     'Drove progress on over 5 high-profile feature projects, managing workflows and deadlines for multiple projects concurrently, while analyzing and debugging over 10 bugs per week, improving site functionality by 5%.',
-  //     'Collaborated with a team of 4 to engineer the account area of the website with a 100% collaboration satisfaction rating, incorporating user-authentication on the back end and Auth0 for login flow, reducing unactivated logins from 50 to 0.',
-  //     'Assembled and developed component libraries from the ground up for over 60 components utilizing atomic design principles, while learning Gutenberg Blocks to develop 3 blocks to ease ability to update media for content creators.',
-  //   ],
-  // },
+  //SSPM
+  {
+    slug: 'sspm',
+    imgLoc: '/sspm/Screenshot_2024-09-27_at_11.26.07_AM.png',
+    images: [
+      {
+        imgLoc: '/sspm/Screenshot_2024-09-27_at_11.26.07_AM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/sspm/Screenshot_2024-09-27_at_11.25.35_AM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/sspm/Screenshot_2024-09-27_at_11.26.00_AM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/sspm/Screenshot_2024-09-27_at_11.26.22_AM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/sspm/Screenshot_2024-09-27_at_11.26.46_AM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/sspm/Screenshot_2024-09-27_at_11.26.58_AM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/sspm/Screenshot_2024-09-27_at_11.27.10_AM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+    ],
+    imgWidth: '350px',
+    year: 2023,
+
+    imgHeight: '300px',
+    imgAlt: 'screenshot of sing sing prison museum virtual exhibit',
+    siteTitle: 'Custom Enterprise Website',
+    siteClient: 'Blue Telescope',
+    siteActive: true,
+    projectName: 'Sing Sing Prison Museum Virtual Exhibit',
+    siteDescription: 'TBD',
+    siteActive: true,
+    linkToSite: 'https://openwindowsingsing.org/',
+    clientType: 'Fulltime',
+    keyTech: ['strapi', 'nextjs', 'react'],
+    bullets: [
+      'Spearheaded an initiative to engineer a product cancellation flow to recommend alternative products and promote customer retention, diverting 31% of clients to new dog food formula purchase instead of cancellation, generating $20K.',
+      'Designed and implemented a product quiz for the website which captured email from 85% of visitors and drove 55% of visitors to new subscription purchases, generating over $50K in new revenue per year.',
+      'Drove progress on over 5 high-profile feature projects, managing workflows and deadlines for multiple projects concurrently, while analyzing and debugging over 10 bugs per week, improving site functionality by 5%.',
+      'Collaborated with a team of 4 to engineer the account area of the website with a 100% collaboration satisfaction rating, incorporating user-authentication on the back end and Auth0 for login flow, reducing unactivated logins from 50 to 0.',
+      'Assembled and developed component libraries from the ground up for over 60 components utilizing atomic design principles, while learning Gutenberg Blocks to develop 3 blocks to ease ability to update media for content creators.',
+    ],
+  },
+  //Kofi's Fire
+  {
+    slug: 'kofi',
+    imgLoc: '/kofi/Screenshot_2024-09-27_at_11.29.37_AM.png',
+    images: [
+      {
+        imgLoc: '/wildearth/Screenshot_2024-09-26_at_3.57.49_PM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.04.21_PM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.05.02_PM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.06.01_PM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.06.21_PM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.06.45_PM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.07.07_PM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.07.49_PM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.08.06_PM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+      {
+        imgLoc: '/wildearth/Screenshot_2024-09-26_at_4.09.13_PM.png',
+        imgWidth: '350px',
+        imgHeight: '300px',
+        imgAlt: 'screenshot of wildearth website',
+      },
+    ],
+    imgWidth: '350px',
+    year: 2023,
+
+    imgHeight: '300px',
+    imgAlt: 'never die young screenshot of logo',
+    siteTitle: 'Custom Enterprise Website',
+    siteClient: 'Wild Earth',
+    projectName: `Kofi's Fire`,
+    siteActive: true,
+    siteDescription: 'TBD',
+    linkToSite: 'https://kofisfire.hudsonvalley.org/',
+    clientType: 'Fulltime',
+    keyTech: ['strapi', 'nextjs', 'react'],
+    bullets: [
+      'Spearheaded an initiative to engineer a product cancellation flow to recommend alternative products and promote customer retention, diverting 31% of clients to new dog food formula purchase instead of cancellation, generating $20K.',
+      'Designed and implemented a product quiz for the website which captured email from 85% of visitors and drove 55% of visitors to new subscription purchases, generating over $50K in new revenue per year.',
+      'Drove progress on over 5 high-profile feature projects, managing workflows and deadlines for multiple projects concurrently, while analyzing and debugging over 10 bugs per week, improving site functionality by 5%.',
+      'Collaborated with a team of 4 to engineer the account area of the website with a 100% collaboration satisfaction rating, incorporating user-authentication on the back end and Auth0 for login flow, reducing unactivated logins from 50 to 0.',
+      'Assembled and developed component libraries from the ground up for over 60 components utilizing atomic design principles, while learning Gutenberg Blocks to develop 3 blocks to ease ability to update media for content creators.',
+    ],
+  },
   //Wild Earth
   {
-    slug: 'wde',
+    slug: 'wildearth',
     imgLoc: '/wildearth/Screenshot_2024-09-26_at_3.57.49_PM.png',
     images: [
       {
@@ -341,6 +318,9 @@ export const webWork = [
     imgAlt: 'never die young screenshot of logo',
     siteTitle: 'Custom Enterprise Website',
     siteClient: 'Wild Earth',
+    year: 2022,
+    siteActive: true,
+    projectName: 'Wild Earth Website',
     siteDescription:
       'Oversaw front end engineering for a series C plant-based dog food start-up valued at over $20MM, maintaining and building out feature work in a headless architecture site to drive performance, growing new customer base by 15%.',
     linkToSite: 'https://neverdieyoung.net',
@@ -373,6 +353,9 @@ export const webWork = [
       'Collaborated with a team of 4 to engineer the account area of the website with a 100% collaboration satisfaction rating, incorporating user-authentication on the back end and Auth0 for login flow, reducing unactivated logins from 50 to 0.',
       'Assembled and developed component libraries from the ground up for over 60 components utilizing atomic design principles, while learning Gutenberg Blocks to develop 3 blocks to ease ability to update media for content creators.',
     ],
+    siteActive: false,
+    projectName: 'Perpetual Flame Website',
+    year: 2022,
 
     images: [
       {
@@ -415,7 +398,10 @@ export const webWork = [
     imgHeight: '300px',
     imgAlt: 'never die young screenshot of logo',
     siteTitle: 'Custom Website + Graphic Design',
-    siteClient: 'Never Die Young Tribute Band, 2021',
+    siteActive: false,
+    projectName: 'Never Die Young Custom Website',
+    siteClient: 'Never Die Young Tribute Band',
+    year: 2021,
     clientType: 'Freelance',
     siteDescription:
       'Full graphic design services and custom website built with React in Next.js.',
@@ -424,6 +410,10 @@ export const webWork = [
   //SEQUENCING LAB
   {
     slug: 'seq',
+    year: 2020,
+    siteActive: false,
+    projectName: 'Sequencing Lab Machine Monitoring Site',
+    siteClient: 'Omniome Inc',
     images: [
       {
         imgLoc: '/seqScreenshot.png',
@@ -437,7 +427,7 @@ export const webWork = [
     imgHeight: '300px',
     imgAlt: 'never die young screenshot of logo',
     siteTitle: 'Custom Website',
-    siteClient: 'Omniome Inc., 2020',
+    siteClient: 'Omniome Inc.',
     clientType: 'Fulltime',
     siteDescription:
       'Page built to supervise DNA sequencing remotely for biotech company. Custom Webpack set-up and configuration.',
@@ -446,6 +436,8 @@ export const webWork = [
   //PALETTE
   {
     slug: 'palette',
+    year: 2020,
+    siteActive: false,
     images: [
       {
         imgLoc: '/palette_screen.jpg',
@@ -460,8 +452,7 @@ export const webWork = [
     imgAlt: 'screenshot of palette site',
     siteTitle: 'Custom Website',
     clientType: 'Freelance',
-
-    siteClient: 'Carly Hayter, 2021',
+    siteClient: 'Carly Hayter',
     siteDescription:
       "A fun color palette generator with infinite scoll functionality. Created with Imagga's Color AI API, and Unsplash.",
     linkToSite: 'https://infinite-scroll-pi.vercel.app/',
