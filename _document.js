@@ -10,7 +10,7 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <Head>
-          <link rel="icon" href="/assets/img/favicon.svg" />
+          <link rel="icon" href="/icons/namec.svg" />
           <link
             rel="stylesheet"
             href="./node_modules/font-awesome/css/font.awesome.min.css"

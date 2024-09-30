@@ -33,7 +33,11 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+          <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/icons/namec.svg"
+          />
           <link rel="stylesheet" href="https://use.typekit.net/czl8qzd.css" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

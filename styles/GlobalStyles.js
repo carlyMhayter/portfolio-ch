@@ -27,7 +27,6 @@ const GlobalStyles = createGlobalStyle`
 --hotpink: #EE4266;
 --yellow: #ece425;
 --ltyellow: #fffa84;
-
 --darkYellow: #817c0b;
 --pinkBrown: #d37f79;
 --deSatRed: #f06464;
