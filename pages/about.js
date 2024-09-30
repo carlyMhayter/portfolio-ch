@@ -60,7 +60,8 @@ const InnerContainer = styled.div`
   /* top: 250px; */
   @media only screen and (min-width: 640px) {
     flex-direction: row;
-    top: auto;
+    top: 50%;
+    transform: translate(0%, -50%);
   }
 `;
 
