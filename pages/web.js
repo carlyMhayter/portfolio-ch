@@ -459,10 +459,10 @@ function Home() {
                     <span>YEAR:</span> {site.year ? site.year : '***'}
                   </SiteDetail>
                 </SiteDetails>
-                <SiteTitle className={'underlineTitle'}>
+                <SiteTitle className="underlineTitle">
                   {site.projectName}
                 </SiteTitle>
-                <SiteDescription className={'underlineTitle'}>
+                <SiteDescription className="underlineTitle">
                   {site.siteTitle}
                 </SiteDescription>
                 <SiteInfo isSelected={selected === site.slug}></SiteInfo>

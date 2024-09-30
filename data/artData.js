@@ -1,6 +1,6 @@
 const classString = 'project-img-container fineart-img-container';
 
-export const artData = [
+const artData = [
   {
     imgLoc: '/male-figure1.jpg',
     imgWidth: '300px',
@@ -47,3 +47,4 @@ export const artData = [
     sizeClass: `${classString}-med`,
   },
 ];
+export default artData;

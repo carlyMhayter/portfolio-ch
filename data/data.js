@@ -146,8 +146,7 @@ export const webWork = [
     siteClient: 'Blue Telescope',
     siteActive: true,
     projectName: 'Sing Sing Prison Museum Virtual Exhibit',
-    siteDescription: `Sing Sing Prison Museum’s created this virtual exhibit to serve it's mission of share stories of incarceration and reform, past and present, and bring people together to imagine and create a more just society. Our vision is a justice system dedicated to healing and rehabilitation and a society that respects individual humanity and dignity.  Through our programs and exhibitions, we promote important conversations about the human impact of incarceration both inside and outside the walls of the prison.`,
-    siteActive: true,
+    siteDescription: `Sing Sing Prison Museum’s created this virtual exhibit to serve it's mission to share stories of incarceration and reform, past and present, and bring people together to imagine and create a more just society. Our vision is a justice system dedicated to healing and rehabilitation and a society that respects individual humanity and dignity.  Through our programs and exhibitions, we promote important conversations about the human impact of incarceration both inside and outside the walls of the prison.`,
     linkToSite: 'https://openwindowsingsing.org/',
     clientType: 'Fulltime',
     keyTech: ['strapi', 'nextjs', 'react'],
@@ -382,7 +381,6 @@ export const webWork = [
     imgHeight: '300px',
     imgAlt: 'never die young screenshot of logo',
     siteTitle: 'Custom Website + Graphic Design',
-    siteActive: false,
     projectName: 'Never Die Young Custom Website',
     siteClient: 'Never Die Young Tribute Band',
     year: 2021,
@@ -413,9 +411,7 @@ export const webWork = [
       'Collaborated with a team of 4 to engineer the account area of the website with a 100% collaboration satisfaction rating, incorporating user-authentication on the back end and Auth0 for login flow, reducing unactivated logins from 50 to 0.',
       'Assembled and developed component libraries from the ground up for over 60 components utilizing atomic design principles, while learning Gutenberg Blocks to develop 3 blocks to ease ability to update media for content creators.',
     ],
-    siteActive: false,
     projectName: 'Sequencing Lab Machine Monitoring Site',
-    siteClient: 'Omniome Inc',
     images: [
       {
         imgLoc: '/seqScreenshot.png',
@@ -431,15 +427,6 @@ export const webWork = [
     siteTitle: 'Custom Website',
     siteClient: 'Omniome Inc.',
     clientType: 'Fulltime',
-    keyTech: ['typescript', 'nextjs'],
-    bullets: [
-      'Spearheaded an initiative to engineer a product cancellation flow to recommend alternative products and promote customer retention, diverting 31% of clients to new dog food formula purchase instead of cancellation, generating $20K.',
-      'Designed and implemented a product quiz for the website which captured email from 85% of visitors and drove 55% of visitors to new subscription purchases, generating over $50K in new revenue per year.',
-      'Drove progress on over 5 high-profile feature projects, managing workflows and deadlines for multiple projects concurrently, while analyzing and debugging over 10 bugs per week, improving site functionality by 5%.',
-      'Collaborated with a team of 4 to engineer the account area of the website with a 100% collaboration satisfaction rating, incorporating user-authentication on the back end and Auth0 for login flow, reducing unactivated logins from 50 to 0.',
-      'Assembled and developed component libraries from the ground up for over 60 components utilizing atomic design principles, while learning Gutenberg Blocks to develop 3 blocks to ease ability to update media for content creators.',
-    ],
-    siteActive: false,
     siteDescription:
       'Page built to supervise DNA sequencing remotely for biotech company. Custom Webpack set-up and configuration.',
     linkToSite: 'https://seq-lab-status.vercel.app',
@@ -448,7 +435,6 @@ export const webWork = [
   {
     slug: 'palette',
     year: 2020,
-    siteActive: false,
     images: [
       {
         imgLoc: '/palette_screen.jpg',

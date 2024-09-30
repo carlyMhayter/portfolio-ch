@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import PageLayout from '../components/PageLayout';
 import styled from 'styled-components';
-import { artData } from '../data/artData';
+import artData from '../data/artData';
 const classString = 'project-img-container fineart-img-container';
 
 const FineArtContainer = styled.div`
