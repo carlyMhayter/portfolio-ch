@@ -6,6 +6,17 @@ import styled from 'styled-components';
 import arrow from '../public/arrow.svg';
 import closeX from '../public/x.svg';
 import { webWork } from '../data/data';
+import react from '../public/icons/React-icon.svg.png';
+import vercel from '../public/icons/vercel.svg';
+import wordpress from '../public/icons/Wordpress-Logo.svg';
+import gatsby from '../public/icons/Gatsby_Monogram.png';
+import ts from '../public/icons/ts.png';
+import auth0 from '../public/icons/auth0.svg';
+import nextjs from '../public/icons/nextjs-icon.svg';
+import netlify from '../public/icons/netlify.png';
+import strapi from '../public/icons/strapi.png';
+import stripe from '../public/icons/stripe.svg';
+import redux from '../public/icons/redux.png';
 
 const ProjectsOuterContainer = styled.div`
   height: 100%;
@@ -38,7 +49,7 @@ const ProjectContainer = styled.button`
     .underlineTitle {
       &:after {
         background: none repeat scroll 0 0 transparent;
-        bottom: 0;
+        bottom: -3px;
         content: '';
         display: block;
         height: 3px; //
@@ -48,7 +59,6 @@ const ProjectContainer = styled.button`
         position: relative;
 
         background: linear-gradient(to right, white, var(--yellow), white);
-
         /* background: linear-gradient(to right, var(--blue-ltr), var(--vvLtGrey)); // */
         transition:
           width 0.3s ease 0s,
@@ -120,13 +130,13 @@ const SiteDetails = styled.div`
 `;
 const SiteDetail = styled.p`
   font-size: 0.85rem;
-  color: var(--olive);
-  font-weight: 800;
+  color: var(--darkYellow);
+  font-weight: 500;
   letter-spacing: 0.03em;
   /* border-bottom: 1px solid var(--ltpink); */
 
   span {
-    color: var(--blue);
+    color: var(--olive);
     font-weight: 500;
     padding-bottom: 0em;
     margin-right: 0.25em;
@@ -143,12 +153,41 @@ const SiteTitle = styled.div`
   text-decoration-color: var(--ltyellow);
   line-height: 1em;
   padding-top: 0.5em;
+  text-align: center;
 
   @media only screen and (min-width: 640px) {
     text-decoration: none;
     padding-right: 20dvw;
     text-align: center;
     padding-top: 0.5em;
+    /* line-height: 1.5em; */
+  }
+  /* border-bottom: 2px solid yellow; */
+`;
+
+const ModalTitle = styled.div`
+  font-size: 1.5rem;
+  color: var(--olive);
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  line-height: 1em;
+  padding-top: 0.5em;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: var(--ltyellow);
+  width: 90dvw;
+  position: relative;
+  background-image: radial-gradient(white, rgba(255, 255, 255, 0.8));
+  top: 1em;
+  right: 0.5em;
+
+  @media only screen and (min-width: 640px) {
+    text-align: left;
+    padding-top: 0.5em;
+    width: 40dvw;
+    right: 2em;
+    position: fixed;
+
     /* line-height: 1.5em; */
   }
   /* border-bottom: 2px solid yellow; */
@@ -163,11 +202,25 @@ const SiteDescription = styled.div`
     padding-right: 20dvw;
   }
 `;
+
+const ModalDescription = styled.div`
+  font-size: 1rem;
+  color: var(--olive);
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5rem;
+
+  @media only screen and (min-width: 640px) {
+    padding-right: 20dvw;
+    padding-bottom: 1rem;
+    text-align: left;
+  }
+`;
+
 const SiteInfo = styled.div`
-  /* height: 600px; */
   width: 100%;
-  color: gray;
-  /* ${(props) => (props.isSelected ? '   height: 600px;' : 'height: 1px;')} */
+  color: var(--darkYellow);
+  padding-bottom: 1em;
 `;
 
 const ArrowContainer = styled.div`
@@ -234,36 +287,38 @@ const CloseContainer = styled.div`
 
 const ModalInfoContainer = styled.div`
   position: absolute;
-  /* border: 1px solid blue; */
-  width: calc(100% - 2rem);
-  height: calc(100% - 2rem);
+  width: calc(100%);
+  height: fit-content;
   position: relative;
   margin: 0 auto;
   margin-top: 1rem;
   max-width: 1200px;
-  padding: 2rem;
-  /* overflow-y: scroll; */
-  /* border: 1px solid var(--yellow); */
+  padding: 1rem;
 
-  * {
-    padding-bottom: 0.5rem;
+  @media only screen and (min-width: 640px) {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    padding: 2rem;
   }
 `;
 const ModalImagesContainer = styled.div`
   position: absolute;
-  /* border: 1px solid blue; */
-  width: calc(100% - 2rem);
-  height: calc(100% - 2rem);
+  width: calc(100%);
+  height: fit-content;
   position: relative;
   margin: 0 auto;
   margin-top: 1rem;
   max-width: 1200px;
-  padding: 2rem;
-  /* overflow-y: scroll; */
-  /* border: 1px solid var(--yellow); */
+  padding: 1rem;
 
   * {
     padding-bottom: 0.5rem;
+  }
+
+  @media only screen and (min-width: 640px) {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    padding: 2rem;
   }
 `;
 
@@ -271,7 +326,64 @@ const ModalImage = styled.img`
   width: 100%;
   height: auto;
 `;
-ModalImage;
+
+const SiteTech = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 0.5rem;
+  padding-top: 2rem;
+  @media only screen and (min-width: 480px) {
+  }
+  @media only screen and (min-width: 640px) {
+    padding-top: 6rem;
+  }
+  @media only screen and (min-width: 768px) {
+  }
+  @media only screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media only screen and (min-width: 1280px) {
+  }
+  @media only screen and (min-width: 1536px) {
+  }
+
+  @media only screen and (min-width: 2000px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+`;
+
+const SiteTechItem = styled.div`
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  line-height: 20px;
+  margin-bottom: 6px;
+  color: var(--olive);
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  p {
+    margin-bottom: 6px;
+    margin-left: 4px;
+  }
+`;
+const SiteTechIcon = styled.img`
+  height: 20px;
+  width: 20px;
+`;
+
+const ModalBullets = styled.ul`
+  list-style-type: disc;
+`;
+
+const ModalBullet = styled.li`
+  color: gray;
+  padding-bottom: 0.5rem;
+  margin-left: 0.5rem;
+`;
+
 function Home() {
   const [clickedInto, setClickedInto] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -302,6 +414,19 @@ function Home() {
   console.log('selectedData.images', selectedData.images);
 
   console.log(typeof []);
+  const icons = {
+    typescript: ts.src,
+    nextjs: nextjs.src,
+    vercel: vercel.src,
+    gatsby: gatsby.src,
+    redux: redux.src,
+    netlify: netlify.src,
+    wordpress: wordpress.src,
+    stripe: stripe.src,
+    auth0: auth0.src,
+    react: react.src,
+    strapi: strapi.src,
+  };
   return (
     <>
       <Head>
@@ -311,6 +436,8 @@ function Home() {
         <ProjectsOuterContainer>
           {webWork.map((site, index) => (
             <ProjectContainer
+              // data-aos="fade-up"
+              // data-aos-once="true"
               id={`slug-${site.slug}`}
               key={`${Date.now}-${index}`}
               isSelected={selected === site.slug}
@@ -361,19 +488,34 @@ function Home() {
           </CloseButton>{' '}
           <ModalImagesContainer>
             {selectedData.images &&
-              selectedData.images.map(
-                (image) => (
-                  <>
-                    <ModalImage src={image.imgLoc} alt={image.imgAlt} />{' '}
-                  </>
-                ),
-                // <ModalImage>{image}</ModalImage>
-              )}
+              selectedData.images.map((image) => (
+                <>
+                  <ModalImage src={image.imgLoc} alt={image.imgAlt} />{' '}
+                </>
+              ))}
           </ModalImagesContainer>
           <ModalInfoContainer>
-            <SiteTitle>{selectedData.siteClient}</SiteTitle>
-            <SiteDescription>{selectedData.siteTitle}</SiteDescription>
+            <ModalTitle>
+              {selectedData.projectName}{' '}
+              <ModalDescription>{selectedData.siteTitle}</ModalDescription>
+            </ModalTitle>
+            <SiteTech>
+              {selectedData.keyTech &&
+                selectedData.keyTech.length !== 0 &&
+                selectedData.keyTech.map((item) => (
+                  <SiteTechItem>
+                    <SiteTechIcon alt="icon" src={icons[`${item}`]} />
+                    <p>{item}</p>
+                  </SiteTechItem>
+                ))}
+            </SiteTech>
             <SiteInfo>{selectedData.siteDescription}</SiteInfo>
+            <ModalBullets>
+              {selectedData.bullets &&
+                selectedData.bullets.map((bullet) => (
+                  <ModalBullet>{bullet}</ModalBullet>
+                ))}{' '}
+            </ModalBullets>
           </ModalInfoContainer>
         </ModalInner>
       </ModalContainer>
@@ -381,32 +523,3 @@ function Home() {
   );
 }
 export default Home;
-
-// <div className="page-content web-page-content">
-//   <div className="gallery-container web-gallery">
-//     {webExamples.map((thing) => (
-//       <div
-//         key={thing.sitePic}
-//         className="web-project"
-//         style={{
-//           backgroundImage: `url(${thing.imgLoc})`,
-//         }}
-//       >
-//         <div className="project-background-overlay">
-//           <div className="project-inner-container">
-//             <div className="project-text-container">
-//               <p className="project-title site-title">{thing.siteTitle}</p>
-//               <p className="project-client">{thing.siteClient}</p>
-//               <p className="project-description web-description ">
-//                 {thing.siteDescription}
-//               </p>
-//               <a className="project-link" href={thing.linkToSite}>
-//                 View site
-//               </a>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     ))}
-//   </div>
-// </div>;
