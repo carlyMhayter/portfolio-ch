@@ -99,11 +99,7 @@ function Home() {
               <Text>Fine Art</Text>
             </WorkTypeContainer>
           </Link>
-          <Link
-            href="/HayterCarly_Resume_Nov2022_v2.pdf"
-            download
-            target="_blank"
-          >
+          <Link href="/041424_CarlyHayter_Resume.pdf" download target="_blank">
             <WorkTypeContainer
               color1="var(--hotpink)"
               color2="var(--blue)"
