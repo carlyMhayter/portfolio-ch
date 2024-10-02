@@ -1,7 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
-import PageLayout from '../components/PageLayout';
 import Image from 'next/image';
 import styled from 'styled-components';
 import arrow from '../public/arrow.svg';
@@ -18,6 +16,7 @@ import netlify from '../public/icons/netlify.png';
 import strapi from '../public/icons/strapi.png';
 import stripe from '../public/icons/stripe.svg';
 import redux from '../public/icons/redux.png';
+import figma from '../public/icons/figma.png';
 
 const ModalTitle = styled.div`
   font-size: 1.5rem;
@@ -234,6 +233,7 @@ function WebModal({
     auth0: auth0.src,
     react: react.src,
     strapi: strapi.src,
+    figma: figma.src,
   };
   return (
     <ModalContainer clickedInto={clickedInto} showModal={showModal}>

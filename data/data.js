@@ -75,7 +75,7 @@ export const webWork = [
       'Blue Telescope is an innovative, creative, diverse and woman-owned business that delivers unique interactive experiences through narrative storytelling and immersive media strategies. I worked as the Lead Creative Web Developer, and executed the design for this custom website.',
     linkToSite: 'https://www.bluetelescope.com/',
     clientType: 'Fulltime',
-    keyTech: ['nextjs', 'react', 'typescript'],
+    keyTech: ['nextjs', 'react', 'typescript', 'figma'],
     bullets: [
       //TODO: bt bullets
       'Whilst lead web developer, cordinated up to 4 development projects at a time, allowing employer to have product turn-around times of 3-8 months for custom websites',
@@ -143,7 +143,7 @@ export const webWork = [
     siteDescription: `Sing Sing Prison Museum’s created this virtual exhibit to serve it's mission to share stories of incarceration and reform, past and present, and bring people together to imagine and create a more just society. Our vision is a justice system dedicated to healing and rehabilitation and a society that respects individual humanity and dignity.  Through our programs and exhibitions, we promote important conversations about the human impact of incarceration both inside and outside the walls of the prison.`,
     linkToSite: 'https://openwindowsingsing.org/',
     clientType: 'Fulltime',
-    keyTech: ['strapi', 'nextjs', 'react'],
+    keyTech: ['strapi', 'nextjs', 'react', 'figma'],
     //TODO: sspm bullets
     bullets: [
       'Developed a custom Strapi server to configure complex, constantly updating copy and images for a team of 4-5 producers.',
@@ -216,7 +216,7 @@ export const webWork = [
       'Kofi’s Fire is an award-winning web-based interactive graphic novel inspired by the true story of the 1741 New York City Uprising, where enslaved Africans and indentured white servants set fire to warehouses in lower Manhattan. This immersive educational experience was created for for middle and high school students to spark their imaginations with a richly detailed slice of an often overlooked history and to fan the flames of curiosity when they encounter other stories.',
     linkToSite: 'https://kofisfire.hudsonvalley.org/',
     clientType: 'Fulltime',
-    keyTech: ['strapi', 'nextjs', 'react'],
+    keyTech: ['strapi', 'nextjs', 'react', 'figma'],
     //TODO: bullets for kofi's fire
     bullets: [
       `Developed 10+ interactive components for website, including a mobile-responsive interactive map with various locations and information for people and places in the graphic novel.`,
@@ -316,6 +316,7 @@ export const webWork = [
       'stripe',
       'auth0',
       'react',
+      'figma',
     ],
     bullets: [
       'Spearheaded an initiative to engineer a product cancellation flow to recommend alternative products and promote customer retention, diverting 31% of clients to new dog food formula purchase instead of cancellation, generating $20K.',
