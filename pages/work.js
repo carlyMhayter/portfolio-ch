@@ -17,7 +17,8 @@ const WorkTypeContainer = styled.div`
   text-align: center;
   transition: all ease 0.5s;
   cursor: pointer;
-  background: linear-gradient(to right, var(--green), var(--green)),
+  background:
+    linear-gradient(to right, var(--green), var(--green)),
     linear-gradient(to right, var(--aqua), var(--aqua));
   background-size:
     100% 0.1em,
@@ -29,7 +30,8 @@ const WorkTypeContainer = styled.div`
   transition: background-size 400ms;
 
   &.second {
-    background: linear-gradient(to right, var(--yellow), var(--yellow)),
+    background:
+      linear-gradient(to right, var(--yellow), var(--yellow)),
       linear-gradient(to right, var(--ltyellow), var(--ltyellow));
     background-size:
       100% 0.1em,
@@ -41,7 +43,8 @@ const WorkTypeContainer = styled.div`
   }
 
   &.third {
-    background: linear-gradient(to right, var(--hotpink), var(--hotpink)),
+    background:
+      linear-gradient(to right, var(--hotpink), var(--hotpink)),
       linear-gradient(to right, var(--ltpink), var(--ltpink));
     background-size:
       100% 0.1em,
@@ -77,7 +80,7 @@ const ResumeContainer = styled.a`
   }
 `;
 
-function Home() {
+function WorkPage() {
   return (
     <>
       <Head>
@@ -99,7 +102,12 @@ function Home() {
               <Text>Fine Art</Text>
             </WorkTypeContainer>
           </Link>
-          <Link href="/041424_CarlyHayter_Resume.pdf" download target="_blank">
+          <Link
+            href="/041424_CarlyHayter_Resume.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <WorkTypeContainer
               color1="var(--hotpink)"
               color2="var(--blue)"
@@ -113,4 +121,4 @@ function Home() {
     </>
   );
 }
-export default Home;
+export default WorkPage;

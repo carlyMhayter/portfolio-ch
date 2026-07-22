@@ -1,0 +1,258 @@
+{
+  "data": [
+    {
+      "id": "vha_688",
+      "type": "va_facilities",
+      "attributes": {
+        "name": "Washington VA Medical Center",
+        "facilityType": "va_health_facility",
+        "classification": "VA Medical Center (VAMC)",
+        "parent": {
+          "id": "vha_402",
+          "link": "https://api.va.gov/services/va_facilities/v0/facilities/vha_402"
+        },
+        "website": "http://www.washingtondc.va.gov",
+        "lat": 38.9311137,
+        "long": -77.0109110499999,
+        "timeZone": "America/New_York",
+        "address": {
+          "mailing": {
+            "address1": "50 Irving Street, Northwest",
+            "address2": "Bldg 2",
+            "address3": "Suite 7",
+            "zip": "20422-0001",
+            "city": "Washington",
+            "state": "DC"
+          },
+          "physical": {
+            "address1": "50 Irving Street, Northwest",
+            "address2": "Bldg 2",
+            "address3": "Suite 7",
+            "zip": "20422-0001",
+            "city": "Washington",
+            "state": "DC"
+          }
+        },
+        "phone": "1-800-827-1000",
+        "hours": "\"monday\": \"9:30AM-4:00PM\",",
+        "operationalHoursSpecialInstructions": [
+          "More hours are available for some services.",
+          "If you need to talk to someone, call the Vet Center at 1-877-927-8387.",
+          "Vet Center hours are dependent upon outreach assignments."
+        ],
+        "services": {
+          "health": [
+            {
+              "name": "Example Service Name",
+              "serviceId": "exampleServiceId",
+              "link": "http://api.va.gov/services/va_facilities/v1/facilities/vha_558GA/services/covid19Vaccine"
+            }
+          ],
+          "benefits": [
+            {
+              "name": "Example Service Name",
+              "serviceId": "exampleServiceId",
+              "link": "http://api.va.gov/services/va_facilities/v1/facilities/vha_558GA/services/covid19Vaccine"
+            }
+          ],
+          "other": [
+            {
+              "name": "Example Service Name",
+              "serviceId": "exampleServiceId",
+              "link": "http://api.va.gov/services/va_facilities/v1/facilities/vha_558GA/services/covid19Vaccine"
+            }
+          ],
+          "link": "http://api.va.gov/services/va_facilities/v1/facilities/vha_558GA/services/",
+          "lastUpdated": "2018-01-01"
+        },
+        "satisfaction": {
+          "health": {
+            "primaryCareUrgent": 0.85,
+            "primaryCareRoutine": 0.85,
+            "specialtyCareUrgent": 0.85,
+            "specialtyCareRoutine": 0.85
+          },
+          "effectiveDate": "2018-01-01"
+        },
+        "mobile": false,
+        "operatingStatus": "NORMAL",
+        "visn": "20"
+      }
+    },
+    {
+      "id": "vha_689",
+      "type": "va_facilities",
+      "attributes": {
+        "name": "Washington VA Medical Center",
+        "facilityType": "va_health_facility",
+        "classification": "VA Medical Center (VAMC)",
+        "parent": {
+          "id": "vha_402",
+          "link": "https://api.va.gov/services/va_facilities/v0/facilities/vha_402"
+        },
+        "website": "http://www.washingtondc.va.gov",
+        "lat": 38.9311137,
+        "long": -77.0109110499999,
+        "timeZone": "America/New_York",
+        "address": {
+          "mailing": {
+            "address1": "50 Irving Street, Northwest",
+            "address2": "Bldg 2",
+            "address3": "Suite 7",
+            "zip": "20422-0001",
+            "city": "Washington",
+            "state": "DC"
+          },
+          "physical": {
+            "address1": "50 Irving Street, Northwest",
+            "address2": "Bldg 2",
+            "address3": "Suite 7",
+            "zip": "20422-0001",
+            "city": "Washington",
+            "state": "DC"
+          }
+        },
+        "phone": "1-800-827-1000",
+        "hours": "\"monday\": \"9:30AM-4:00PM\",",
+        "operationalHoursSpecialInstructions": [
+          "More hours are available for some services.",
+          "If you need to talk to someone, call the Vet Center at 1-877-927-8387.",
+          "Vet Center hours are dependent upon outreach assignments."
+        ],
+        "services": {
+          "health": [
+            {
+              "name": "Example Service Name",
+              "serviceId": "exampleServiceId",
+              "link": "http://api.va.gov/services/va_facilities/v1/facilities/vha_558GA/services/covid19Vaccine"
+            }
+          ],
+          "benefits": [
+            {
+              "name": "Example Service Name",
+              "serviceId": "exampleServiceId",
+              "link": "http://api.va.gov/services/va_facilities/v1/facilities/vha_558GA/services/covid19Vaccine"
+            }
+          ],
+          "other": [
+            {
+              "name": "Example Service Name",
+              "serviceId": "exampleServiceId",
+              "link": "http://api.va.gov/services/va_facilities/v1/facilities/vha_558GA/services/covid19Vaccine"
+            }
+          ],
+          "link": "http://api.va.gov/services/va_facilities/v1/facilities/vha_558GA/services/",
+          "lastUpdated": "2018-01-01"
+        },
+        "satisfaction": {
+          "health": {
+            "primaryCareUrgent": 0.85,
+            "primaryCareRoutine": 0.85,
+            "specialtyCareUrgent": 0.85,
+            "specialtyCareRoutine": 0.85
+          },
+          "effectiveDate": "2018-01-01"
+        },
+        "mobile": false,
+        "operatingStatus": "NORMAL",
+        "visn": "20"
+      }
+    },
+    {
+      "id": "vha_687",
+      "type": "va_facilities",
+      "attributes": {
+        "name": "Washington VA Medical Center",
+        "facilityType": "va_health_facility",
+        "classification": "VA Medical Center (VAMC)",
+        "parent": {
+          "id": "vha_402",
+          "link": "https://api.va.gov/services/va_facilities/v0/facilities/vha_402"
+        },
+        "website": "http://www.washingtondc.va.gov",
+        "lat": 38.9311137,
+        "long": -77.0109110499999,
+        "timeZone": "America/New_York",
+        "address": {
+          "mailing": {
+            "address1": "50 Irving Street, Northwest",
+            "address2": "Bldg 2",
+            "address3": "Suite 7",
+            "zip": "20422-0001",
+            "city": "Washington",
+            "state": "DC"
+          },
+          "physical": {
+            "address1": "50 Irving Street, Northwest",
+            "address2": "Bldg 2",
+            "address3": "Suite 7",
+            "zip": "20422-0001",
+            "city": "Washington",
+            "state": "DC"
+          }
+        },
+        "phone": "1-800-827-1000",
+        "hours": "\"monday\": \"9:30AM-4:00PM\",",
+        "operationalHoursSpecialInstructions": [
+          "More hours are available for some services.",
+          "If you need to talk to someone, call the Vet Center at 1-877-927-8387.",
+          "Vet Center hours are dependent upon outreach assignments."
+        ],
+        "services": {
+          "health": [
+            {
+              "name": "Example Service Name",
+              "serviceId": "exampleServiceId",
+              "link": "http://api.va.gov/services/va_facilities/v1/facilities/vha_558GA/services/covid19Vaccine"
+            }
+          ],
+          "benefits": [
+            {
+              "name": "Example Service Name",
+              "serviceId": "exampleServiceId",
+              "link": "http://api.va.gov/services/va_facilities/v1/facilities/vha_558GA/services/covid19Vaccine"
+            }
+          ],
+          "other": [
+            {
+              "name": "Example Service Name",
+              "serviceId": "exampleServiceId",
+              "link": "http://api.va.gov/services/va_facilities/v1/facilities/vha_558GA/services/covid19Vaccine"
+            }
+          ],
+          "link": "http://api.va.gov/services/va_facilities/v1/facilities/vha_558GA/services/",
+          "lastUpdated": "2018-01-01"
+        },
+        "satisfaction": {
+          "health": {
+            "primaryCareUrgent": 0.85,
+            "primaryCareRoutine": 0.85,
+            "specialtyCareUrgent": 0.85,
+            "specialtyCareRoutine": 0.85
+          },
+          "effectiveDate": "2018-01-01"
+        },
+        "mobile": false,
+        "operatingStatus": "NORMAL",
+        "visn": "20"
+      }
+    }
+  ],
+  "links": {
+    "related": "https://api.va.gov/services/va_facilities/v1/facilities?id=vha_688",
+    "self": "https://api.va.gov/services/va_facilities/v1/facilities?type=health&page=1&per_page=1000",
+    "first": "https://api.va.gov/services/va_facilities/v1/facilities?type=health&page=1&per_page=1000",
+    "prev": "https://api.va.gov/services/va_facilities/v1/facilities?type=health&page=1&per_page=1000",
+    "next": "https://api.va.gov/services/va_facilities/v1/facilities?type=health&page=2&per_page=1000",
+    "last": "https://api.va.gov/services/va_facilities/v1/facilities?type=health&page=4&per_page=1000"
+  },
+  "meta": {
+    "pagination": {
+      "currentPage": 1,
+      "perPage": 20,
+      "totalPages": 250,
+      "totalEntries": 2162
+    },
+    "distances": [54.13]
+  }
+}

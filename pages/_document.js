@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <link
             rel="shortcut icon"
@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
           />
           <link rel="stylesheet" href="https://use.typekit.net/czl8qzd.css" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
 
           <link
             href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap"
@@ -51,15 +51,11 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
-            rel="stylesheet"
-          ></link>
-          <link
             href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Playwrite+NG+Modern:wght@100..400&display=swap"
             rel="stylesheet"
-          ></link>
+          />
           <meta property="og:url" content="https://kofisfire.com/" />
-          <meta property="og:title" content="Carly Hayer" />
+          <meta property="og:title" content="Carly Hayter" />
 
           <meta
             property="og:description"
@@ -70,7 +66,6 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-        <script>0</script>
       </Html>
     );
   }

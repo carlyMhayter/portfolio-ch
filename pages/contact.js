@@ -114,7 +114,7 @@ const CopyIcon = styled.img`
   margin-left: 0.5rem;
 `;
 
-function Home() {
+function ContactPage() {
   const [copied, setCopied] = useState(false);
 
   return (
@@ -129,8 +129,20 @@ function Home() {
             <CopyButton
               id="carly-email"
               onClick={() => {
-                setCopied(true);
-                navigator.clipboard.writeText('carlyhayter@gmail.com');
+                const email = 'carlyhayter@gmail.com';
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(email).then(() => {
+                    setCopied(true);
+                  });
+                } else {
+                  const textArea = document.createElement('textarea');
+                  textArea.value = email;
+                  document.body.appendChild(textArea);
+                  textArea.select();
+                  document.execCommand('copy');
+                  document.body.removeChild(textArea);
+                  setCopied(true);
+                }
               }}
             >
               carlyhayter@gmail.com{' '}
@@ -146,6 +158,7 @@ function Home() {
             <a
               href="https://www.linkedin.com/in/carly-hayter-ab1a8853/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn
               <DoneIcon src={exLink.src} />
@@ -157,4 +170,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default ContactPage;

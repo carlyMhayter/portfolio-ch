@@ -27,7 +27,15 @@ function NavBar() {
         <div className="text-links-container">
           {Links.map((link) => (
             <div key={link.linkName} className="navlink">
-              <Link href={link.linkLoc}>
+              <Link
+                href={link.linkLoc}
+                target={link.linkLoc.startsWith('http') ? '_blank' : undefined}
+                rel={
+                  link.linkLoc.startsWith('http')
+                    ? 'noopener noreferrer'
+                    : undefined
+                }
+              >
                 <a> {link.linkName} </a>
               </Link>
             </div>

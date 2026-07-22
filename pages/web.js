@@ -1,18 +1,20 @@
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
+import { useMemo } from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 import PageLayout from '../components/PageLayout';
-import Image from 'next/image';
 import styled from 'styled-components';
 import arrow from '../public/arrow.svg';
 import { webWork } from '../data/data';
 import WebModal from '../components/WebModal';
+
 const ProjectsOuterContainer = styled.div`
   height: 100%;
   width: 100%;
-  /* background-color: pink; */
   padding-top: 7rem;
 `;
-const ProjectContainer = styled.button`
+
+const ProjectContainer = styled(Link)`
   background-color: white;
   border-radius: 5px;
   overflow: hidden;
@@ -25,13 +27,10 @@ const ProjectContainer = styled.button`
   margin-bottom: 1.5rem;
   transition: all ease 0.5s;
   position: relative;
-  border: 0px;
+  text-decoration: none;
+  color: inherit;
   cursor: pointer;
-  /* box-shadow: 2px 2px 0px 0px var(--ltyellow); */
-  /* ${(props) =>
-    props.isSelected
-      ? '  align-items: flex-start;'
-      : '  align-items: center;'} */
+
   @media only screen and (min-width: 640px) {
     .underlineTitle {
       &:after {
@@ -39,14 +38,12 @@ const ProjectContainer = styled.button`
         bottom: -3px;
         content: '';
         display: block;
-        height: 3px; //
+        height: 3px;
         left: 50%;
         opacity: 0;
         border-radius: 2px;
         position: relative;
-
         background: linear-gradient(to right, white, var(--yellow), white);
-        /* background: linear-gradient(to right, var(--blue-ltr), var(--vvLtGrey)); // */
         transition:
           width 0.3s ease 0s,
           left 0.3s ease 0s,
@@ -81,6 +78,7 @@ const ProjectContainer = styled.button`
     }
   }
 `;
+
 const ImageContainer = styled.div`
   height: 290px;
   width: 100%;
@@ -91,35 +89,34 @@ const ImageContainer = styled.div`
   border-radius: 5px;
   overflow: hidden;
   margin-top: 5px;
-  /* border: 1px solid blue; */
 
   @media only screen and (min-width: 640px) {
     width: 30%;
   }
 `;
+
 const TextContainer = styled.div`
-  /* border: 1px solid red; */
-  /* background-color: pink; */
   width: 100%;
   height: 290px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
+
   @media only screen and (min-width: 640px) {
     width: 100%;
   }
 `;
+
 const SiteDetails = styled.div`
-  /* background-color: lavender; */
   width: 100%;
   text-align: left;
 `;
+
 const SiteDetail = styled.p`
   font-size: 0.85rem;
   color: var(--darkYellow);
   font-weight: 500;
   letter-spacing: 0.03em;
-  /* border-bottom: 1px solid var(--ltpink); */
 
   span {
     color: var(--olive);
@@ -127,11 +124,8 @@ const SiteDetail = styled.p`
     padding-bottom: 0em;
     margin-right: 0.25em;
   }
-
-  @media only screen and (min-width: 640px) {
-  }
-  /* border-bottom: 2px solid yellow; */
 `;
+
 const SiteTitle = styled.div`
   font-size: 1.5rem;
   color: var(--olive);
@@ -146,10 +140,9 @@ const SiteTitle = styled.div`
     padding-right: 20dvw;
     text-align: center;
     padding-top: 0.5em;
-    /* line-height: 1.5em; */
   }
-  /* border-bottom: 2px solid yellow; */
 `;
+
 const SiteDescription = styled.div`
   font-size: 1rem;
   color: var(--olive);
@@ -160,15 +153,16 @@ const SiteDescription = styled.div`
     padding-right: 20dvw;
   }
 `;
+
 const SiteInfo = styled.div`
   width: 100%;
   color: var(--darkYellow);
   padding-bottom: 1em;
 `;
-const ArrowContainer = styled.div`
-  /* border: 1px solid blue; */
 
+const ArrowContainer = styled.div`
   display: none;
+
   @media only screen and (min-width: 640px) {
     display: block;
     height: 100%;
@@ -182,37 +176,20 @@ const ArrowContainer = styled.div`
   }
 `;
 
-function Home() {
-  const [clickedInto, setClickedInto] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [selected, setSelected] = useState('');
-  const [selectedData, setSelectedData] = useState({});
+function WebPage() {
+  const router = useRouter();
+  const selected = router.query.project || '';
 
-  useEffect(() => {
-    if (clickedInto) {
-      const title = document.getElementById('modal-title');
-      const data = webWork.filter((site) => site.slug === selected)[0];
-      setSelectedData(data);
-      title.scrollIntoView();
+  const selectedData = useMemo(
+    () => webWork.find((site) => site.slug === selected) || {},
+    [selected],
+  );
 
-      document.body.style.overflow = 'hidden';
+  const isOpen = Boolean(selected);
 
-      setTimeout(() => {
-        setShowModal(true);
-      }, 500);
-    } else {
-      document.body.style.overflow = 'auto';
-
-      setTimeout(() => {
-        setShowModal(false);
-      }, 0);
-    }
-  }, [clickedInto]);
-  console.log('selectedData', selectedData);
-  console.log(typeof selectedData.images);
-  console.log('selectedData.images', selectedData.images);
-
-  console.log(typeof []);
+  const handleClose = () => {
+    router.push('/web', undefined, { shallow: true });
+  };
 
   return (
     <>
@@ -221,17 +198,12 @@ function Home() {
       </Head>
       <PageLayout>
         <ProjectsOuterContainer>
-          {webWork.map((site, index) => (
+          {webWork.map((site) => (
             <ProjectContainer
-              // data-aos="fade-up"
-              // data-aos-once="true"
+              key={site.slug}
+              href={`/web?project=${site.slug}`}
+              scroll={false}
               id={`slug-${site.slug}`}
-              key={`${Date.now}-${index}`}
-              isSelected={selected === site.slug}
-              onClick={() => {
-                setClickedInto(true);
-                setSelected(site.slug);
-              }}
             >
               <ImageContainer
                 style={{ backgroundImage: `url(${site.imgLoc})` }}
@@ -252,9 +224,9 @@ function Home() {
                 <SiteDescription className="underlineTitle">
                   {site.siteTitle}
                 </SiteDescription>
-                <SiteInfo isSelected={selected === site.slug}></SiteInfo>
+                <SiteInfo></SiteInfo>
               </TextContainer>
-              <ArrowContainer isSelected={selected === site.slug}>
+              <ArrowContainer>
                 <img src={arrow.src} alt="right pointing arrow" />
               </ArrowContainer>
             </ProjectContainer>
@@ -263,12 +235,11 @@ function Home() {
       </PageLayout>
       <WebModal
         selectedData={selectedData}
-        setClickedInto={setClickedInto}
-        setSelected={setSelected}
-        clickedInto={clickedInto}
-        showModal={showModal}
+        open={isOpen}
+        onClose={handleClose}
       />
     </>
   );
 }
-export default Home;
+
+export default WebPage;

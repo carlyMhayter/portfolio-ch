@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import mask from '../../public/name2.svg';
 import image from '../../public/carrlyname.jpg';
@@ -31,42 +31,6 @@ const NameImage = styled.div`
   background-size: cover;
   animation: color 10s 0s infinite;
 
-  /* @keyframes color {
-    1% {
-      background-color: var(--blue);
-    }
-    30% {
-      background-color: var(--blue);
-    }
-    31% {
-      background-color: var(--pinkBrown);
-    }
-    35% {
-      background-color: var(--pinkBrown);
-    }
-    50% {
-      background-color: var(--pinkBrown);
-    }
-    51% {
-      background-color: var(--yellow);
-    }
-    55% {
-      background-color: var(--yellow);
-    }
-    70% {
-      background-color: var(--yellow);
-    }
-    71% {
-      background-color: var(--green);
-    }
-    75% {
-      background-color: var(--blue);
-    }
-    100% {
-      background-color: var(--blue);
-    }
-  } */
-
   @keyframes color {
     1% {
       background-color: var(--blue);
@@ -98,9 +62,19 @@ const ImageThing = styled.img`
 `;
 
 function Name() {
+  const nameImageRef = useRef(null);
+
+  useEffect(() => {
+    nameImageRef.current.classList.add('animated');
+  }, []);
+
   return (
     <ImageContainer>
-      <NameImage id="NameImage" style={{ maskImage: `url(${mask.src})` }} />
+      <NameImage
+        id="NameImage"
+        ref={nameImageRef}
+        style={{ maskImage: `url(${mask.src})` }}
+      />
       <ImageThing src={image.src} />
     </ImageContainer>
   );

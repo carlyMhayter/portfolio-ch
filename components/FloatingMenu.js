@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import Link from 'next/dist/client/link';
-import { useRouter } from 'next/dist/client/router';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const OuterMenuContainer = styled.nav`
   /* background-color: orange; */
@@ -153,7 +153,6 @@ function FloatingMenu() {
   const [currentLinks, setCurrentLinks] = useState([]);
   const [current, setCurrent] = useState(linkArray[0]);
   const [show, setShow] = useState(false);
-  console.log('show', show);
 
   useEffect(() => {
     const pathname = router.pathname;
@@ -191,14 +190,15 @@ function FloatingMenu() {
         <MenuLinks>
           {currentLinks.map((link, index) => (
             <MenuLink
-              key={`${Date.now}-${index}`}
+              key={link.name}
               data-aos="fade-right"
               data-aos-delay={`${100 * index}`}
               color={link.color}
             >
               <Link
                 href={link.href}
-                target={link.name === 'Blog' ? '_blank' : '_self'}
+                target={link.name === 'Blog' ? '_blank' : undefined}
+                rel={link.name === 'Blog' ? 'noopener noreferrer' : undefined}
               >
                 {link.name}
               </Link>

@@ -11,6 +11,7 @@
     "fix": "yarn lint --fix && prettier --write ."
   },
   "dependencies": {
+    "@ariakit/react": "^0.4.34",
     "@formspree/react": "^2.5.1",
     "aos": "^2.3.4",
     "clipboard": "^2.0.11",

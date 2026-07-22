@@ -39,5 +39,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 0,
     'jsx-a11y/label-has-associated-control': 0,
     'spaced-comment': 0,
+    'max-classes-per-file': 0,
+    'react/destructuring-assignment': 0,
   },
 };

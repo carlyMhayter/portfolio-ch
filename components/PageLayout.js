@@ -27,7 +27,7 @@ export default function PageLayout({ children, fullHeight }) {
     <OuterContainer fullHeight={fullHeight}>
       <InnerContainer>
         <FloatingMenu />
-        {children}
+        <main>{children}</main>
       </InnerContainer>
     </OuterContainer>
   );
