@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import { useMemo } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
@@ -227,7 +228,13 @@ function WebPage() {
                 <SiteInfo></SiteInfo>
               </TextContainer>
               <ArrowContainer>
-                <img src={arrow.src} alt="right pointing arrow" />
+                <Image
+                  src={arrow}
+                  alt="right pointing arrow"
+                  width={40}
+                  height={40}
+                  style={{ width: '40px', height: 'auto' }}
+                />
               </ArrowContainer>
             </ProjectContainer>
           ))}

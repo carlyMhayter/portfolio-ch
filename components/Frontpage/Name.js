@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import styled from 'styled-components';
 import mask from '../../public/name2.svg';
 import image from '../../public/carrlyname.jpg';
@@ -54,13 +55,6 @@ const NameImage = styled.div`
   }
 `;
 
-const ImageThing = styled.img`
-  width: 100%;
-  height: auto;
-  display: block;
-  opacity: 0;
-`;
-
 function Name() {
   const nameImageRef = useRef(null);
 
@@ -75,7 +69,14 @@ function Name() {
         ref={nameImageRef}
         style={{ maskImage: `url(${mask.src})` }}
       />
-      <ImageThing src={image.src} />
+      <Image
+        src={image}
+        alt=""
+        width={1190}
+        height={815}
+        style={{ width: '100%', height: 'auto', display: 'block', opacity: 0 }}
+        priority
+      />
     </ImageContainer>
   );
 }

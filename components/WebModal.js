@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import styled from 'styled-components';
 import {
   Dialog,
@@ -93,20 +94,11 @@ const ModalImagesContainer = styled.div`
   max-width: 1200px;
   padding: 1rem;
 
-  * {
-    padding-bottom: 0.5rem;
-  }
-
   @media only screen and (min-width: 640px) {
     width: calc(100% - 2rem);
     height: calc(100% - 2rem);
     padding: 2rem;
   }
-`;
-
-const ModalImage = styled.img`
-  width: 100%;
-  height: auto;
 `;
 
 const ModalTitle = styled(DialogHeading)`
@@ -185,11 +177,6 @@ const SiteTechItem = styled.div`
   }
 `;
 
-const SiteTechIcon = styled.img`
-  height: 20px;
-  width: 20px;
-`;
-
 const ModalBullets = styled.ul`
   list-style-type: disc;
 `;
@@ -228,15 +215,29 @@ function WebModal({ selectedData, open, onClose }) {
     <StyledDialog open={open} onClose={onClose}>
       <ModalInner>
         <CloseButton aria-label="Close project details">
-          <img src={closeX.src} alt="" />
+          <Image
+            src={closeX}
+            alt=""
+            width={40}
+            height={40}
+            style={{ width: '40px', height: 'auto' }}
+          />
         </CloseButton>
 
         <ModalImagesContainer>
           {selectedData.images?.map((image, idx) => (
-            <ModalImage
+            <Image
               key={`${selectedData.slug}-img-${idx}`}
               src={image.imgLoc}
               alt={image.imgAlt}
+              width={image.width || 1200}
+              height={image.height || 700}
+              style={{
+                width: '100%',
+                height: 'auto',
+                paddingBottom: '0.5rem',
+              }}
+              sizes="(max-width: 640px) 90vw, 40vw"
             />
           ))}
         </ModalImagesContainer>
@@ -250,7 +251,18 @@ function WebModal({ selectedData, open, onClose }) {
           <SiteTech>
             {selectedData.keyTech?.map((item) => (
               <SiteTechItem key={`${selectedData.slug}-tech-${item}`}>
-                <SiteTechIcon alt="" src={icons[item]} />
+                <Image
+                  alt=""
+                  src={icons[item]}
+                  width={20}
+                  height={20}
+                  style={{
+                    marginBottom: '6px',
+                    marginLeft: '4px',
+                    width: '20px',
+                    height: 'auto',
+                  }}
+                />
                 <p>{item}</p>
               </SiteTechItem>
             ))}
