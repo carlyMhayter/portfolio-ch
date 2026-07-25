@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import PageLayout from '../components/PageLayout';
 import styled from 'styled-components';
 import copy from '../public/copy.svg';
@@ -7,36 +8,18 @@ import exLink from '../public/exLink.svg';
 
 import { useState } from 'react';
 const ContactContainer = styled.div`
-  /* border: 1px solid lime; */
   width: 100%;
-  height: calc(100% - 150px);
   display: flex;
   position: relative;
-  overflow: hidden;
   align-items: start;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  top: 150px;
-  overflow-y: scroll;
+  top: 0px;
 
   @media only screen and (min-width: 640px) {
-    top: 0px;
     height: 100%;
     align-items: center;
-  }
-`;
-
-const InnerContainer = styled.div`
-  display: flex;
-  position: relative;
-  /* overflow: hidden; */
-  flex-direction: column;
-  /* min-height: 700px; */
-  height: fit-content;
-  top: 150px;
-  align-items: center;
-  font-size: 1rem;
-  @media only screen and (min-width: 640px) {
-    top: auto;
   }
 
   a {
@@ -62,6 +45,21 @@ const InnerContainer = styled.div`
   }
 `;
 
+const InnerContainer = styled.div`
+  display: flex;
+  position: relative;
+  /* overflow: hidden; */
+  flex-direction: column;
+  /* min-height: 700px; */
+  height: fit-content;
+  top: 150px;
+  align-items: center;
+  font-size: 1rem;
+  @media only screen and (min-width: 640px) {
+    top: auto;
+  }
+`;
+
 const ContactText = styled.p`
   color: var(--blue);
   font-weight: 600;
@@ -69,7 +67,6 @@ const ContactText = styled.p`
 `;
 const CopyButton = styled.button`
   border: 1px solid var(--ltyellow);
-  /* background-color: var(--ltyellow); */
   background-color: whitesmoke;
   font-size: 1rem;
   line-height: 1rem;
@@ -78,6 +75,7 @@ const CopyButton = styled.button`
   text-align: center;
   margin-bottom: 0.5rem;
   padding-right: 2rem;
+  position: relative;
   border-radius: 5px;
   color: var(--olive);
   transition: 0.5s all ease;
@@ -124,46 +122,45 @@ function ContactPage() {
       </Head>
       <PageLayout fullHeight>
         <ContactContainer>
-          <InnerContainer>
-            <ContactText>Contact me at:</ContactText>
-            <CopyButton
-              id="carly-email"
-              onClick={() => {
-                const email = 'carlyhayter@gmail.com';
-                if (navigator.clipboard && navigator.clipboard.writeText) {
-                  navigator.clipboard.writeText(email).then(() => {
-                    setCopied(true);
-                  });
-                } else {
-                  const textArea = document.createElement('textarea');
-                  textArea.value = email;
-                  document.body.appendChild(textArea);
-                  textArea.select();
-                  document.execCommand('copy');
-                  document.body.removeChild(textArea);
+          <ContactText>Contact me at:</ContactText>
+          <CopyButton
+            id="carly-email"
+            onClick={() => {
+              const email = 'carlyhayter@gmail.com';
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(email).then(() => {
                   setCopied(true);
-                }
-              }}
-            >
-              carlyhayter@gmail.com{' '}
-              <CopyIcon
-                src={copy.src}
-                className={`${copied ? `hide` : `show`}`}
-              />
-              <DoneIcon
-                src={check.src}
-                className={`${copied ? `show` : `hide`}`}
-              />
-            </CopyButton>
-            <a
-              href="https://www.linkedin.com/in/carly-hayter-ab1a8853/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-              <DoneIcon src={exLink.src} />
-            </a>
-          </InnerContainer>
+                });
+              } else {
+                const textArea = document.createElement('textarea');
+                textArea.value = email;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                setCopied(true);
+              }
+            }}
+          >
+            carlyhayter@gmail.com{' '}
+            <CopyIcon
+              src={copy.src}
+              className={`${copied ? `hide` : `show`}`}
+            />
+            <DoneIcon
+              src={check.src}
+              className={`${copied ? `show` : `hide`}`}
+            />
+          </CopyButton>
+          <Link
+            href="https://www.linkedin.com/in/carly-hayter-ab1a8853/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ position: 'relative' }}
+          >
+            LinkedIn
+            <DoneIcon src={exLink.src} />
+          </Link>
         </ContactContainer>
       </PageLayout>
     </>
