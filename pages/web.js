@@ -206,9 +206,15 @@ function WebPage() {
               scroll={false}
               id={`slug-${site.slug}`}
             >
-              <ImageContainer
-                style={{ backgroundImage: `url(${site.imgLoc})` }}
-              />
+              <ImageContainer>
+                <Image
+                  src={site.imgLoc}
+                  alt={`${site.projectName} thumbnail`}
+                  fill
+                  style={{ objectFit: 'cover', borderRadius: '5px' }}
+                  sizes="(max-width: 640px) 100vw, 30vw"
+                />
+              </ImageContainer>
               <TextContainer>
                 <SiteDetails>
                   <SiteDetail>

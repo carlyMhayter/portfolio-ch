@@ -22,12 +22,16 @@ const InnerContainer = styled.div`
   max-width: 1200px;
 `;
 
+const MainContainer = styled.main`
+  padding-top: 5rem;
+`;
+
 export default function PageLayout({ children, fullHeight }) {
   return (
     <OuterContainer fullHeight={fullHeight}>
       <InnerContainer>
         <FloatingMenu />
-        <main>{children}</main>
+        <MainContainer>{children}</MainContainer>
       </InnerContainer>
     </OuterContainer>
   );

@@ -3,12 +3,12 @@ import Head from 'next/head';
 import PageLayout from '../components/PageLayout';
 import styled from 'styled-components';
 import image from '../public/self-cropped-hat-small.jpg';
-import mask from '../public/dotsblack.svg';
-import dots from '../public/blueborder.svg';
-import dots2 from '../public/blueborder2.svg';
+
+// Next.js 14 imports SVGs from public/ as string URLs, not objects with .src
+const maskUrl = '/dotsblack.svg';
+const dots2Url = '/blueborder2.svg';
 
 const AboutContainer = styled.div`
-  /* border: 1px solid lime; */
   width: 100%;
   height: calc(100% - 125px);
   display: flex;
@@ -16,13 +16,9 @@ const AboutContainer = styled.div`
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  top: 150px;
+  /* top: 150px; */
   overflow-y: scroll;
-  /* background-image: linear-gradient(
-    to bottom,
-    var(--ltgreen) 10%,
-    transparent 40%
-  ); */
+
   border-radius: 10px;
   @media only screen and (min-width: 640px) {
     top: 0px;
@@ -48,31 +44,25 @@ const AboutContainer = styled.div`
 `;
 
 const InnerContainer = styled.div`
-  display: flex;
-  position: absolute;
-  inset: 0;
-  /* overflow: hidden; */
-  flex-direction: column-reverse;
-  /* min-height: 700px; */
-  /* background-color: red; */
-  padding-top: 100px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+  /* padding-top: 14rem; */
   height: fit-content;
-  /* top: 250px; */
+  align-items: center;
   @media only screen and (min-width: 640px) {
-    flex-direction: row;
-    top: 50%;
-    transform: translate(0%, -50%);
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem;
   }
 `;
 
 const IntroContainer = styled.div`
   padding: 0.25rem 1rem;
-  /* width: 300px; */
   margin-bottom: 1rem;
   text-align: right;
   width: fit-content;
-  /* align-self: flex-end; */
-  /* box-shadow: 20px 15px 0px 0px var(--pinkBrown); */
   z-index: 10;
   margin: 0 auto;
   color: var(--olive);
@@ -88,6 +78,7 @@ const IntroContainer = styled.div`
 `;
 
 const TextContainer = styled.div`
+  position: relative;
   width: 100%;
   height: fit-content;
   /* background-color: pink; */
@@ -128,55 +119,24 @@ const TextContainer = styled.div`
 
 const ImageContainer = styled.div`
   position: relative;
-  width: 300px;
-  height: 375px;
-  /* top: 150px; */
+  width: 100%;
+  height: auto;
 
   z-index: 2;
   mask-position: center top;
   mask-size: contain;
   mask-repeat: no-repeat;
   margin: 0 auto;
+
   @media only screen and (min-width: 640px) {
     top: -20px;
-    width: 400px;
-    height: 475px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
   }
 `;
 
-const DotsContainer = styled.img`
-  position: absolute;
-  width: 300px;
-  height: 375px;
-  top: 0px;
-  z-index: 3;
-
-  color: #fc8b83;
-  @media only screen and (min-width: 640px) {
-    top: -10px;
-    right: -10px;
-    width: 400px;
-    height: 475px;
-  }
-`;
-
-const DotsContainer2 = styled.img`
-  position: absolute;
-  width: 300px;
-  height: 375px;
-  top: -30px;
-  right: -35px;
-  z-index: 1;
-
-  @media only screen and (min-width: 640px) {
-    top: 10px;
-    right: 10px;
-    width: 400px;
-    height: 475px;
-  }
-`;
-
-function Home() {
+function AboutPage() {
   return (
     <>
       <Head>
@@ -200,30 +160,39 @@ function Home() {
             </TextContainer>
             <ImageContainer>
               <Image
-                style={{ maskImage: `url(${mask.src})` }}
                 className="self-portrait"
                 src={image}
                 alt="self portrait of the designer"
-                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                style={{
+                  maskImage: `url(${maskUrl})`,
+                  width: '100%',
+                  height: 'auto',
+                  zIndex: 10,
+                  top: '200px',
+                }}
                 placeholder="blur"
-              />{' '}
-              {/* <DotsContainer alt="dots border" src={dots.src} /> */}
-              <DotsContainer2 alt="dots border" src={dots2.src} />
+              />
+              <Image
+                className="dots container"
+                src={dots2Url}
+                alt="dots border"
+                unoptimized
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                fill
+                style={{
+                  position: 'absolute',
+                  top: '20px',
+                  right: '-20px',
+                  left: 'auto',
+                  zIndex: -1,
+                }}
+              />
             </ImageContainer>
-            {/* <img
-              className="palm-tree"
-              src="/palm-tree-color.svg"
-              alt="hand drawn design of palm tree"
-            /> */}
           </InnerContainer>
         </AboutContainer>
-        {/* <Image
-          src="/palm-tree-color.svg"
-          alt="hand drawn design of palm tree"
-          layout="fill"
-        /> */}
       </PageLayout>
     </>
   );
 }
-export default Home;
+export default AboutPage;

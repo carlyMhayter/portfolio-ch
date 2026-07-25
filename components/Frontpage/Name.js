@@ -55,6 +55,18 @@ const NameImage = styled.div`
   }
 `;
 
+const VisuallyHidden = styled.h1`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+`;
+
 function Name() {
   const nameImageRef = useRef(null);
 
@@ -64,10 +76,12 @@ function Name() {
 
   return (
     <ImageContainer>
+      <VisuallyHidden>Carly Hayter</VisuallyHidden>
       <NameImage
         id="NameImage"
         ref={nameImageRef}
         style={{ maskImage: `url(${mask.src})` }}
+        aria-hidden="true"
       />
       <Image
         src={image}

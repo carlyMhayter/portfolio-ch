@@ -35,8 +35,9 @@ function NavBar() {
                     ? 'noopener noreferrer'
                     : undefined
                 }
+                className="navlink-anchor"
               >
-                <a> {link.linkName} </a>
+                {link.linkName}
               </Link>
             </div>
           ))}
