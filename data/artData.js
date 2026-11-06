@@ -1,6 +1,16 @@
+import spacelady from '../public/art/spacelady.jpg';
+import saint from '../public/art/saint.JPG';
+import bird1 from '../public/art/bird1.jpg';
+import brianna from '../public/art/brianna.PNG';
+import maleFigure from '../public/art/male-figure1.jpg';
+import colorLeaves from '../public/art/color-leaves.png';
+import hazelDrawing from '../public/art/hazel-drawing.jpg';
+import dylanPainting from '../public/art/dylan-painting.jpg';
+import kristianPainting from '../public/art/kristian-painting.jpg';
+
 const artData = [
   {
-    imgLoc: '/art/spacelady.JPG',
+    imgLoc: spacelady,
     imgTitle: 'Space Lady',
     imgDescription: 'Digitally colored pen and ink drawing. 2024',
     altText: 'digital print of woman in rainbow space',
@@ -8,7 +18,7 @@ const artData = [
     height: 4336,
   },
   {
-    imgLoc: '/art/saint.JPG',
+    imgLoc: saint,
     imgTitle: 'Sad Saint',
     imgDescription: 'Digitally colored pen and ink drawing. 2024',
     altText: 'portrait of female saint',
@@ -16,7 +26,7 @@ const artData = [
     height: 4032,
   },
   {
-    imgLoc: '/art/bird1.jpg',
+    imgLoc: bird1,
     imgTitle: 'Hawk',
     imgDescription: 'Pen and ink drawing. 2024',
     altText: 'drawing of hawk',
@@ -24,7 +34,7 @@ const artData = [
     height: 4032,
   },
   {
-    imgLoc: '/art/brianna.PNG',
+    imgLoc: brianna,
     imgTitle: 'Brianna',
     imgDescription: 'Acrylic on board. 2013.',
     altText: 'abstract portrait of female face',
@@ -32,7 +42,7 @@ const artData = [
     height: 1050,
   },
   {
-    imgLoc: '/art/male-figure1.jpg',
+    imgLoc: maleFigure,
     imgTitle: 'Male Figure from Life',
     imgDescription: 'Charcoal on newsprint, 2021. 2.5hr pose.',
     altText: 'male figure drawing',
@@ -40,7 +50,7 @@ const artData = [
     height: 3370,
   },
   {
-    imgLoc: '/art/color-leaves.png',
+    imgLoc: colorLeaves,
     imgTitle: 'Untitled',
     imgDescription: 'Watercolor. 2011',
     altText: 'rainbow watercolor leaves',
@@ -48,7 +58,7 @@ const artData = [
     height: 1147,
   },
   {
-    imgLoc: '/art/hazel-drawing.jpg',
+    imgLoc: hazelDrawing,
     imgTitle: 'Pen Portrait',
     imgDescription: 'Pen on paper. 2013',
     altText: 'pen portrait drawing of friend',
@@ -56,7 +66,7 @@ const artData = [
     height: 3825,
   },
   {
-    imgLoc: '/art/dylan-painting.jpg',
+    imgLoc: dylanPainting,
     imgTitle: 'Dylan',
     imgDescription: 'Acrylic on Board. 2014',
     altText: 'portrait painting on board',
@@ -64,7 +74,7 @@ const artData = [
     height: 1953,
   },
   {
-    imgLoc: '/art/kristian-painting.jpg',
+    imgLoc: kristianPainting,
     imgTitle: 'Kristian',
     imgDescription: 'Acrylic on Board. 2011',
     altText: 'portrait painting on board of man',

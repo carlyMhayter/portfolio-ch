@@ -77,6 +77,7 @@ function FineArtPage() {
                   display: 'block',
                 }}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                placeholder="blur"
               />
               <ProjectTextContainer>
                 <ProjectText>{pic.imgTitle}</ProjectText>
